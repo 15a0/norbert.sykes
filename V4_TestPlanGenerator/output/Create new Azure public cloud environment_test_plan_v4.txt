@@ -1,0 +1,82 @@
+====================================================================================================
+TEST PLAN (V4) - Create new Azure public cloud environment
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 4
+Total test cases: 1
+Reachable questions: 17
+Min questions per case: 17
+Max questions per case: 17
+Avg questions per case: 17.0
+Coverage: 17/17 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q7: Acknowledgement:
+  Options: Yes
+Q11: Is this WBS, I/O or PM order going to be split?
+  Options: Yes, No
+Q21: Support team:
+Q25: Business Process
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q7 (Acknowledgement:): Yes
+  Q11 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q21 (Support team:): [Not assigned]
+  Q25 (Business Process): [Not assigned]
+
+Visible questions (17):
+  DATA COLLECTION (enter any valid value): Q8, Q9, Q10, Q12, Q16, Q17, Q18, Q19, Q20, Q24, Q26, Q27, Q31
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q7: Acknowledgement: (TEST VAR)
+Q8: Archer engagement number: (DATA COL)
+Q9: Archer Confirmation Email: (DATA COL)
+Q10: Disclaimer: (DATA COL)
+Q11: Is this WBS, I/O or PM order going to be split? (TEST VAR)
+Q12: WBS, I/O, PM Order: (DATA COL)
+Q16: Percent Split: Element One (DATA COL)
+Q17: Second: WBS, I/O or PM Order (DATA COL)
+Q18: Percent Split: Element Two (DATA COL)
+Q19: Max cost: (DATA COL)
+Q20: Application name: (DATA COL)
+Q21: Support team: (TEST VAR)
+Q24: Application environment(s) needed: (DATA COL)
+Q25: Business Process (TEST VAR)
+Q26: Business Subprocess (DATA COL)
+Q27: Requested completion date: (DATA COL)
+Q31: Comments: (DATA COL)
+

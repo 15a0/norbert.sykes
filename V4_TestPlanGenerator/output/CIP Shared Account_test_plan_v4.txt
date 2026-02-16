@@ -1,0 +1,84 @@
+====================================================================================================
+TEST PLAN (V4) - CIP Shared Account
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 2
+Total test cases: 2
+Reachable questions: 14
+Min questions per case: 11
+Max questions per case: 12
+Avg questions per case: 11.5
+Coverage: 14/14 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q9: Employee type:
+  Options: Employee, Contractor
+Q11: Request type:
+  Options: Add, Remove
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q9 (Employee type:): Employee
+  Q11 (Request type:): Remove
+
+Visible questions (12):
+  DATA COLLECTION (enter any valid value): Q3, Q4, Q6, Q10, Q16, Q18, Q19, Q21, Q22, Q23
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q9 (Employee type:): Employee
+  Q11 (Request type:): Add
+
+Visible questions (11):
+  DATA COLLECTION (enter any valid value): Q3, Q4, Q6, Q10, Q16, Q17, Q20, Q22, Q23
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q3: Approving Supervisor: (DATA COL)
+Q4: Supervisor Override: (DATA COL)
+Q6: Supervisor: (DATA COL)
+Q9: Employee type: (TEST VAR)
+Q10: Which domain is this request for? (DATA COL)
+Q11: Request type: (TEST VAR)
+Q16: Disclaimer: (DATA COL)
+Q17: Requested start date: (DATA COL)
+Q18: Unknown (DATA COL)
+Q19: Request removal date and time: (DATA COL)
+Q20: Reason for request: (DATA COL)
+Q21: Reason for removal: (DATA COL)
+Q22: Comments: (DATA COL)
+Q23: Comments: (DATA COL)
+

@@ -1,0 +1,240 @@
+====================================================================================================
+TEST PLAN (V4) - Cell Phone Request
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 13
+Total test cases: 8
+Reachable questions: 43
+Min questions per case: 10
+Max questions per case: 30
+Avg questions per case: 19.6
+Coverage: 43/43 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q2: What do you need?
+  Options: New cellular phone/device, Replace/Upgrade Cellular Phone/Device, Return cellphone/cellular device Phone, Suspend/Resume cellular service (e.g. Seasonal employee), Update information for existing cell phone (accounting, ownership, asset information, etc.)
+Q6: Is this for a shared smart phone?
+  Options: Yes, No
+Q9: Will you be using the Bulk Upload Spreadsheet to order multiple devices?
+  Options: Yes, No
+Q31: Is this WBS, I/O, PM Order going to be split?
+  Options: Yes, No
+Q32: Select the utility|operating company where monthly recurring charges should be applied:
+Q43: Select the additional utility|operating company.
+Q50: Are there additional splits??
+  Options: Yes, No
+Q53: Will device(s) be purchased as part of a project?
+  Options: Yes, No
+Q55: Type of device being requested:
+  Options: Cell phone - Flip Phone, Cell phone - Smart Phone (iPhone), Cellular Analog Telephone Adapter, Other
+Q66: Do you want to switch providers?
+  Options: Yes, No
+Q81: Choose one:
+  Options: Suspend service, Resume service
+Q87: Information needing to be updated: (check all that apply.)
+  Options: Accounting WBS #, Device owner, SIM, IMEI, Other
+Q88: Select the utility|operating company where monthly recurring charges should be applied:
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): New cellular phone/device
+  Q6 (Is this for a shared smart phone?): No
+  Q9 (Will you be using the Bulk Upload Spreadsheet to order multiple devices?): No
+  Q31 (Is this WBS, I/O, PM Order going to be split?): Yes
+  Q32 (Select the utility|operating company where monthly recurring charges should be applied:): [Not assigned]
+  Q43 (Select the additional utility|operating company.): [Not assigned]
+  Q50 (Are there additional splits??): Yes
+  Q53 (Will device(s) be purchased as part of a project?): Yes
+  Q55 (Type of device being requested:): Cell phone - Flip Phone
+
+Visible questions (30):
+  DATA COLLECTION (enter any valid value): Q16, Q27, Q34, Q35, Q42, Q45, Q46, Q49, Q51, Q54, Q56, Q57, Q61, Q62, Q63, Q68, Q69, Q93, Q94, Q101, Q102
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): Return cellphone/cellular device Phone
+  Q6 (Is this for a shared smart phone?): No
+  Q9 (Will you be using the Bulk Upload Spreadsheet to order multiple devices?): No
+
+Visible questions (18):
+  DATA COLLECTION (enter any valid value): Q16, Q27, Q34, Q35, Q45, Q46, Q74, Q75, Q76, Q77, Q78, Q93, Q94, Q101, Q102
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): New cellular phone/device
+  Q6 (Is this for a shared smart phone?): No
+  Q9 (Will you be using the Bulk Upload Spreadsheet to order multiple devices?): Yes
+
+Visible questions (15):
+  DATA COLLECTION (enter any valid value): Q16, Q17, Q18, Q27, Q34, Q35, Q45, Q46, Q93, Q94, Q101, Q102
+
+Test Case 4
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): Return cellphone/cellular device Phone
+  Q6 (Is this for a shared smart phone?): No
+  Q9 (Will you be using the Bulk Upload Spreadsheet to order multiple devices?): Yes
+
+Visible questions (15):
+  DATA COLLECTION (enter any valid value): Q16, Q21, Q22, Q27, Q34, Q35, Q45, Q46, Q93, Q94, Q101, Q102
+
+Test Case 5
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): New cellular phone/device
+  Q6 (Is this for a shared smart phone?): Yes
+
+Visible questions (10):
+  DATA COLLECTION (enter any valid value): Q8, Q16, Q34, Q35, Q45, Q46, Q93, Q94
+
+Test Case 6
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): New cellular phone/device
+  Q6 (Is this for a shared smart phone?): No
+  Q9 (Will you be using the Bulk Upload Spreadsheet to order multiple devices?): No
+  Q31 (Is this WBS, I/O, PM Order going to be split?): No
+  Q32 (Select the utility|operating company where monthly recurring charges should be applied:): [Not assigned]
+  Q53 (Will device(s) be purchased as part of a project?): Yes
+  Q55 (Type of device being requested:): Cell phone - Smart Phone (iPhone)
+
+Visible questions (25):
+  DATA COLLECTION (enter any valid value): Q16, Q27, Q34, Q35, Q45, Q46, Q54, Q56, Q58, Q61, Q62, Q63, Q68, Q69, Q93, Q94, Q101, Q102
+
+Test Case 7
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): New cellular phone/device
+  Q6 (Is this for a shared smart phone?): No
+  Q9 (Will you be using the Bulk Upload Spreadsheet to order multiple devices?): No
+  Q31 (Is this WBS, I/O, PM Order going to be split?): No
+  Q32 (Select the utility|operating company where monthly recurring charges should be applied:): [Not assigned]
+  Q53 (Will device(s) be purchased as part of a project?): Yes
+  Q55 (Type of device being requested:): Cellular Analog Telephone Adapter
+
+Visible questions (22):
+  DATA COLLECTION (enter any valid value): Q16, Q27, Q34, Q35, Q45, Q46, Q54, Q59, Q63, Q68, Q69, Q93, Q94, Q101, Q102
+
+Test Case 8
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): New cellular phone/device
+  Q6 (Is this for a shared smart phone?): No
+  Q9 (Will you be using the Bulk Upload Spreadsheet to order multiple devices?): No
+  Q31 (Is this WBS, I/O, PM Order going to be split?): No
+  Q32 (Select the utility|operating company where monthly recurring charges should be applied:): [Not assigned]
+  Q53 (Will device(s) be purchased as part of a project?): Yes
+  Q55 (Type of device being requested:): Other
+
+Visible questions (22):
+  DATA COLLECTION (enter any valid value): Q16, Q27, Q34, Q35, Q45, Q46, Q54, Q60, Q63, Q68, Q69, Q93, Q94, Q101, Q102
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q2: What do you need? (TEST VAR)
+Q6: Is this for a shared smart phone? (TEST VAR)
+Q8: Unknown (DATA COL)
+Q9: Will you be using the Bulk Upload Spreadsheet to order multiple devices? (TEST VAR)
+Q16: Disclaimer: (DATA COL)
+Q17: Unknown (DATA COL)
+Q18: Attachment (DATA COL)
+Q19: Unknown (DATA COL)
+Q20: Attachment (DATA COL)
+Q21: Unknown (DATA COL)
+Q22: Attachment (DATA COL)
+Q23: Unknown (DATA COL)
+Q24: Attachment (DATA COL)
+Q25: Unknown (DATA COL)
+Q26: Attachment (DATA COL)
+Q27: Supervisor Name (DATA COL)
+Q31: Is this WBS, I/O, PM Order going to be split? (TEST VAR)
+Q32: Select the utility|operating company where monthly recurring charges should be applied: (TEST VAR)
+Q34: Other Operating Company: (DATA COL)
+Q35: Other WBS IO PM: (DATA COL)
+Q42: Percent Split: Element One (DATA COL)
+Q43: Select the additional utility|operating company. (TEST VAR)
+Q45: Other Operating Company: (DATA COL)
+Q46: Other WBS: (DATA COL)
+Q49: Percent Split: Element Two (DATA COL)
+Q50: Are there additional splits?? (TEST VAR)
+Q51: Provide the additional Split Information: (DATA COL)
+Q53: Will device(s) be purchased as part of a project? (TEST VAR)
+Q54: WBS, I/O, PM Order if device(s) will be purchased as part of a project: (DATA COL)
+Q55: Type of device being requested: (TEST VAR)
+Q56: Unknown (DATA COL)
+Q57: Optional Accessories: (DATA COL)
+Q58: Optional Accessories: (DATA COL)
+Q59: Device model: (DATA COL)
+Q60: Other Device: (DATA COL)
+Q61: Will this phone be used internationally? (DATA COL)
+Q62: Name of another employee with a cell phone plan/setup that should match the new plan/setup. (DATA COL)
+Q63: Do you have a preferred carrier? (DATA COL)
+Q64: Current cell phone number(s): (DATA COL)
+Q65: Current cellular device owner(s): (DATA COL)
+Q66: Do you want to switch providers? (TEST VAR)
+Q67: Select new carrier: (DATA COL)
+Q68: Delivery instructions: (DATA COL)
+Q69: Reason for request: (DATA COL)
+Q70: Delivery instructions: (DATA COL)
+Q71: Reason for request: (DATA COL)
+Q72: Unknown (DATA COL)
+Q74: Current carrier: (DATA COL)
+Q75: Current cell phone number(s): (DATA COL)
+Q76: Current cellular device owner(s): (DATA COL)
+Q77: Has this phone already been disconnected with the provider? (DATA COL)
+Q78: Unknown (DATA COL)
+Q79: Current cell phone number(s): (DATA COL)
+Q80: Current cellular device owner(s): (DATA COL)
+Q81: Choose one: (TEST VAR)
+Q82: Unknown (DATA COL)
+Q83: Unknown (DATA COL)
+Q84: Effective date of the suspension of service: (DATA COL)
+Q85: Effective date of the resumption of service: (DATA COL)
+Q86: Current cell phone number(s): (DATA COL)
+Q87: Information needing to be updated: (check all that apply.) (TEST VAR)
+Q88: Select the utility|operating company where monthly recurring charges should be applied: (TEST VAR)
+Q93: Other Operating Company: (DATA COL)
+Q94: Other WBS IO PM: (DATA COL)
+Q95: New device owner: (DATA COL)
+Q96: Current SIM number: (DATA COL)
+Q97: New SIM number: (DATA COL)
+Q98: Current IMEI number: (DATA COL)
+Q99: New IMEI number: (DATA COL)
+Q100: Provide the other Information being updated: (DATA COL)
+Q101: Comments: (DATA COL)
+Q102: Comments: (DATA COL)
+

@@ -1,0 +1,1424 @@
+{
+  "id": null,
+  "guid": null,
+  "createDate": null,
+  "modifiedDate": null,
+  "rxId": null,
+  "summary": null,
+  "serviceRevisionId": null,
+  "workflowId": "rx-6a6d716d-487e-4c2e-8562-40278a325b20",
+  "questionnaireGroupId": "17c442c9-1b18-475a-9e57-c114dd893e5f",
+  "name": "AutoSys New Windows Application",
+  "bulkRequestedForUserLimit": 1,
+  "pages": [
+    {
+      "id": "5af8a91d-162b-d91c-7425-edd1960735d8",
+      "externalId": null,
+      "perUser": false,
+      "title": "",
+      "pageItems": [
+        {
+          "type": "TextField",
+          "id": "8b59276c-f82e-e9db-cbcc-3e5d16f7717a",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-service-name",
+          "description": null,
+          "required": false,
+          "template": "object:5362",
+          "processInputId": 536870930,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "${service.name}",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "67206cbd-9b89-e190-d2ec-c9b68d5a6252",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-sub-process",
+          "description": null,
+          "required": false,
+          "template": "object:5363",
+          "processInputId": 536870931,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "c3fc82a0-018e-ed4d-9733-6313f70ff299",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-has-a-disclaimer",
+          "description": null,
+          "required": false,
+          "template": "object:5364",
+          "processInputId": 536870932,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "45056872-9ea7-4246-e50f-30f043c7b153",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-template-name",
+          "description": null,
+          "required": false,
+          "template": "object:5365",
+          "processInputId": 536870933,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "3d7e2d12-a722-5ffe-deba-652429a58800",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-requested-item",
+          "description": null,
+          "required": false,
+          "template": "object:5366",
+          "processInputId": 536870934,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "8ccb380c-3804-763b-460a-d07f62e4e980",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "DWP-SRM-SLA-has-a-disclaimer",
+                "valueReference": "c3fc82a0-018e-ed4d-9733-6313f70ff299",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "0"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "0"
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-disclaimer",
+          "description": null,
+          "required": false,
+          "template": "object:5367",
+          "processInputId": 536870935,
+          "hidden": false,
+          "readOnly": true,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "5980d171-a0c9-7003-1ebb-5e0639381f58",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Job name prefix (if known):",
+          "description": "<p>&nbsp;(Limit to ten characters. Application will be used in several ways. Contact CSOPER with any questions. Example: PGmiso, EMS, Ops, gts, gls)</p>",
+          "required": true,
+          "template": "object:5368",
+          "processInputId": 536870912,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "61d6c7cc-26bb-f240-1215-a930af32249c",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Which server do you want to run your production jobs?",
+          "description": null,
+          "required": true,
+          "template": "object:5369",
+          "processInputId": 536870917,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "\\\\autob-pbvw01\\prod (PEDC)",
+              "displayValue": "\\\\autob-pbvw01\\prod (PEDC)",
+              "disabled": false
+            },
+            {
+              "dataValue": "\\\\autob-pbvw02\\prod (SCA)",
+              "displayValue": "\\\\autob-pbvw02\\prod (SCA)",
+              "disabled": false
+            },
+            {
+              "dataValue": "No preference",
+              "displayValue": "No preference",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "377f5a68-eaca-226a-4587-4807cebe1210",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "What would you like us to name the folder that the AutoSys executables will be stored in?",
+          "description": null,
+          "required": true,
+          "template": "object:5370",
+          "processInputId": 536870920,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "6380b6b7-a287-b615-e158-601156ff9c60",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Do you have a dedicated AutoSys job owner service account that this job can run under?",
+          "description": "<p>typically these ids are named with sa-js*</p>",
+          "required": true,
+          "template": "object:5371",
+          "processInputId": 536870919,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "dbe3720b-f1e2-4639-1dfb-801daf91276d",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "6380b6b7-a287-b615-e158-601156ff9c60",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Do you have a dedicated AutoSys job owner service account that this job can run under?",
+                "valueReference": "6380b6b7-a287-b615-e158-601156ff9c60",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Provide name of service account:",
+          "description": null,
+          "required": true,
+          "template": "object:5372",
+          "processInputId": 536870916,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "9f71d415-ca39-7713-5533-540c5105cabe",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "6380b6b7-a287-b615-e158-601156ff9c60",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Do you have a dedicated AutoSys job owner service account that this job can run under?",
+                "valueReference": "6380b6b7-a287-b615-e158-601156ff9c60",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "SA account:",
+          "description": null,
+          "required": false,
+          "template": "object:5373",
+          "processInputId": 536870922,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "61d69fa9-f133-302a-27f3-1e5c3a1d5ebe",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "6380b6b7-a287-b615-e158-601156ff9c60",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Do you have a dedicated AutoSys job owner service account that this job can run under?",
+                "valueReference": "6380b6b7-a287-b615-e158-601156ff9c60",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "Account name:",
+          "description": null,
+          "required": false,
+          "template": "object:5374",
+          "processInputId": 536870916,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "a971b1ee-9f54-e02a-dad0-fe6105551a29",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "6380b6b7-a287-b615-e158-601156ff9c60",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Do you have a dedicated AutoSys job owner service account that this job can run under?",
+                "valueReference": "6380b6b7-a287-b615-e158-601156ff9c60",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "What would you like the SA account to be called?",
+          "description": "<p>All service accounts will start with sa-js and then the name of your team or application will be added to the end. &nbsp;e.g. sa-jsitscad&nbsp;</p>",
+          "required": true,
+          "template": "object:5375",
+          "processInputId": 536870922,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "c95bc210-9d92-d023-a02e-14385b9d081d",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Do you already have an Autosys group (a-Autosys_*) you belong to?",
+          "description": null,
+          "required": true,
+          "template": "object:5376",
+          "processInputId": 536870923,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "7db8a365-9db3-2b96-b60d-9e2d59486a1c",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "c95bc210-9d92-d023-a02e-14385b9d081d",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Do you already have an Autosys group (a-Autosys_*) you belong to?",
+                "valueReference": "c95bc210-9d92-d023-a02e-14385b9d081d",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Enter group name:",
+          "description": null,
+          "required": true,
+          "template": "object:5377",
+          "processInputId": 536870918,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "6aefeb3e-43bf-8aba-c4f9-2ae550a13134",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "c95bc210-9d92-d023-a02e-14385b9d081d",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Do you already have an Autosys group (a-Autosys_*) you belong to?",
+                "valueReference": "c95bc210-9d92-d023-a02e-14385b9d081d",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Create group name:",
+          "description": null,
+          "required": false,
+          "template": "object:5378",
+          "processInputId": 536870921,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "46eff7a9-b022-367b-07b7-33e3ecf2d827",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "c95bc210-9d92-d023-a02e-14385b9d081d",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Do you already have an Autosys group (a-Autosys_*) you belong to?",
+                "valueReference": "c95bc210-9d92-d023-a02e-14385b9d081d",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "Group name:",
+          "description": null,
+          "required": false,
+          "template": "object:5379",
+          "processInputId": 536870918,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "1ca3fb64-7b83-6fe5-e487-b67ab4c8fea6",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "c95bc210-9d92-d023-a02e-14385b9d081d",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Do you already have an Autosys group (a-Autosys_*) you belong to?",
+                "valueReference": "c95bc210-9d92-d023-a02e-14385b9d081d",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "What would you like the group name to be called?",
+          "description": "<p>All AutoSys groups start with a-Autosys_* and then the name of your team or application will be added to the end. &nbsp;e.g. a-Autosys_OMS</p>",
+          "required": true,
+          "template": "object:5380",
+          "processInputId": 536870921,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "bd1e72da-a3cf-3843-a5a9-d32eaf50d059",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Remedy group name to assign errors to:",
+          "description": null,
+          "required": true,
+          "template": "object:5381",
+          "processInputId": 536870914,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "bcaa1bb4-2c27-7da6-0b12-a91c5718c38c",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Reason for request:",
+          "description": null,
+          "required": true,
+          "template": "object:5382",
+          "processInputId": 536870915,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "bffc3758-5d5b-a388-97de-ab7ab5580e51",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Customer",
+          "description": null,
+          "required": false,
+          "template": "object:5383",
+          "processInputId": 536870929,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "${requestedFor.fullName}",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "bd165e00-72ba-31ce-954d-a0ffb8c92ac4",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "bffc3758-5d5b-a388-97de-ab7ab5580e51",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Comments",
+          "description": "<p><strong>If \u2018Name Not Found\u2019 is selected, indicate the following information, if known:&nbsp; recipient\u2019s name, corporate ID, company, department, and phone number</strong></p>",
+          "required": true,
+          "template": "object:5384",
+          "processInputId": 536870913,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "f597e030-6351-00b2-7ae8-ff43ca03e3c4",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "bffc3758-5d5b-a388-97de-ab7ab5580e51",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Supervisor Name",
+          "description": "<p>Please specify the approving supervisor</p>",
+          "required": true,
+          "template": "object:5385",
+          "processInputId": 536870927,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "CTM:People",
+          "datasetName": "CTM:People",
+          "datasetIdFieldId": "260000006",
+          "datasetIdFieldName": "ManagersName",
+          "datasetNameFieldId": "260000006",
+          "datasetNameFieldName": "ManagersName",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "AND",
+            "withParentheses": false,
+            "left": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Profile Status",
+                "valueReference": "7",
+                "fieldType": "SELECTION",
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Enabled"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Enabled"
+              }
+            },
+            "right": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Full Name",
+                  "valueReference": "1000000017",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "*Manager Not Found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "*Manager Not Found"
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Full Name",
+                  "valueReference": "1000000017",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "*Name Not Found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "*Name Not Found"
+                }
+              }
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "2b1be685-95aa-bef8-642c-dad6994f5be5",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "bffc3758-5d5b-a388-97de-ab7ab5580e51",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Supervisor ID",
+          "description": null,
+          "required": false,
+          "template": "object:5386",
+          "processInputId": 536870928,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "9d6db1bd-941c-609a-5169-d6631efdc6fa",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "bffc3758-5d5b-a388-97de-ab7ab5580e51",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Comments:",
+          "description": null,
+          "required": false,
+          "template": "object:5387",
+          "processInputId": 536870913,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "c280eeef-b24c-97fd-f35d-53c71380ba40",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "bffc3758-5d5b-a388-97de-ab7ab5580e51",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Supervisor Name lookup",
+          "description": null,
+          "required": false,
+          "template": "object:5388",
+          "processInputId": 536870927,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "991bfb2d-c935-a1b7-bb4b-f225a2c884d3",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "bffc3758-5d5b-a388-97de-ab7ab5580e51",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Supervisor ID lookup",
+          "description": null,
+          "required": false,
+          "template": "object:5389",
+          "processInputId": 536870928,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "name": "Retrieve Supervisor",
+      "type": "OPEN_QUESTIONNAIRE",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "CTM:People",
+        "tableName": "CTM:People",
+        "mappings": [
+          {
+            "fieldName": "ManagersName",
+            "fieldId": "260000006",
+            "questionLabel": "Supervisor Name lookup",
+            "questionId": "c280eeef-b24c-97fd-f35d-53c71380ba40"
+          },
+          {
+            "fieldName": "ManagerLoginID",
+            "fieldId": "301336500",
+            "questionLabel": "Supervisor ID lookup",
+            "questionId": "991bfb2d-c935-a1b7-bb4b-f225a2c884d3"
+          }
+        ],
+        "qualification": {
+          "operator": "EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "FIELD",
+            "label": "Remedy Login ID",
+            "valueReference": "4",
+            "fieldType": "TEXT",
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "CONTEXT",
+            "label": null,
+            "valueReference": "${requestedFor.loginName}",
+            "fieldType": null,
+            "value": null
+          }
+        }
+      },
+      "qualification": null
+    },
+    {
+      "name": "Retrieve supervisor when requested for Not Found",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "CTM:People",
+        "tableName": "CTM:People",
+        "mappings": [
+          {
+            "fieldName": "Remedy Login ID",
+            "fieldId": "4",
+            "questionLabel": "Supervisor ID",
+            "questionId": "2b1be685-95aa-bef8-642c-dad6994f5be5"
+          }
+        ],
+        "qualification": {
+          "operator": "EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "FIELD",
+            "label": "Full Name",
+            "valueReference": "1000000017",
+            "fieldType": "TEXT",
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Supervisor Name",
+            "valueReference": "f597e030-6351-00b2-7ae8-ff43ca03e3c4",
+            "fieldType": null,
+            "value": null
+          }
+        }
+      },
+      "qualification": {
+        "operator": "NOT_EQUALS",
+        "withParentheses": false,
+        "left": {
+          "values": [],
+          "type": "QUESTION_ANSWER",
+          "label": "Supervisor Name",
+          "valueReference": "f597e030-6351-00b2-7ae8-ff43ca03e3c4",
+          "fieldType": null,
+          "value": null
+        },
+        "right": {
+          "values": [],
+          "type": "STRING",
+          "label": null,
+          "valueReference": null,
+          "fieldType": null,
+          "value": null
+        }
+      }
+    },
+    {
+      "name": "Retrieve DWP-SRM-SLA Data",
+      "type": "OPEN_QUESTIONNAIRE",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "weDWP:DWP-SRM-SLA-DefinitionMeasurement",
+        "tableName": "weDWP:DWP-SRM-SLA-DefinitionMeasurement",
+        "mappings": [
+          {
+            "fieldName": "Has a Disclaimer",
+            "fieldId": "536870937",
+            "questionLabel": "DWP-SRM-SLA-has-a-disclaimer",
+            "questionId": "c3fc82a0-018e-ed4d-9733-6313f70ff299"
+          },
+          {
+            "fieldName": "Requested Item__c",
+            "fieldId": "536870940",
+            "questionLabel": "DWP-SRM-SLA-requested-item",
+            "questionId": "3d7e2d12-a722-5ffe-deba-652429a58800"
+          },
+          {
+            "fieldName": "Sub Process__c",
+            "fieldId": "536870941",
+            "questionLabel": "DWP-SRM-SLA-sub-process",
+            "questionId": "67206cbd-9b89-e190-d2ec-c9b68d5a6252"
+          },
+          {
+            "fieldName": "WO Template Name",
+            "fieldId": "536870925",
+            "questionLabel": "DWP-SRM-SLA-template-name",
+            "questionId": "45056872-9ea7-4246-e50f-30f043c7b153"
+          },
+          {
+            "fieldName": "Disclaimer__c",
+            "fieldId": "536870920",
+            "questionLabel": "DWP-SRM-SLA-disclaimer",
+            "questionId": "8ccb380c-3804-763b-460a-d07f62e4e980"
+          }
+        ],
+        "qualification": {
+          "operator": "AND",
+          "withParentheses": false,
+          "left": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Form Tier 1",
+              "valueReference": "536870913",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "QUESTION_ANSWER",
+              "label": "DWP-SRM-SLA-service-name",
+              "valueReference": "8b59276c-f82e-e9db-cbcc-3e5d16f7717a",
+              "fieldType": null,
+              "value": null
+            }
+          },
+          "right": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Status",
+              "valueReference": "7",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Active"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Active"
+            }
+          }
+        }
+      },
+      "qualification": null
+    }
+  ],
+  "showActions": false,
+  "useDefaultLanguage": false
+}

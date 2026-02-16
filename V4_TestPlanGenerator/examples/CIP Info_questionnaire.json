@@ -1,0 +1,1973 @@
+{
+  "id": null,
+  "guid": null,
+  "createDate": null,
+  "modifiedDate": null,
+  "rxId": null,
+  "summary": null,
+  "serviceRevisionId": null,
+  "workflowId": "rx-fb2faa6e-31c7-4783-ae5d-a21503e18ea6",
+  "questionnaireGroupId": "7bbc96bd-65b4-413b-afd5-37c7d7700431",
+  "name": "CIP Info",
+  "bulkRequestedForUserLimit": 1,
+  "pages": [
+    {
+      "id": "6c5d3d4d-a969-8b71-aead-134a4eaa326a",
+      "externalId": null,
+      "perUser": false,
+      "title": "",
+      "pageItems": [
+        {
+          "type": "TextField",
+          "id": "ed39fcec-3f7c-a740-18c8-2a366cc6ddc8",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-service-name",
+          "description": null,
+          "required": false,
+          "template": "object:2200",
+          "processInputId": 536870917,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "${service.name}",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "01a80af2-a1ff-b79a-e593-e2bfea53dd98",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Customer",
+          "description": null,
+          "required": false,
+          "template": "object:2201",
+          "processInputId": 536870924,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "${requestedFor.fullName}",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "3a9a594f-19a7-28b9-8c59-533c19dcbfb2",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "01a80af2-a1ff-b79a-e593-e2bfea53dd98",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Approving Supervisor:",
+          "description": null,
+          "required": false,
+          "template": "object:2202",
+          "processInputId": 536870916,
+          "hidden": false,
+          "readOnly": true,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "4605bd46-c0b4-c2ff-b5c9-e0517c4156b0",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "01a80af2-a1ff-b79a-e593-e2bfea53dd98",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Supervisor Override:",
+          "description": "<p>Specify the approving supervisor (should be in the organizational chain of recipient, or Manager-NERC/CIP Compliance, or Director-Enterprise Security and Compliance, or CIP Senior Manager-CIO).</p>",
+          "required": false,
+          "template": "object:2203",
+          "processInputId": 536870929,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "CTM:People",
+          "datasetName": "CTM:People",
+          "datasetIdFieldId": "260000006",
+          "datasetIdFieldName": "ManagersName",
+          "datasetNameFieldId": "260000006",
+          "datasetNameFieldName": "ManagersName",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "AND",
+            "withParentheses": false,
+            "left": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Profile Status",
+                "valueReference": "7",
+                "fieldType": "SELECTION",
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Enabled"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Enabled"
+              }
+            },
+            "right": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Full Name",
+                  "valueReference": "1000000017",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "*Manager Not Found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "*Manager Not Found"
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Full Name",
+                  "valueReference": "1000000017",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "*Name Not Found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "*Name Not Found"
+                }
+              }
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "60d01861-d64e-df7e-3d78-8392f722b0a8",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "01a80af2-a1ff-b79a-e593-e2bfea53dd98",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Approving Supervisor",
+          "description": null,
+          "required": false,
+          "template": "object:2202",
+          "processInputId": 536870916,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "710235cb-641f-48b4-eaae-b9c94fd1468c",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "01a80af2-a1ff-b79a-e593-e2bfea53dd98",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Supervisor:",
+          "description": "<p>Specify the approving supervisor (should be in the organizational chain of recipient, or Manager-NERC/CIP Compliance, or Director-Enterprise Security and Compliance, or CIP Senior Manager-CIO).</p>",
+          "required": true,
+          "template": "object:2203",
+          "processInputId": 536870929,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "CTM:People",
+          "datasetName": "CTM:People",
+          "datasetIdFieldId": "260000006",
+          "datasetIdFieldName": "ManagersName",
+          "datasetNameFieldId": "260000006",
+          "datasetNameFieldName": "ManagersName",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "AND",
+            "withParentheses": false,
+            "left": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Profile Status",
+                "valueReference": "7",
+                "fieldType": "SELECTION",
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Enabled"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Enabled"
+              }
+            },
+            "right": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Full Name",
+                  "valueReference": "1000000017",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "*Manager Not Found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "*Manager Not Found"
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Full Name",
+                  "valueReference": "1000000017",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "*Name Not Found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "*Name Not Found"
+                }
+              }
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "57f19204-2dc4-e18f-c4c4-677a98d33521",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Approver Name",
+          "description": null,
+          "required": false,
+          "template": "object:2204",
+          "processInputId": 536870932,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "b55e9958-2624-7879-96db-0b57404e952c",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Approver ID",
+          "description": null,
+          "required": false,
+          "template": "object:2205",
+          "processInputId": 536870931,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "34d0b219-d242-5c99-ccd0-c74acfe71cf0",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Employee type:",
+          "description": null,
+          "required": true,
+          "template": "object:2206",
+          "processInputId": 536870920,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Employee",
+              "displayValue": "Employee",
+              "disabled": false
+            },
+            {
+              "dataValue": "Contractor",
+              "displayValue": "Contractor",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "0c48c71f-8102-c649-9c6b-1fb3d91f05f8",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "CIP information type:",
+          "description": null,
+          "required": true,
+          "template": "object:2207",
+          "processInputId": 536870915,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Archer GRC",
+              "displayValue": "Archer GRC",
+              "disabled": false
+            },
+            {
+              "dataValue": "Corporate file share/SharePoint",
+              "displayValue": "Corporate file share/SharePoint",
+              "disabled": false
+            },
+            {
+              "dataValue": "DEMAXX file share",
+              "displayValue": "DEMAXX file share",
+              "disabled": false
+            },
+            {
+              "dataValue": "Patching SME",
+              "displayValue": "Patching SME",
+              "disabled": false
+            },
+            {
+              "dataValue": "Remedy CMDB",
+              "displayValue": "Remedy CMDB",
+              "disabled": false
+            },
+            {
+              "dataValue": "SevOne",
+              "displayValue": "SevOne",
+              "disabled": false
+            },
+            {
+              "dataValue": "Other",
+              "displayValue": "Other",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "6cc049e1-86f3-a8d7-e116-a48d9f97c6f3",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "0c48c71f-8102-c649-9c6b-1fb3d91f05f8",
+            "leadingQuestionExpectedAnswers": [
+              "Other"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "CIP information type:",
+                "valueReference": "0c48c71f-8102-c649-9c6b-1fb3d91f05f8",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Other"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Other",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Other"
+              }
+            }
+          },
+          "label": "Other:",
+          "description": null,
+          "required": true,
+          "template": "object:2208",
+          "processInputId": 536870921,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "db3cdfd9-54bc-2e3d-f1cb-9377ecf7b24a",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "CIP information type:",
+                "valueReference": "0c48c71f-8102-c649-9c6b-1fb3d91f05f8",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Other"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Other",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Other"
+              }
+            }
+          },
+          "label": "Other:",
+          "description": null,
+          "required": false,
+          "template": "object:2208",
+          "processInputId": 536870921,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "32d95503-a1c8-9baa-2021-f4548be95559",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Request type:",
+          "description": null,
+          "required": true,
+          "template": "object:2209",
+          "processInputId": 536870918,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Add",
+              "displayValue": "Add",
+              "disabled": false
+            },
+            {
+              "dataValue": "Remove",
+              "displayValue": "Remove",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "2747fd79-b139-5986-ef53-4eda8fd2f3dc",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "32d95503-a1c8-9baa-2021-f4548be95559",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-sub-process",
+          "description": null,
+          "required": false,
+          "template": "object:2210",
+          "processInputId": 536870919,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "ec7bcb69-d2e1-5457-5626-fac7c2a99cff",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "32d95503-a1c8-9baa-2021-f4548be95559",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-requested-item",
+          "description": null,
+          "required": false,
+          "template": "object:2211",
+          "processInputId": 536870933,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "13a7e0e7-2472-6769-16ab-25b3b5dcd9c9",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "32d95503-a1c8-9baa-2021-f4548be95559",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-template-name",
+          "description": null,
+          "required": false,
+          "template": "object:2212",
+          "processInputId": 536870930,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "8d31e61f-c9ac-b46b-dba6-c121ea9e7c6f",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "32d95503-a1c8-9baa-2021-f4548be95559",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-has-a-disclaimer",
+          "description": null,
+          "required": false,
+          "template": "object:2213",
+          "processInputId": 536870926,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "ebf66128-3222-d7a9-c58c-54c0a6475b9d",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "DWP-SRM-SLA-has-a-disclaimer",
+                "valueReference": "8d31e61f-c9ac-b46b-dba6-c121ea9e7c6f",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "0"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "0"
+              }
+            }
+          },
+          "label": "Disclaimer:",
+          "description": null,
+          "required": false,
+          "template": "object:2214",
+          "processInputId": 536870934,
+          "hidden": false,
+          "readOnly": true,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DateField",
+          "id": "c145b6fb-cad8-7902-eb34-37a60ea17d9e",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "32d95503-a1c8-9baa-2021-f4548be95559",
+            "leadingQuestionExpectedAnswers": [
+              "Add"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "32d95503-a1c8-9baa-2021-f4548be95559",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Add"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Add",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Add"
+              }
+            }
+          },
+          "label": "Requested start date:",
+          "description": null,
+          "required": true,
+          "template": "object:2215",
+          "processInputId": 536870914,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "timezoneId": null,
+          "min": {
+            "limitType": "NO_LIMIT"
+          },
+          "max": {
+            "limitType": "NO_LIMIT"
+          },
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DescriptionWidget",
+          "id": "808b7d34-cddc-18ac-1af6-71dd01e71d74",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "32d95503-a1c8-9baa-2021-f4548be95559",
+            "leadingQuestionExpectedAnswers": [
+              "Remove"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "32d95503-a1c8-9baa-2021-f4548be95559",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Remove"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Remove",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Remove"
+              }
+            }
+          },
+          "description": "<p>&nbsp;</p>\n<p><strong>Reminder to supervisor</strong>: <strong>any required revocation requests are being submitted on your behalf and it is your responsibility to ensure access has ended (exit from PSPs, logout from cyber systems) prior to the requested revocation date/time (default 3:00pm last day in service/role)</strong>.</p>\n<p>Enter the date and time access is no longer needed below. Access rights will be revoked at or shortly after the specified time in order to ensure compliance with regulatory standard requirements.</p>\n<p><strong>**If submitting a request for a date/time already passed, submit this request with the current date and time and immediately contact the Manager, NERC/CIP Compliance at 920-433-1426 (desk) or 262-875-8390 (cell).&nbsp; Escalate to the Director Enterprise Security &amp; Compliance&nbsp;at 262-544-7517 if needed.</strong></p>\n<p>Note: If employee or contractor has been granted more than one type of NERC CIP access rights (physical, operator login, admin login, shared admin account, CIP information) a separate removal request must be submitted for each type of rights. Contact the CIP-Compliance-Team (Group Mbox) for clarification or assistance and escalate to the Manager, NERC/CIP Compliance if necessary.</p>\n<p>&nbsp;</p>",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DateTimeField",
+          "id": "413b06ad-26a6-57ee-0ff4-1ac18964296e",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "32d95503-a1c8-9baa-2021-f4548be95559",
+            "leadingQuestionExpectedAnswers": [
+              "Remove"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "32d95503-a1c8-9baa-2021-f4548be95559",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Remove"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Remove",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Remove"
+              }
+            }
+          },
+          "label": "Request removal date and time:",
+          "description": null,
+          "required": true,
+          "template": "object:2217",
+          "processInputId": 536870912,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "zonedDefaultAnswer": null,
+          "timezoneId": null,
+          "min": {
+            "limitType": "NO_LIMIT"
+          },
+          "max": {
+            "limitType": "NO_LIMIT"
+          },
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "09cba51b-b1a1-ba65-a811-20aaf20a0464",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "32d95503-a1c8-9baa-2021-f4548be95559",
+            "leadingQuestionExpectedAnswers": [
+              "Add"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "32d95503-a1c8-9baa-2021-f4548be95559",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Add"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Add",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Add"
+              }
+            }
+          },
+          "label": "Reason for request:",
+          "description": null,
+          "required": true,
+          "template": "object:2218",
+          "processInputId": 536870913,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "152673fd-14bb-6577-5511-391dfb73f664",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "32d95503-a1c8-9baa-2021-f4548be95559",
+            "leadingQuestionExpectedAnswers": [
+              "Remove"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "32d95503-a1c8-9baa-2021-f4548be95559",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Remove"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Remove",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Remove"
+              }
+            }
+          },
+          "label": "Reason for removal:",
+          "description": null,
+          "required": true,
+          "template": "object:2219",
+          "processInputId": 536870913,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Termination",
+              "displayValue": "Termination (Examples: Retirement, Resignation, Termination, Suspension)",
+              "disabled": false
+            },
+            {
+              "dataValue": "Reassignment/Transfer",
+              "displayValue": "Transfer/Reassignment (Examples:  Job Transfer, Project Completion, Extended Leave of Absence, Access no longer required, etc.)",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "35d856b5-9825-4723-b749-af4f9ddf4533",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Customer",
+          "description": null,
+          "required": false,
+          "template": "object:2220",
+          "processInputId": 536870924,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "${requestedFor.fullName}",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "cc4a2c0c-5823-76ce-5022-a9e32a5ac5c3",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "35d856b5-9825-4723-b749-af4f9ddf4533",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Comments:",
+          "description": null,
+          "required": false,
+          "template": "object:2221",
+          "processInputId": 536870928,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "0df6a901-0068-d896-23fd-d5dbac758467",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "35d856b5-9825-4723-b749-af4f9ddf4533",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Comments:",
+          "description": "<p><strong>If \u2018Name Not Found\u2019 is selected, indicate the following information, if known: &nbsp;recipient\u2019s name, corporate ID, company, department, and phone number</strong></p>",
+          "required": true,
+          "template": "object:2222",
+          "processInputId": 536870928,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "8d3f7dc1-46d9-0b6c-cf6d-21a3f3e3f27d",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "34d0b219-d242-5c99-ccd0-c74acfe71cf0",
+            "leadingQuestionExpectedAnswers": [
+              "Employee"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Employee type:",
+                "valueReference": "34d0b219-d242-5c99-ccd0-c74acfe71cf0",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Employee"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Employee",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Employee"
+              }
+            }
+          },
+          "label": "RI-EE-CNTR",
+          "description": null,
+          "required": false,
+          "template": "object:2223",
+          "processInputId": 536870923,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "EE",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "222b258a-afa8-e98b-7cc2-deffd6462a31",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "34d0b219-d242-5c99-ccd0-c74acfe71cf0",
+            "leadingQuestionExpectedAnswers": [
+              "Contractor"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Employee type:",
+                "valueReference": "34d0b219-d242-5c99-ccd0-c74acfe71cf0",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Contractor"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Contractor",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Contractor"
+              }
+            }
+          },
+          "label": "RI-EE-CNTR",
+          "description": null,
+          "required": false,
+          "template": "object:2223",
+          "processInputId": 536870923,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "CNTR",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "name": "Identify Approval Supervisor",
+      "type": "OPEN_QUESTIONNAIRE",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "CTM:People",
+        "tableName": "CTM:People",
+        "mappings": [
+          {
+            "fieldName": "ManagersName",
+            "fieldId": "260000006",
+            "questionLabel": "Approving Supervisor:",
+            "questionId": "3a9a594f-19a7-28b9-8c59-533c19dcbfb2"
+          }
+        ],
+        "qualification": {
+          "operator": "AND",
+          "withParentheses": false,
+          "left": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Profile Status",
+              "valueReference": "7",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Enabled"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Enabled"
+            }
+          },
+          "right": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Remedy Login ID",
+              "valueReference": "4",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "CONTEXT",
+              "label": null,
+              "valueReference": "${requestedFor.loginName}",
+              "fieldType": null,
+              "value": null
+            }
+          }
+        }
+      },
+      "qualification": null
+    },
+    {
+      "name": "Retrieve Approval Supervisor Info",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "CTM:People",
+        "tableName": "CTM:People",
+        "mappings": [
+          {
+            "fieldName": "Full Name",
+            "fieldId": "1000000017",
+            "questionLabel": "Approver Name",
+            "questionId": "57f19204-2dc4-e18f-c4c4-677a98d33521"
+          },
+          {
+            "fieldName": "Remedy Login ID",
+            "fieldId": "4",
+            "questionLabel": "Approver ID",
+            "questionId": "b55e9958-2624-7879-96db-0b57404e952c"
+          }
+        ],
+        "qualification": {
+          "operator": "AND",
+          "withParentheses": false,
+          "left": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Profile Status",
+              "valueReference": "7",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Enabled"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Enabled"
+            }
+          },
+          "right": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Full Name",
+              "valueReference": "1000000017",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "QUESTION_ANSWER",
+              "label": "Approving Supervisor:",
+              "valueReference": "3a9a594f-19a7-28b9-8c59-533c19dcbfb2",
+              "fieldType": null,
+              "value": null
+            }
+          }
+        }
+      },
+      "qualification": {
+        "operator": "NOT_EQUALS",
+        "withParentheses": false,
+        "left": {
+          "values": [],
+          "type": "QUESTION_ANSWER",
+          "label": "Approving Supervisor:",
+          "valueReference": "3a9a594f-19a7-28b9-8c59-533c19dcbfb2",
+          "fieldType": null,
+          "value": null
+        },
+        "right": {
+          "values": [],
+          "type": "STRING",
+          "label": null,
+          "valueReference": null,
+          "fieldType": null,
+          "value": null
+        }
+      }
+    },
+    {
+      "name": "Retrieve Approval Supervisor Info  - Override",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "CTM:People",
+        "tableName": "CTM:People",
+        "mappings": [
+          {
+            "fieldName": "Full Name",
+            "fieldId": "1000000017",
+            "questionLabel": "Approver Name",
+            "questionId": "57f19204-2dc4-e18f-c4c4-677a98d33521"
+          },
+          {
+            "fieldName": "Remedy Login ID",
+            "fieldId": "4",
+            "questionLabel": "Approver ID",
+            "questionId": "b55e9958-2624-7879-96db-0b57404e952c"
+          }
+        ],
+        "qualification": {
+          "operator": "OR",
+          "withParentheses": false,
+          "left": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Full Name",
+              "valueReference": "1000000017",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "QUESTION_ANSWER",
+              "label": "Supervisor Override:",
+              "valueReference": "4605bd46-c0b4-c2ff-b5c9-e0517c4156b0",
+              "fieldType": null,
+              "value": null
+            }
+          },
+          "right": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Full Name",
+              "valueReference": "1000000017",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "QUESTION_ANSWER",
+              "label": "Supervisor:",
+              "valueReference": "710235cb-641f-48b4-eaae-b9c94fd1468c",
+              "fieldType": null,
+              "value": null
+            }
+          }
+        }
+      },
+      "qualification": {
+        "operator": "OR",
+        "withParentheses": false,
+        "left": {
+          "operator": "NOT_EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Supervisor Override:",
+            "valueReference": "4605bd46-c0b4-c2ff-b5c9-e0517c4156b0",
+            "fieldType": null,
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "STRING",
+            "label": null,
+            "valueReference": null,
+            "fieldType": null,
+            "value": null
+          }
+        },
+        "right": {
+          "operator": "NOT_EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Supervisor:",
+            "valueReference": "710235cb-641f-48b4-eaae-b9c94fd1468c",
+            "fieldType": null,
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "STRING",
+            "label": null,
+            "valueReference": null,
+            "fieldType": null,
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "name": "Retrieve Approval Supervisor Info - No Override",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "CTM:People",
+        "tableName": "CTM:People",
+        "mappings": [
+          {
+            "fieldName": "Full Name",
+            "fieldId": "1000000017",
+            "questionLabel": "Approver Name",
+            "questionId": "57f19204-2dc4-e18f-c4c4-677a98d33521"
+          },
+          {
+            "fieldName": "Remedy Login ID",
+            "fieldId": "4",
+            "questionLabel": "Approver ID",
+            "questionId": "b55e9958-2624-7879-96db-0b57404e952c"
+          }
+        ],
+        "qualification": {
+          "operator": "AND",
+          "withParentheses": false,
+          "left": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Profile Status",
+              "valueReference": "7",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Enabled"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Enabled"
+            }
+          },
+          "right": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Full Name",
+              "valueReference": "1000000017",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "QUESTION_ANSWER",
+              "label": "Approving Supervisor:",
+              "valueReference": "3a9a594f-19a7-28b9-8c59-533c19dcbfb2",
+              "fieldType": null,
+              "value": null
+            }
+          }
+        }
+      },
+      "qualification": {
+        "operator": "AND",
+        "withParentheses": false,
+        "left": {
+          "operator": "EQUALS",
+          "withParentheses": true,
+          "left": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Supervisor Override:",
+            "valueReference": "4605bd46-c0b4-c2ff-b5c9-e0517c4156b0",
+            "fieldType": null,
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "STRING",
+            "label": null,
+            "valueReference": null,
+            "fieldType": null,
+            "value": null
+          }
+        },
+        "right": {
+          "operator": "EQUALS",
+          "withParentheses": true,
+          "left": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Supervisor:",
+            "valueReference": "710235cb-641f-48b4-eaae-b9c94fd1468c",
+            "fieldType": null,
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "STRING",
+            "label": null,
+            "valueReference": null,
+            "fieldType": null,
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "name": "Retrieve DWP-SRM-SLA Data",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "weDWP:DWP-SRM-SLA-DefinitionMeasurement",
+        "tableName": "weDWP:DWP-SRM-SLA-DefinitionMeasurement",
+        "mappings": [
+          {
+            "fieldName": "Disclaimer__c",
+            "fieldId": "536870920",
+            "questionLabel": "Disclaimer:",
+            "questionId": "ebf66128-3222-d7a9-c58c-54c0a6475b9d"
+          },
+          {
+            "fieldName": "Has a Disclaimer",
+            "fieldId": "536870937",
+            "questionLabel": "DWP-SRM-SLA-has-a-disclaimer",
+            "questionId": "8d31e61f-c9ac-b46b-dba6-c121ea9e7c6f"
+          },
+          {
+            "fieldName": "Requested Item__c",
+            "fieldId": "536870940",
+            "questionLabel": "DWP-SRM-SLA-requested-item",
+            "questionId": "ec7bcb69-d2e1-5457-5626-fac7c2a99cff"
+          },
+          {
+            "fieldName": "Sub Process__c",
+            "fieldId": "536870941",
+            "questionLabel": "DWP-SRM-SLA-sub-process",
+            "questionId": "2747fd79-b139-5986-ef53-4eda8fd2f3dc"
+          },
+          {
+            "fieldName": "WO Template Name",
+            "fieldId": "536870925",
+            "questionLabel": "DWP-SRM-SLA-template-name",
+            "questionId": "13a7e0e7-2472-6769-16ab-25b3b5dcd9c9"
+          }
+        ],
+        "qualification": {
+          "operator": "AND",
+          "withParentheses": false,
+          "left": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Form Tier 1",
+              "valueReference": "536870913",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "QUESTION_ANSWER",
+              "label": "DWP-SRM-SLA-service-name",
+              "valueReference": "ed39fcec-3f7c-a740-18c8-2a366cc6ddc8",
+              "fieldType": null,
+              "value": null
+            }
+          },
+          "right": {
+            "operator": "AND",
+            "withParentheses": false,
+            "left": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Form Tier 2",
+                "valueReference": "536870914",
+                "fieldType": "TEXT",
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "32d95503-a1c8-9baa-2021-f4548be95559",
+                "fieldType": null,
+                "value": null
+              }
+            },
+            "right": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Status",
+                "valueReference": "7",
+                "fieldType": "SELECTION",
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Active"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Active"
+              }
+            }
+          }
+        }
+      },
+      "qualification": {
+        "operator": "NOT_EQUALS",
+        "withParentheses": false,
+        "left": {
+          "values": [],
+          "type": "QUESTION_ANSWER",
+          "label": "Request type:",
+          "valueReference": "32d95503-a1c8-9baa-2021-f4548be95559",
+          "fieldType": null,
+          "value": null
+        },
+        "right": {
+          "values": [],
+          "type": "STRING",
+          "label": null,
+          "valueReference": null,
+          "fieldType": null,
+          "value": null
+        }
+      }
+    }
+  ],
+  "showActions": false,
+  "useDefaultLanguage": false
+}

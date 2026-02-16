@@ -1,0 +1,94 @@
+====================================================================================================
+TEST PLAN (V4) - AutoSys New Windows Application
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 2
+Total test cases: 3
+Reachable questions: 15
+Min questions per case: 13
+Max questions per case: 13
+Avg questions per case: 13.0
+Coverage: 15/15 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q10: Do you have a dedicated AutoSys job owner service account that this job can run under?
+  Options: Yes, No
+Q15: Do you already have an Autosys group (a-Autosys_*) you belong to?
+  Options: Yes, No
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q10 (Do you have a dedicated AutoSys job owner service account that this job can run under?): Yes
+  Q15 (Do you already have an Autosys group (a-Autosys_*) you belong to?): Yes
+
+Visible questions (13):
+  DATA COLLECTION (enter any valid value): Q6, Q7, Q8, Q9, Q11, Q16, Q20, Q21, Q23, Q24, Q26
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q10 (Do you have a dedicated AutoSys job owner service account that this job can run under?): No
+  Q15 (Do you already have an Autosys group (a-Autosys_*) you belong to?): Yes
+
+Visible questions (13):
+  DATA COLLECTION (enter any valid value): Q6, Q7, Q8, Q9, Q14, Q16, Q20, Q21, Q23, Q24, Q26
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q10 (Do you have a dedicated AutoSys job owner service account that this job can run under?): Yes
+  Q15 (Do you already have an Autosys group (a-Autosys_*) you belong to?): No
+
+Visible questions (13):
+  DATA COLLECTION (enter any valid value): Q6, Q7, Q8, Q9, Q11, Q19, Q20, Q21, Q23, Q24, Q26
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q6: DWP-SRM-SLA-disclaimer (DATA COL)
+Q7: Job name prefix (if known): (DATA COL)
+Q8: Which server do you want to run your production jobs? (DATA COL)
+Q9: What would you like us to name the folder that the AutoSys executables will be stored in? (DATA COL)
+Q10: Do you have a dedicated AutoSys job owner service account that this job can run under? (TEST VAR)
+Q11: Provide name of service account: (DATA COL)
+Q14: What would you like the SA account to be called? (DATA COL)
+Q15: Do you already have an Autosys group (a-Autosys_*) you belong to? (TEST VAR)
+Q16: Enter group name: (DATA COL)
+Q19: What would you like the group name to be called? (DATA COL)
+Q20: Remedy group name to assign errors to: (DATA COL)
+Q21: Reason for request: (DATA COL)
+Q23: Comments (DATA COL)
+Q24: Supervisor Name (DATA COL)
+Q26: Comments: (DATA COL)
+

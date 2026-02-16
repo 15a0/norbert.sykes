@@ -1,0 +1,186 @@
+====================================================================================================
+TEST PLAN (V4) - Virtual Desktops and Hosted Applications
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 8
+Total test cases: 7
+Reachable questions: 39
+Min questions per case: 10
+Max questions per case: 20
+Avg questions per case: 17.1
+Coverage: 39/39 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q4: What are you looking to do?
+  Options: New VDI, Retire VDI
+Q11: Is this WBS, I/O or PM order going to be split?
+  Options: Yes, No
+Q26: Do you have a WEC issued device?
+  Options: Yes, No
+Q27: Is this request for an OpenCIS Developer?
+  Options: Yes, No
+Q28: Do you need additional software beyond that which is provided by default?
+  Options: Yes, No
+Q29: Do you require access to Microstation and/or DDS?
+  Options: Yes, No
+Q45: Recommendation override:
+  Options: Hosted Apps, Override
+Q51: Recommendation override:
+  Options: Hosted Apps, Override
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q4 (What are you looking to do?): New VDI
+  Q11 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q26 (Do you have a WEC issued device?): No
+  Q27 (Is this request for an OpenCIS Developer?): No
+  Q28 (Do you need additional software beyond that which is provided by default?): Yes
+  Q29 (Do you require access to Microstation and/or DDS?): No
+
+Visible questions (20):
+  DATA COLLECTION (enter any valid value): Q3, Q9, Q10, Q12, Q13, Q14, Q18, Q19, Q33, Q34, Q35, Q56, Q58, Q63
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q4 (What are you looking to do?): Retire VDI
+
+Visible questions (10):
+  DATA COLLECTION (enter any valid value): Q3, Q9, Q20, Q22, Q24, Q25, Q56, Q59, Q62
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q4 (What are you looking to do?): New VDI
+  Q11 (Is this WBS, I/O or PM order going to be split?): No
+  Q26 (Do you have a WEC issued device?): No
+  Q27 (Is this request for an OpenCIS Developer?): No
+  Q28 (Do you need additional software beyond that which is provided by default?): No
+  Q45 (Recommendation override:): Override
+
+Visible questions (19):
+  DATA COLLECTION (enter any valid value): Q3, Q9, Q10, Q18, Q19, Q44, Q48, Q49, Q54, Q55, Q56, Q58, Q63
+
+Test Case 4
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q4 (What are you looking to do?): New VDI
+  Q11 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q26 (Do you have a WEC issued device?): No
+  Q27 (Is this request for an OpenCIS Developer?): No
+  Q28 (Do you need additional software beyond that which is provided by default?): Yes
+  Q29 (Do you require access to Microstation and/or DDS?): Yes
+
+Visible questions (19):
+  DATA COLLECTION (enter any valid value): Q3, Q9, Q10, Q12, Q13, Q14, Q18, Q19, Q37, Q38, Q56, Q58, Q63
+
+Test Case 5
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q4 (What are you looking to do?): New VDI
+  Q11 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q26 (Do you have a WEC issued device?): Yes
+  Q27 (Is this request for an OpenCIS Developer?): Yes
+  Q28 (Do you need additional software beyond that which is provided by default?): Yes
+
+Visible questions (18):
+  DATA COLLECTION (enter any valid value): Q3, Q9, Q10, Q12, Q13, Q14, Q18, Q19, Q42, Q43, Q56, Q58, Q63
+
+Test Case 6
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q4 (What are you looking to do?): New VDI
+  Q11 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q26 (Do you have a WEC issued device?): Yes
+  Q27 (Is this request for an OpenCIS Developer?): No
+  Q51 (Recommendation override:): Hosted Apps
+
+Visible questions (17):
+  DATA COLLECTION (enter any valid value): Q3, Q9, Q10, Q12, Q13, Q14, Q18, Q19, Q50, Q56, Q58, Q63
+
+Test Case 7
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q4 (What are you looking to do?): New VDI
+  Q11 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q26 (Do you have a WEC issued device?): Yes
+  Q27 (Is this request for an OpenCIS Developer?): Yes
+  Q28 (Do you need additional software beyond that which is provided by default?): No
+
+Visible questions (17):
+  DATA COLLECTION (enter any valid value): Q3, Q9, Q10, Q12, Q13, Q14, Q18, Q19, Q40, Q56, Q58, Q63
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q3: Unknown (DATA COL)
+Q4: What are you looking to do? (TEST VAR)
+Q9: Disclaimer: (DATA COL)
+Q10: WBS, I/O, or PM order 1 (DATA COL)
+Q11: Is this WBS, I/O or PM order going to be split? (TEST VAR)
+Q12: Percent Split 1: (DATA COL)
+Q13: WBS, I/O, or PM order 2: (DATA COL)
+Q14: Percent Split 2: (DATA COL)
+Q18: Project name: (DATA COL)
+Q19: Reason for request: (DATA COL)
+Q20: Name of VDI to retire: (DATA COL)
+Q22: Secondary Device Lookup (DATA COL)
+Q24: VDI Name: (DATA COL)
+Q25: Date to Retire the VDI by: (DATA COL)
+Q26: Do you have a WEC issued device? (TEST VAR)
+Q27: Is this request for an OpenCIS Developer? (TEST VAR)
+Q28: Do you need additional software beyond that which is provided by default? (TEST VAR)
+Q29: Do you require access to Microstation and/or DDS? (TEST VAR)
+Q33: Unknown (DATA COL)
+Q34: List the additional software to install: (DATA COL)
+Q35: Acknowledgement: (DATA COL)
+Q37: Unknown (DATA COL)
+Q38: Acknowledgement: (DATA COL)
+Q40: Unknown (DATA COL)
+Q42: Unknown (DATA COL)
+Q43: Acknowledgement: (DATA COL)
+Q44: Unknown (DATA COL)
+Q45: Recommendation override: (TEST VAR)
+Q48: Unknown (DATA COL)
+Q49: Please provide justification for your override: (DATA COL)
+Q50: Unknown (DATA COL)
+Q51: Recommendation override: (TEST VAR)
+Q54: Unknown (DATA COL)
+Q55: Please provide justification for your override: (DATA COL)
+Q56: Supervisor Name: (DATA COL)
+Q58: Comments: (DATA COL)
+Q59: Comments: (DATA COL)
+Q62: Comments: (DATA COL)
+Q63: Comments: (DATA COL)
+

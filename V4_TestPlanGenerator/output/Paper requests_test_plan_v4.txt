@@ -1,0 +1,101 @@
+====================================================================================================
+TEST PLAN (V4) - Paper requests
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 2
+Total test cases: 3
+Reachable questions: 11
+Unreachable questions (excluded from coverage): 1
+Min questions per case: 9
+Max questions per case: 9
+Avg questions per case: 9.0
+Coverage: 11/11 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q8: Is this WBS, I/O or PM order going to be split?
+  Options: Yes, No
+Q15: Paper Size:
+  Options: 8.5 X 11, 8.5 X 14, 11 X 17
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q8 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q15 (Paper Size:): 8.5 X 11
+
+Visible questions (9):
+  DATA COLLECTION (enter any valid value): Q7, Q9, Q10, Q11, Q16, Q19, Q20
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q8 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q15 (Paper Size:): 8.5 X 14
+
+Visible questions (9):
+  DATA COLLECTION (enter any valid value): Q7, Q9, Q10, Q11, Q17, Q19, Q20
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q8 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q15 (Paper Size:): 11 X 17
+
+Visible questions (9):
+  DATA COLLECTION (enter any valid value): Q7, Q9, Q10, Q11, Q18, Q19, Q20
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q7: WBS IO PM 1 (DATA COL)
+Q8: Is this WBS, I/O or PM order going to be split? (TEST VAR)
+Q9: Percent Split 1: (DATA COL)
+Q10: WBS, IO, or PM order 2: (DATA COL)
+Q11: Percent Split 2: (DATA COL)
+Q15: Paper Size: (TEST VAR)
+Q16: Number of Cartons of 8.5" X 11": (DATA COL)
+Q17: Number of Cartons of 8.5: X 14": (DATA COL)
+Q18: Number of Cartons of 11" X 17": (DATA COL)
+Q19: Printer Location [Column Number]: (DATA COL)
+Q20: Comments: (DATA COL)
+Q21: Comments: (DATA COL) (UNREACHABLE)
+
+====================================================================================================
+UNREACHABLE QUESTIONS (Cannot be tested)
+====================================================================================================
+
+These questions have visibility conditions that are always False.
+They cannot be displayed to users and are excluded from test coverage.
+
+Q21: Comments:
+

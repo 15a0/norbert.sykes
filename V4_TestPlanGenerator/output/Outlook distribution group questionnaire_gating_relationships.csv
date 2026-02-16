@@ -1,0 +1,45 @@
+Questionnaire_Name,Parent_Question_Number,Parent_Question_Label,Parent_Is_Test_Variable,Child_Question_Number,Child_Question_Label,Operator,Expected_Value
+Outlook distribution group questionnaire,Q1,DWP-SRM-SLA-service-name,No,Q2,Unknown,==,Outlook distribution groups
+Outlook distribution group questionnaire,Q1,DWP-SRM-SLA-service-name,No,Q3,What do you need?,==,Outlook distribution groups
+Outlook distribution group questionnaire,Q1,DWP-SRM-SLA-service-name,No,Q4,Request Type - Retire,!=,Outlook distribution groups
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q5,Desired name:,==,New List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q6,Owner/administrator of distribution group:,==,New List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q7,"The owner can add members or fill out the spreadsheet (optional, link below).",==,New List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q8,Shared Access Attachment,==,New List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q9,Level of security needed:,==,New List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q10,I am looking to update or change:,==,Update a List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q11,DWP-SRM-SLA-requested-item,==,New List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q11,DWP-SRM-SLA-requested-item,==,Update a List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q12,DWP-SRM-SLA-template-name,==,New List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q12,DWP-SRM-SLA-template-name,==,Update a List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q13,DWP-SRM-SLA-has-a-disclaimer,==,New List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q13,DWP-SRM-SLA-has-a-disclaimer,==,Update a List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q14,DWP-SRM-SLA-sub-process,==,New List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q14,DWP-SRM-SLA-sub-process,==,Update a List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q16,Outlook group name:,==,Update a List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q17,"The owner can add members or fill out the spreadsheet (optional, link below).",==,Update a List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q18,Current group name:,==,Update a List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q19,New group name:,==,Update a List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q20,Shared access attachment,==,Update a List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q21,Current owner name:,==,Update a List
+Outlook distribution group questionnaire,Q3,What do you need?,Yes,Q22,New owner name:,==,Update a List
+Outlook distribution group questionnaire,Q4,Request Type - Retire,No,Q11,DWP-SRM-SLA-requested-item,!=,
+Outlook distribution group questionnaire,Q4,Request Type - Retire,No,Q12,DWP-SRM-SLA-template-name,!=,
+Outlook distribution group questionnaire,Q4,Request Type - Retire,No,Q13,DWP-SRM-SLA-has-a-disclaimer,!=,
+Outlook distribution group questionnaire,Q4,Request Type - Retire,No,Q14,DWP-SRM-SLA-sub-process,!=,
+Outlook distribution group questionnaire,Q4,Request Type - Retire,No,Q23,Enter the distribution list to be deleted:,==,Delete a List
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q11,DWP-SRM-SLA-requested-item,!=,
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q12,DWP-SRM-SLA-template-name,!=,
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q13,DWP-SRM-SLA-has-a-disclaimer,!=,
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q14,DWP-SRM-SLA-sub-process,!=,
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q16,Outlook group name:,==,Membership
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q16,Outlook group name:,==,Ownership
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q17,"The owner can add members or fill out the spreadsheet (optional, link below).",==,Membership
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q18,Current group name:,==,Group Name
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q19,New group name:,==,Group Name
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q20,Shared access attachment,==,Membership
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q21,Current owner name:,==,Ownership
+Outlook distribution group questionnaire,Q10,I am looking to update or change:,Yes,Q22,New owner name:,==,Ownership
+Outlook distribution group questionnaire,Q12,DWP-SRM-SLA-template-name,No,Q15,DWP-SRM-SLA-disclaimer,==,0
+Outlook distribution group questionnaire,Q24,Customer,No,Q25,Comments:,contains,found
+Outlook distribution group questionnaire,Q24,Customer,No,Q26,Comments:,does not contain,found

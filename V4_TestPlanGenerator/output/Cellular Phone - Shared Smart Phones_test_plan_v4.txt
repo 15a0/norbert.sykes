@@ -1,0 +1,145 @@
+====================================================================================================
+TEST PLAN (V4) - Cellular Phone - Shared Smart Phones
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 8
+Total test cases: 4
+Reachable questions: 40
+Min questions per case: 7
+Max questions per case: 27
+Avg questions per case: 18.5
+Coverage: 40/40 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q2: What do you need?
+  Options: New shared smart phone/device, Upgrade a shared flip phone to a shared smart phone, Upgrade a shared smart phone to a new shared smart phone, Disconnect or return a Shared Smart Phone
+Q6: Is this a Shared Smart Phone
+  Options: Yes, No
+Q16: Is this WBS, I/O, PM Order going to be split?
+  Options: Yes, No
+Q17: Select the utility|operating company where monthly recurring charges should be applied:
+Q28: Select the additional utility|operating company.
+Q35: Are there additional splits?
+  Options: Yes, No
+Q38: Will device(s) be purchased as part of a project?
+  Options: Yes, No
+Q47: Do you want to switch providers?
+  Options: Yes, No
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): Upgrade a shared flip phone to a shared smart phone
+  Q16 (Is this WBS, I/O, PM Order going to be split?): Yes
+  Q17 (Select the utility|operating company where monthly recurring charges should be applied:): [Not assigned]
+  Q28 (Select the additional utility|operating company.): [Not assigned]
+  Q38 (Will device(s) be purchased as part of a project?): Yes
+  Q47 (Do you want to switch providers?): Yes
+
+Visible questions (27):
+  DATA COLLECTION (enter any valid value): Q11, Q12, Q19, Q20, Q27, Q30, Q31, Q34, Q39, Q41, Q42, Q43, Q44, Q45, Q46, Q48, Q52, Q53, Q54, Q62, Q63
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): Disconnect or return a Shared Smart Phone
+  Q6 (Is this a Shared Smart Phone): Yes
+
+Visible questions (15):
+  DATA COLLECTION (enter any valid value): Q11, Q19, Q20, Q30, Q31, Q56, Q57, Q58, Q59, Q60, Q61, Q62, Q63
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): New shared smart phone/device
+  Q16 (Is this WBS, I/O, PM Order going to be split?): Yes
+  Q17 (Select the utility|operating company where monthly recurring charges should be applied:): [Not assigned]
+  Q28 (Select the additional utility|operating company.): [Not assigned]
+  Q35 (Are there additional splits?): Yes
+  Q38 (Will device(s) be purchased as part of a project?): Yes
+
+Visible questions (25):
+  DATA COLLECTION (enter any valid value): Q11, Q12, Q19, Q20, Q27, Q30, Q31, Q34, Q36, Q39, Q41, Q42, Q43, Q44, Q49, Q50, Q51, Q62, Q63
+
+Test Case 4
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (What do you need?): Upgrade a shared smart phone to a new shared smart phone
+
+Visible questions (7):
+  DATA COLLECTION (enter any valid value): Q11, Q19, Q20, Q30, Q31, Q55
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q2: What do you need? (TEST VAR)
+Q6: Is this a Shared Smart Phone (TEST VAR)
+Q11: Disclaimer: (DATA COL)
+Q12: Supervisor Name (DATA COL)
+Q16: Is this WBS, I/O, PM Order going to be split? (TEST VAR)
+Q17: Select the utility|operating company where monthly recurring charges should be applied: (TEST VAR)
+Q19: Other Operating Company: (DATA COL)
+Q20: Other WBS IO PM: (DATA COL)
+Q27: Percent Split: Element One (DATA COL)
+Q28: Select the additional utility|operating company. (TEST VAR)
+Q30: Other Operating Company: (DATA COL)
+Q31: Other WBS: (DATA COL)
+Q34: Percent Split: Element Two (DATA COL)
+Q35: Are there additional splits? (TEST VAR)
+Q36: Provide the additional Split Information: (DATA COL)
+Q38: Will device(s) be purchased as part of a project? (TEST VAR)
+Q39: WBS, I/O, PM Order if device(s) will be purchased as part of a project: (DATA COL)
+Q41: Unknown (DATA COL)
+Q42: Optional Accessories: (DATA COL)
+Q43: Will this phone be used internationally? (DATA COL)
+Q44: Does this Shared Computer ID need to be email enabled? (DATA COL)
+Q45: Current cell phone number: (DATA COL)
+Q46: Current cellular device owner: (DATA COL)
+Q47: Do you want to switch providers? (TEST VAR)
+Q48: Select new carrier: (DATA COL)
+Q49: Do you have a preferred carrier? (DATA COL)
+Q50: Delivery instructions: (DATA COL)
+Q51: Reason for request: (DATA COL)
+Q52: Delivery instructions: (DATA COL)
+Q53: Reason for request: (DATA COL)
+Q54: Unknown (DATA COL)
+Q55: Unknown (DATA COL)
+Q56: What is the shared computer ID assigned to this smart phone? (DATA COL)
+Q57: Current carrier: (DATA COL)
+Q58: Current cell phone number(s): (DATA COL)
+Q59: Current cellular device owner(s): (DATA COL)
+Q60: Has this phone already been disconnected with the provider? (DATA COL)
+Q61: Unknown (DATA COL)
+Q62: Comments: (DATA COL)
+Q63: Comments: (DATA COL)
+

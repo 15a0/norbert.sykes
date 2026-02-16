@@ -1,0 +1,152 @@
+====================================================================================================
+TEST PLAN (V4) - Air Card and MiFi Request
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 5
+Total test cases: 6
+Reachable questions: 34
+Min questions per case: 11
+Max questions per case: 21
+Avg questions per case: 16.7
+Coverage: 34/34 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q3: I am requesting:
+  Options: Air Card Activation, Air Card change to service, I am having an issue with my Air Card or MiFi, Return MiFi
+Q4: Change requesting:
+  Options: Discontinue, Transfer, Switch, Other
+Q11: Device Name
+Q14: Is this WBS, I/O or PM order going to be split?
+  Options: Yes, No
+Q35: The MiFi carrier is:
+  Options: AT&T, Cellcom, US Cellular, Verizon, Other
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I am requesting:): Air Card change to service
+  Q4 (Change requesting:): Transfer
+  Q11 (Device Name): [Not assigned]
+  Q14 (Is this WBS, I/O or PM order going to be split?): Yes
+
+Visible questions (21):
+  DATA COLLECTION (enter any valid value): Q2, Q10, Q12, Q15, Q19, Q20, Q21, Q22, Q23, Q24, Q25, Q26, Q27, Q34, Q42, Q43, Q45
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I am requesting:): Return MiFi
+  Q35 (The MiFi carrier is:): Other
+
+Visible questions (14):
+  DATA COLLECTION (enter any valid value): Q2, Q10, Q12, Q23, Q36, Q37, Q38, Q39, Q40, Q42, Q43, Q45
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I am requesting:): I am having an issue with my Air Card or MiFi
+  Q11 (Device Name): [Not assigned]
+
+Visible questions (11):
+  DATA COLLECTION (enter any valid value): Q2, Q12, Q22, Q31, Q32, Q33, Q42, Q43, Q45
+
+Test Case 4
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I am requesting:): Air Card change to service
+  Q4 (Change requesting:): Switch
+  Q11 (Device Name): [Not assigned]
+  Q14 (Is this WBS, I/O or PM order going to be split?): Yes
+
+Visible questions (19):
+  DATA COLLECTION (enter any valid value): Q2, Q10, Q12, Q15, Q19, Q20, Q21, Q22, Q23, Q28, Q30, Q34, Q42, Q43, Q45
+
+Test Case 5
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I am requesting:): Air Card Activation
+  Q11 (Device Name): [Not assigned]
+  Q14 (Is this WBS, I/O or PM order going to be split?): Yes
+
+Visible questions (17):
+  DATA COLLECTION (enter any valid value): Q2, Q10, Q12, Q15, Q19, Q20, Q21, Q22, Q23, Q29, Q34, Q42, Q43, Q45
+
+Test Case 6
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I am requesting:): Air Card change to service
+  Q4 (Change requesting:): Other
+  Q11 (Device Name): [Not assigned]
+  Q14 (Is this WBS, I/O or PM order going to be split?): Yes
+
+Visible questions (18):
+  DATA COLLECTION (enter any valid value): Q2, Q5, Q10, Q12, Q15, Q19, Q20, Q21, Q22, Q23, Q34, Q42, Q43, Q45
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q2: Unknown (DATA COL)
+Q3: I am requesting: (TEST VAR)
+Q4: Change requesting: (TEST VAR)
+Q5: Other: (DATA COL)
+Q10: Disclaimer: (DATA COL)
+Q11: Device Name (TEST VAR)
+Q12: Secondary Device Lookup (DATA COL)
+Q14: Is this WBS, I/O or PM order going to be split? (TEST VAR)
+Q15: WBS, I/O, PM Order (DATA COL)
+Q19: Percent Split for WBS Element One (DATA COL)
+Q20: Second: WBS, I/O or PM Order (DATA COL)
+Q21: Percent Split for WBS Element Two (DATA COL)
+Q22: Urgency (DATA COL)
+Q23: Reason for request: (DATA COL)
+Q24: Current air card telephone number: (DATA COL)
+Q25: Current Air Card IMEI number (DATA COL)
+Q26: Current Provider (DATA COL)
+Q27: PC name to transfer air card to: (DATA COL)
+Q28: Existing MiFi telephone number: (DATA COL)
+Q29: New Provider Preference (DATA COL)
+Q30: New Air Card IMEI number (if known) (DATA COL)
+Q31: Current Air Card or MiFi telephone number: (DATA COL)
+Q32: Current Air Card or MiFi IMEI Number (DATA COL)
+Q33: Explain the issue you are having: (DATA COL)
+Q34: Delivery instructions: (DATA COL)
+Q35: The MiFi carrier is: (TEST VAR)
+Q36: Other cell phone carrier: (DATA COL)
+Q37: Effective date : (DATA COL)
+Q38: Who was this MiFi assigned to? (DATA COL)
+Q39: The wireless number for the MiFi device is: (DATA COL)
+Q40: Unknown (DATA COL)
+Q42: Comments (DATA COL)
+Q43: Supervisor Name (DATA COL)
+Q45: Comments (DATA COL)
+

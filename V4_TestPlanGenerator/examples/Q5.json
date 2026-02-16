@@ -1,0 +1,5415 @@
+{
+  "id": null,
+  "guid": null,
+  "createDate": null,
+  "modifiedDate": null,
+  "rxId": null,
+  "summary": null,
+  "serviceRevisionId": null,
+  "workflowId": "rx-5d5bd1e0-899a-42a3-8e23-5f01fb896a7b",
+  "questionnaireGroupId": "02bea5d4-0d86-4a98-b57c-4de1a5dd7813",
+  "name": "Virtual Desktops and Hosted Applications",
+  "bulkRequestedForUserLimit": 1,
+  "pages": [
+    {
+      "id": "d20bc6a5-7d6b-dcb1-df95-ce73d9a99180",
+      "externalId": null,
+      "perUser": false,
+      "title": "",
+      "pageItems": [
+        {
+          "type": "TextField",
+          "id": "ab6a0aa9-2cc4-8717-4c42-0ad541b63803",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-service-name",
+          "description": null,
+          "required": false,
+          "template": "object:620",
+          "processInputId": 536870933,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "${service.name}",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "fce4bd56-d97c-4d61-a50f-083a7e05d295",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Customer",
+          "description": null,
+          "required": false,
+          "template": "object:621",
+          "processInputId": 536870917,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "${requestedFor.fullName}",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DescriptionWidget",
+          "id": "5fadafa0-187e-64bf-a5e1-8d3c26795a49",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "description": "<p>• Recommended for contractors using a non-WEC device that need to connect to a standard WEC corporate workstation.<br>• ETA for turnaround: 7 business days from date of approval.<br>• All VDIs use Windows and are created in the CORP domain.<br>• A VDI is assigned to a single person and is dedicated to that person only. &nbsp;Each person who needs access to a VDI should be provided their own unique VDI.<br>• If you are requesting multiple VDIs, a separate request is required for each person needing a VDI.<br>• VDIs will be automatically retired after 90 days of non-use.<br><br><em>*Disclaimer: based on your responses to the form questions, you will be automatically recommended the type&nbsp;of VDI you require or hosted apps if you don't require VDI functionality.</em></p>\n<p>&nbsp;</p>",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "10e33246-6e8a-d42c-7034-2479291f2568",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "What are you looking to do?",
+          "description": null,
+          "required": true,
+          "template": "object:623",
+          "processInputId": 536870928,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "New VDI",
+              "displayValue": "I want a new VDI and/or access to hosted apps",
+              "disabled": false
+            },
+            {
+              "dataValue": "Retire VDI",
+              "displayValue": "I want to retire a VDI",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "acdb500f-3139-6fab-c60e-242845c8c6b2",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-template-name",
+          "description": null,
+          "required": false,
+          "template": "object:624",
+          "processInputId": 536870923,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "cd755772-d2b2-cbce-cc1d-04ae025300fe",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-has-a-disclaimer",
+          "description": null,
+          "required": false,
+          "template": "object:625",
+          "processInputId": 536870918,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "8411ba9a-d6c7-59c7-6e9b-4c4ef8503db5",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-requested-item",
+          "description": null,
+          "required": false,
+          "template": "object:626",
+          "processInputId": 536870947,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "894a149f-32c1-7068-9f74-aa3e53aeff45",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-sub process",
+          "description": null,
+          "required": false,
+          "template": "object:627",
+          "processInputId": 536870936,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "778b39a9-baa4-2b4f-cc81-d7603ade67d0",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "DWP-SRM-SLA-has-a-disclaimer",
+                  "valueReference": "cd755772-d2b2-cbce-cc1d-04ae025300fe",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "0"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "0"
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              }
+            }
+          },
+          "label": "Disclaimer:",
+          "description": null,
+          "required": false,
+          "template": "object:628",
+          "processInputId": 536870951,
+          "hidden": false,
+          "readOnly": true,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "50299088-dd55-5203-0ccc-2851c3c60fb6",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "10e33246-6e8a-d42c-7034-2479291f2568",
+            "leadingQuestionExpectedAnswers": [
+              "New VDI"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "New VDI"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "I want a new VDI and/or access to hosted apps",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "New VDI"
+              }
+            }
+          },
+          "label": "WBS, I/O, or PM order 1",
+          "description": null,
+          "required": true,
+          "template": "object:629",
+          "processInputId": 536870922,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "10e33246-6e8a-d42c-7034-2479291f2568",
+            "leadingQuestionExpectedAnswers": [
+              "New VDI"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "New VDI"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "I want a new VDI and/or access to hosted apps",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "New VDI"
+              }
+            }
+          },
+          "label": "Is this WBS, I/O or PM order going to be split?",
+          "description": null,
+          "required": true,
+          "template": "object:630",
+          "processInputId": 536870926,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "41096648-7207-cf25-0751-7053b3797bc1",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM order going to be split?",
+                "valueReference": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Percent Split 1:",
+          "description": null,
+          "required": true,
+          "template": "object:631",
+          "processInputId": 536870935,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "47ac5a01-3fdf-266c-1f54-ca855280c614",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM order going to be split?",
+                "valueReference": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "WBS, I/O, or PM order 2:",
+          "description": null,
+          "required": true,
+          "template": "object:632",
+          "processInputId": 536870921,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "c8aae170-dc0c-cec9-1916-38edac414af8",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM order going to be split?",
+                "valueReference": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Percent Split 2:",
+          "description": null,
+          "required": false,
+          "template": "object:633",
+          "processInputId": 536870934,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "47b35ad4-b943-17bb-1d22-102305d8ad45",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM order going to be split?",
+                "valueReference": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "Percent Split 1:",
+          "description": null,
+          "required": false,
+          "template": "object:631",
+          "processInputId": 536870935,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "8611f5b3-7d46-d8f2-ea18-27dbec2ba2fc",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM order going to be split?",
+                "valueReference": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "WBS, I/O, or PM order 2:",
+          "description": null,
+          "required": false,
+          "template": "object:632",
+          "processInputId": 536870921,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "a9a03e0c-8ac4-5880-4f4d-4ac8cdf09bcf",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM order going to be split?",
+                "valueReference": "df9c164c-e556-8871-1f0e-d04b47cfd256",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "Percent Split 2:",
+          "description": null,
+          "required": false,
+          "template": "object:633",
+          "processInputId": 536870934,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "3231f8b0-c778-442c-e3e9-16c3e2dda1bc",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "10e33246-6e8a-d42c-7034-2479291f2568",
+            "leadingQuestionExpectedAnswers": [
+              "New VDI"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "New VDI"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "I want a new VDI and/or access to hosted apps",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "New VDI"
+              }
+            }
+          },
+          "label": "Project name:",
+          "description": "<p>If no specific project, enter <strong>General Use</strong>.</p>",
+          "required": true,
+          "template": "object:634",
+          "processInputId": 536870944,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "b727f92d-ff93-99cb-ab7f-df2b5f3f64cc",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "10e33246-6e8a-d42c-7034-2479291f2568",
+            "leadingQuestionExpectedAnswers": [
+              "New VDI"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "New VDI"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "I want a new VDI and/or access to hosted apps",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "New VDI"
+              }
+            }
+          },
+          "label": "Reason for request:",
+          "description": null,
+          "required": true,
+          "template": "object:635",
+          "processInputId": 536870913,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "9b1311a9-1701-f802-a504-a3b358b26cfe",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "10e33246-6e8a-d42c-7034-2479291f2568",
+            "leadingQuestionExpectedAnswers": [
+              "Retire VDI"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Retire VDI"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "I want to retire a VDI",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Retire VDI"
+              }
+            }
+          },
+          "label": "Name of VDI to retire:",
+          "description": "<p>Select the VDI to retire. If not found then select \"*Search for a different device\".</p>",
+          "required": true,
+          "template": "object:636",
+          "processInputId": 536870919,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "1",
+          "datasetId": "weAST:AST-PersonalVDIPeopleJoin",
+          "datasetName": "weAST:AST-PersonalVDIPeopleJoin",
+          "datasetIdFieldId": "200000020",
+          "datasetIdFieldName": "Name__c",
+          "datasetNameFieldId": "200000020",
+          "datasetNameFieldName": "Name__c",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "OR",
+            "withParentheses": false,
+            "left": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Login Name__c",
+                "valueReference": "260100002",
+                "fieldType": "TEXT",
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "CONTEXT",
+                "label": null,
+                "valueReference": "${requestedFor.loginName}",
+                "fieldType": null,
+                "value": null
+              }
+            },
+            "right": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Configuration Type__c",
+                "valueReference": "536870913",
+                "fieldType": "SELECTION",
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Search"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Search"
+              }
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "667e287c-4ffe-75dd-9485-2360943935e5",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Initial Device Type",
+          "description": null,
+          "required": false,
+          "template": "object:637",
+          "processInputId": 536870958,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Lookup",
+          "id": "a5008824-efa9-d6f2-b09c-e3097965272d",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Retire VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want to retire a VDI",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Retire VDI"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Initial Device Type",
+                  "valueReference": "667e287c-4ffe-75dd-9485-2360943935e5",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "850"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "850"
+                }
+              }
+            }
+          },
+          "label": "Secondary Device Lookup",
+          "description": "<p>Use the lookup to select the VDI:&nbsp;&nbsp;If your VDI&nbsp;could not be found in the lookup, please select “*VDI name not found\"</p>",
+          "required": true,
+          "template": "object:638",
+          "processInputId": 536870927,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "1",
+          "datasetId": "weAST:AST-PersonalVDI",
+          "datasetName": "weAST:AST-PersonalVDI",
+          "datasetIdFieldId": "200000020",
+          "datasetIdFieldName": "Name__c",
+          "datasetNameFieldId": "200000020",
+          "datasetNameFieldName": "Name__c",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "NOT_EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Configuration Type",
+              "valueReference": "536870913",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Search"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Search"
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "lookupThreshold": 5,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "c7f9a5a0-6c19-e73e-766c-aba49dae2c93",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Secondary Device Type",
+          "description": null,
+          "required": false,
+          "template": "object:639",
+          "processInputId": 536870956,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "b95d1f76-21ab-19b2-685d-49fb1f595eaf",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Retire VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want to retire a VDI",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Retire VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Secondary Device Type",
+                    "valueReference": "c7f9a5a0-6c19-e73e-766c-aba49dae2c93",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "900"
+                    ],
+                    "type": "STRING",
+                    "label": null,
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "900"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Initial Device Type",
+                    "valueReference": "667e287c-4ffe-75dd-9485-2360943935e5",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "850"
+                    ],
+                    "type": "STRING",
+                    "label": null,
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "850"
+                  }
+                }
+              }
+            }
+          },
+          "label": "VDI Name:",
+          "description": "<p>Please manually enter the VDI name.</p>",
+          "required": true,
+          "template": "object:640",
+          "processInputId": 536870957,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DateField",
+          "id": "f61c7a52-cf7e-cb4f-b257-6c64f35a6d7c",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "10e33246-6e8a-d42c-7034-2479291f2568",
+            "leadingQuestionExpectedAnswers": [
+              "Retire VDI"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Retire VDI"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "I want to retire a VDI",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Retire VDI"
+              }
+            }
+          },
+          "label": "Date to Retire the VDI by:",
+          "description": null,
+          "required": true,
+          "template": "object:641",
+          "processInputId": 536870920,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "timezoneId": null,
+          "min": {
+            "limitType": "NO_LIMIT"
+          },
+          "max": {
+            "limitType": "NO_LIMIT"
+          },
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "1fb3979f-964d-47c1-dbc3-43fccbdf1eb1",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "10e33246-6e8a-d42c-7034-2479291f2568",
+            "leadingQuestionExpectedAnswers": [
+              "New VDI"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "New VDI"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "I want a new VDI and/or access to hosted apps",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "New VDI"
+              }
+            }
+          },
+          "label": "Do you have a WEC issued device?",
+          "description": null,
+          "required": true,
+          "template": "object:642",
+          "processInputId": 536870945,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Do you have a WEC issued device?",
+                  "valueReference": "1fb3979f-964d-47c1-dbc3-43fccbdf1eb1",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              }
+            }
+          },
+          "label": "Is this request for an OpenCIS Developer?",
+          "description": null,
+          "required": true,
+          "template": "object:643",
+          "processInputId": 536870949,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "e369b13f-39ca-3406-6ea0-09228413fa93",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "OR",
+              "withParentheses": false,
+              "left": {
+                "operator": "AND",
+                "withParentheses": true,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Is this request for an OpenCIS Developer?",
+                    "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Is this request for an OpenCIS Developer?",
+                    "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": true,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you have a WEC issued device?",
+                    "valueReference": "1fb3979f-964d-47c1-dbc3-43fccbdf1eb1",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Is this request for an OpenCIS Developer?",
+                    "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                }
+              }
+            }
+          },
+          "label": "Do you need additional software beyond that which is provided by default?",
+          "description": "<p>First check the list of <a target=\"_blank\" href=\"https://projects.wecenergygroup.com/Projects/IBS_ITS/Windows10/Win10BusinessSite/_layouts/15/WopiFrame2.aspx?sourcedoc={5fe94fec-0a94-416f-bb1b-49b176d445a3}&amp;action=default\">Software Installed by Default</a>.</p>",
+          "required": false,
+          "template": "object:644",
+          "processInputId": 536870955,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "c84e9e5c-45f2-f88a-b9a3-d4a4efc8defe",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Is this request for an OpenCIS Developer?",
+                    "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                },
+                "right": {
+                  "operator": "AND",
+                  "withParentheses": false,
+                  "left": {
+                    "operator": "EQUALS",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "QUESTION_ANSWER",
+                      "label": "Do you need additional software beyond that which is provided by default?",
+                      "valueReference": "e369b13f-39ca-3406-6ea0-09228413fa93",
+                      "fieldType": null,
+                      "value": null
+                    },
+                    "right": {
+                      "values": [
+                        "Yes"
+                      ],
+                      "type": "QUESTION_OPTION",
+                      "label": "Yes",
+                      "valueReference": null,
+                      "fieldType": null,
+                      "value": "Yes"
+                    }
+                  },
+                  "right": {
+                    "operator": "EQUALS",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "QUESTION_ANSWER",
+                      "label": "Do you have a WEC issued device?",
+                      "valueReference": "1fb3979f-964d-47c1-dbc3-43fccbdf1eb1",
+                      "fieldType": null,
+                      "value": null
+                    },
+                    "right": {
+                      "values": [
+                        "No"
+                      ],
+                      "type": "QUESTION_OPTION",
+                      "label": "No",
+                      "valueReference": null,
+                      "fieldType": null,
+                      "value": "No"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "label": "Do you require access to Microstation and/or DDS?",
+          "description": null,
+          "required": true,
+          "template": "object:645",
+          "processInputId": 536870953,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "e1c35862-d2cd-2a12-a550-916f996d100d",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "c84e9e5c-45f2-f88a-b9a3-d4a4efc8defe",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Do you require access to Microstation and/or DDS?",
+                "valueReference": "c84e9e5c-45f2-f88a-b9a3-d4a4efc8defe",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Do you require access to any of the following applications?",
+          "description": "<p>- Visual Studio Enterprise<br>- Google Earch<br>- Storms<br>- Synergi<br>- Smallworld<br>- Postman<br>- Azure DevOps</p>",
+          "required": false,
+          "template": "object:646",
+          "processInputId": 536870939,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "a1c60dac-6091-e5c6-80b1-02c221144f9a",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "10e33246-6e8a-d42c-7034-2479291f2568",
+            "leadingQuestionExpectedAnswers": [
+              "Retire VDI"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Retire VDI"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "I want to retire a VDI",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Retire VDI"
+              }
+            }
+          },
+          "label": "Fulfillment Type - Retire VDI",
+          "description": null,
+          "required": false,
+          "template": "object:647",
+          "processInputId": 536870952,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "N/A",
+              "displayValue": "N/A",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": "N/A",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "c383c7e7-23f7-da1e-7040-c75cabd201b3",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Do you require access to Microstation and/or DDS?",
+                  "valueReference": "c84e9e5c-45f2-f88a-b9a3-d4a4efc8defe",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "No"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "No",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "No"
+                }
+              }
+            }
+          },
+          "label": "Fulfillment Type - Standard VDI",
+          "description": null,
+          "required": false,
+          "template": "object:647",
+          "processInputId": 536870952,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Standard VDI",
+              "displayValue": "Standard VDI",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": "Standard VDI",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DescriptionWidget",
+          "id": "765e0bc0-9de6-a1fb-df9c-268a035cba1e",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Do you require access to Microstation and/or DDS?",
+                  "valueReference": "c84e9e5c-45f2-f88a-b9a3-d4a4efc8defe",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "No"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "No",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "No"
+                }
+              }
+            }
+          },
+          "description": "<p>&nbsp;</p>\n<p><strong>Based on your response(s) above, you will be receiving a Standard VDI.</strong></p>\n<p>&nbsp;</p>",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "8c0c8d94-3bac-846b-646a-7e2f1d5969a5",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Do you require access to Microstation and/or DDS?",
+                  "valueReference": "c84e9e5c-45f2-f88a-b9a3-d4a4efc8defe",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "No"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "No",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "No"
+                }
+              }
+            }
+          },
+          "label": "List the additional software to install:",
+          "description": null,
+          "required": true,
+          "template": "object:649",
+          "processInputId": 536870929,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Checkbox",
+          "id": "6faa5190-2f6f-ae18-cdf7-decd15a6720b",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Do you require access to Microstation and/or DDS?",
+                  "valueReference": "c84e9e5c-45f2-f88a-b9a3-d4a4efc8defe",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "No"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "No",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "No"
+                }
+              }
+            }
+          },
+          "label": "Acknowledgement:",
+          "description": "<p><strong>The VDI&nbsp;process does not provide software application installations. Please request all needed software through the&nbsp;<a target=\"_blank\" href=\"https://remedydwp.comp.dirsrv.com/dwp/rest/share/OJSXG33VOJRWKVDZOBST2U2CL5IFET2GJFGEKJTUMVXGC3TUJFSD2MBQGAYDAMBQGAYDAMBQGAYDCJTSMVZW65LSMNSUSZB5GE4DAMJGMNXW45DFPB2FI6LQMU6UGQKUIFGE6R27JBHU2RI=\">Software application</a>&nbsp;form</strong>.</p>",
+          "required": true,
+          "template": "object:650",
+          "processInputId": null,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "I confirm that I have read and understood the above statement.",
+              "displayValue": "I confirm that I have read and understood the above statement.",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswers": [],
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "e290cc5e-f079-4992-19f0-ee7c5d076a44",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you have a WEC issued device?",
+                    "valueReference": "1fb3979f-964d-47c1-dbc3-43fccbdf1eb1",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you require access to Microstation and/or DDS?",
+                    "valueReference": "c84e9e5c-45f2-f88a-b9a3-d4a4efc8defe",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                }
+              }
+            }
+          },
+          "label": "Fulfillment Type - GPU VDI",
+          "description": null,
+          "required": false,
+          "template": "object:647",
+          "processInputId": 536870952,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "GPU VDI",
+              "displayValue": "GPU VDI",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": "GPU VDI",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DescriptionWidget",
+          "id": "344b4164-9aa7-33e2-ccf8-5e50cae7d1cc",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you have a WEC issued device?",
+                    "valueReference": "1fb3979f-964d-47c1-dbc3-43fccbdf1eb1",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you require access to Microstation and/or DDS?",
+                    "valueReference": "c84e9e5c-45f2-f88a-b9a3-d4a4efc8defe",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                }
+              }
+            }
+          },
+          "description": "<p>&nbsp;</p>\n<p><strong>Based on your response(s) above, you will be receiving a VDI with GPU.</strong></p>\n<p>&nbsp;</p>",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Checkbox",
+          "id": "4a73faf1-1d39-d539-eb2d-f9bbde96d93c",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you have a WEC issued device?",
+                    "valueReference": "1fb3979f-964d-47c1-dbc3-43fccbdf1eb1",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you require access to Microstation and/or DDS?",
+                    "valueReference": "c84e9e5c-45f2-f88a-b9a3-d4a4efc8defe",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                }
+              }
+            }
+          },
+          "label": "Acknowledgement:",
+          "description": "<p><strong>The VDI&nbsp;process does not provide software application installations. Please request all needed software through the&nbsp;<a target=\"_blank\" href=\"https://remedydwp.comp.dirsrv.com/dwp/rest/share/OJSXG33VOJRWKVDZOBST2U2CL5IFET2GJFGEKJTUMVXGC3TUJFSD2MBQGAYDAMBQGAYDAMBQGAYDCJTSMVZW65LSMNSUSZB5GE4DAMJGMNXW45DFPB2FI6LQMU6UGQKUIFGE6R27JBHU2RI=\">Software application</a>&nbsp;form</strong>.</p>",
+          "required": true,
+          "template": "object:650",
+          "processInputId": null,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "I confirm that I have read and understood the above statement.",
+              "displayValue": "I confirm that I have read and understood the above statement.",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswers": [],
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "9eaaefdb-a30f-9aa2-e133-40aa58cb0bee",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Is this request for an OpenCIS Developer?",
+                    "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you need additional software beyond that which is provided by default?",
+                    "valueReference": "e369b13f-39ca-3406-6ea0-09228413fa93",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                }
+              }
+            }
+          },
+          "label": "Fulfillment Type - OpenCIS VDI",
+          "description": null,
+          "required": false,
+          "template": "object:647",
+          "processInputId": 536870952,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "OpenCIS Developer VDI",
+              "displayValue": "OpenCIS Developer VDI",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": "OpenCIS Developer VDI",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DescriptionWidget",
+          "id": "aa60d1e0-79bc-c191-9260-074b7c752200",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Is this request for an OpenCIS Developer?",
+                    "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you need additional software beyond that which is provided by default?",
+                    "valueReference": "e369b13f-39ca-3406-6ea0-09228413fa93",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                }
+              }
+            }
+          },
+          "description": "<p>&nbsp;</p>\n<p><strong>Based on your response(s) above, you will be receiving an OpenCIS Developer VDI.</strong></p>\n<p>&nbsp;</p>",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "99be42ce-c9fc-bdc4-2184-382b8237779e",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Is this request for an OpenCIS Developer?",
+                    "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you need additional software beyond that which is provided by default?",
+                    "valueReference": "e369b13f-39ca-3406-6ea0-09228413fa93",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                }
+              }
+            }
+          },
+          "label": "Fulfillment Type - OpenCIS VDI",
+          "description": null,
+          "required": false,
+          "template": "object:647",
+          "processInputId": 536870952,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "OpenCIS Developer VDI",
+              "displayValue": "OpenCIS Developer VDI",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": "OpenCIS Developer VDI",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DescriptionWidget",
+          "id": "db85cd10-7c9e-d94c-204a-f011ed4ca280",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Is this request for an OpenCIS Developer?",
+                    "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you need additional software beyond that which is provided by default?",
+                    "valueReference": "e369b13f-39ca-3406-6ea0-09228413fa93",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                }
+              }
+            }
+          },
+          "description": "<p>&nbsp;</p>\n<p><strong>Based on your response(s) above, you will be receiving an OpenCIS Developer VDI.</strong></p>\n<p>&nbsp;</p>",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Checkbox",
+          "id": "abc7f016-3def-79ca-9234-bad358007122",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Is this request for an OpenCIS Developer?",
+                    "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you need additional software beyond that which is provided by default?",
+                    "valueReference": "e369b13f-39ca-3406-6ea0-09228413fa93",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                }
+              }
+            }
+          },
+          "label": "Acknowledgement:",
+          "description": "<p><strong>The VDI&nbsp;process does not provide software application installations. Please request all needed software through the&nbsp;<a target=\"_blank\" href=\"https://remedydwp.comp.dirsrv.com/dwp/rest/share/OJSXG33VOJRWKVDZOBST2U2CL5IFET2GJFGEKJTUMVXGC3TUJFSD2MBQGAYDAMBQGAYDAMBQGAYDCJTSMVZW65LSMNSUSZB5GE4DAMJGMNXW45DFPB2FI6LQMU6UGQKUIFGE6R27JBHU2RI=\">Software application</a>&nbsp;form</strong>.</p>",
+          "required": true,
+          "template": "object:650",
+          "processInputId": null,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "I confirm that I have read and understood the above statement.",
+              "displayValue": "I confirm that I have read and understood the above statement.",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswers": [],
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DescriptionWidget",
+          "id": "874872f2-f1b6-d419-1a3c-31149cd2e4aa",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": true,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you have a WEC issued device?",
+                    "valueReference": "1fb3979f-964d-47c1-dbc3-43fccbdf1eb1",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                },
+                "right": {
+                  "operator": "AND",
+                  "withParentheses": false,
+                  "left": {
+                    "operator": "EQUALS",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "QUESTION_ANSWER",
+                      "label": "Is this request for an OpenCIS Developer?",
+                      "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                      "fieldType": null,
+                      "value": null
+                    },
+                    "right": {
+                      "values": [
+                        "No"
+                      ],
+                      "type": "QUESTION_OPTION",
+                      "label": "No",
+                      "valueReference": null,
+                      "fieldType": null,
+                      "value": "No"
+                    }
+                  },
+                  "right": {
+                    "operator": "EQUALS",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "QUESTION_ANSWER",
+                      "label": "Do you need additional software beyond that which is provided by default?",
+                      "valueReference": "e369b13f-39ca-3406-6ea0-09228413fa93",
+                      "fieldType": null,
+                      "value": null
+                    },
+                    "right": {
+                      "values": [
+                        "No"
+                      ],
+                      "type": "QUESTION_OPTION",
+                      "label": "No",
+                      "valueReference": null,
+                      "fieldType": null,
+                      "value": "No"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "description": "<p><strong>Based on your responses to the questions above, you do not need a Virtual Desktop (VDI) and will be given access to hosted applications including MS Office (Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word), browsers (Firefox, Google Chrome, Microsoft Edge), Acrobat Reader, File Explorer, and Notepad. </strong></p>\n<p>&nbsp;</p>\n<p><strong>If additional applications are needed, please refer to this <a target=\"_blank\" href=\"https://energysource.wecenergygroup.com/its/Documents/Remote%20Access%20Application%20List.xlsx\">list of hosted applications</a>&nbsp;and submit request(s) for access to additional applications using the Active Directory Security Groups form.</strong></p>\n<p>&nbsp;</p>",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "c16f65e3-69ec-4c2e-8dd8-2b3bebaaa3e7",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": true,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you have a WEC issued device?",
+                    "valueReference": "1fb3979f-964d-47c1-dbc3-43fccbdf1eb1",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                },
+                "right": {
+                  "operator": "AND",
+                  "withParentheses": false,
+                  "left": {
+                    "operator": "EQUALS",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "QUESTION_ANSWER",
+                      "label": "Is this request for an OpenCIS Developer?",
+                      "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                      "fieldType": null,
+                      "value": null
+                    },
+                    "right": {
+                      "values": [
+                        "No"
+                      ],
+                      "type": "QUESTION_OPTION",
+                      "label": "No",
+                      "valueReference": null,
+                      "fieldType": null,
+                      "value": "No"
+                    }
+                  },
+                  "right": {
+                    "operator": "EQUALS",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "QUESTION_ANSWER",
+                      "label": "Do you need additional software beyond that which is provided by default?",
+                      "valueReference": "e369b13f-39ca-3406-6ea0-09228413fa93",
+                      "fieldType": null,
+                      "value": null
+                    },
+                    "right": {
+                      "values": [
+                        "No"
+                      ],
+                      "type": "QUESTION_OPTION",
+                      "label": "No",
+                      "valueReference": null,
+                      "fieldType": null,
+                      "value": "No"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "label": "Recommendation override:",
+          "description": "<p>If you still think you need a Virtual Desktop, please choose the override and provide an explanation.</p>",
+          "required": true,
+          "template": "object:655",
+          "processInputId": 536870954,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Hosted Apps",
+              "displayValue": "Hosted Apps meet my needs",
+              "disabled": false
+            },
+            {
+              "dataValue": "Override",
+              "displayValue": "Override (consult required)",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "d93051b7-a30a-9c5b-52a1-e7a656d912cd",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "c16f65e3-69ec-4c2e-8dd8-2b3bebaaa3e7",
+            "leadingQuestionExpectedAnswers": [
+              "Hosted Apps"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Recommendation override:",
+                "valueReference": "c16f65e3-69ec-4c2e-8dd8-2b3bebaaa3e7",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Hosted Apps"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Hosted Apps meet my needs",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Hosted Apps"
+              }
+            }
+          },
+          "label": "Fulfillment Type - Hosted Apps",
+          "description": null,
+          "required": false,
+          "template": "object:647",
+          "processInputId": 536870952,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Hosted Apps",
+              "displayValue": "Hosted Apps",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": "Hosted Apps",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "514ec288-0163-63e6-c2f5-a9146e34f629",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "c16f65e3-69ec-4c2e-8dd8-2b3bebaaa3e7",
+            "leadingQuestionExpectedAnswers": [
+              "Override"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Recommendation override:",
+                "valueReference": "c16f65e3-69ec-4c2e-8dd8-2b3bebaaa3e7",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Override"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Override (consult required)",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Override"
+              }
+            }
+          },
+          "label": "Fulfillment Type - Override",
+          "description": null,
+          "required": false,
+          "template": "object:647",
+          "processInputId": 536870952,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Standard VDI Override",
+              "displayValue": "Standard VDI Override",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": "Standard VDI Override",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DescriptionWidget",
+          "id": "7fe7457a-0771-7a5a-6eec-d8114e071fd9",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "c16f65e3-69ec-4c2e-8dd8-2b3bebaaa3e7",
+            "leadingQuestionExpectedAnswers": [
+              "Override"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Recommendation override:",
+                "valueReference": "c16f65e3-69ec-4c2e-8dd8-2b3bebaaa3e7",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Override"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Override (consult required)",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Override"
+              }
+            }
+          },
+          "description": "<p>&nbsp;</p>\n<p><strong>Your hosted apps request has been overridden, a consult will be required.</strong></p>\n<p>&nbsp;</p>",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "1d9465d5-4b82-3dc1-ad45-ef7022bed208",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "c16f65e3-69ec-4c2e-8dd8-2b3bebaaa3e7",
+            "leadingQuestionExpectedAnswers": [
+              "Override"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Recommendation override:",
+                "valueReference": "c16f65e3-69ec-4c2e-8dd8-2b3bebaaa3e7",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Override"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Override (consult required)",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Override"
+              }
+            }
+          },
+          "label": "Please provide justification for your override:",
+          "description": null,
+          "required": true,
+          "template": "object:657",
+          "processInputId": 536870960,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DescriptionWidget",
+          "id": "104dd0b2-8502-22d9-69f2-333f1aecaf63",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you have a WEC issued device?",
+                    "valueReference": "1fb3979f-964d-47c1-dbc3-43fccbdf1eb1",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Is this request for an OpenCIS Developer?",
+                    "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                }
+              }
+            }
+          },
+          "description": "<p><strong>Based on your responses to the questions above, you do not need a Virtual Desktop (VDI) but you may need access to hosted applications.&nbsp; If specific hosted applications are needed, please refer to this&nbsp;<a href=\"https://energysource.wecenergygroup.com/its/Documents/Remote%20Access%20Application%20List.xlsx\">list of hosted applications</a>&nbsp;and submit request(s) for access to additional applications using the <a href=\"https://remedydwp.comp.dirsrv.com/dwp/app/#/itemprofile/410\">Active Directory Security Groups</a> form.</strong></p>",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "5edf9544-9d57-2952-167b-5ae1cab7878a",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Do you have a WEC issued device?",
+                    "valueReference": "1fb3979f-964d-47c1-dbc3-43fccbdf1eb1",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Yes"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Yes",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Yes"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Is this request for an OpenCIS Developer?",
+                    "valueReference": "e67721e8-03c8-ebdc-433c-2d27d26502b3",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "No"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "No",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "No"
+                  }
+                }
+              }
+            }
+          },
+          "label": "Recommendation override:",
+          "description": "<p>If you still think you need a Virtual Desktop, please choose the override and provide an explanation.</p>",
+          "required": true,
+          "template": "object:655",
+          "processInputId": 536870954,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Hosted Apps",
+              "displayValue": "Hosted Apps meet my needs",
+              "disabled": false
+            },
+            {
+              "dataValue": "Override",
+              "displayValue": "Override (consult required)",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "3284283e-8c71-3aee-a400-9732036c7952",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "5edf9544-9d57-2952-167b-5ae1cab7878a",
+            "leadingQuestionExpectedAnswers": [
+              "Hosted Apps"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Recommendation override:",
+                "valueReference": "5edf9544-9d57-2952-167b-5ae1cab7878a",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Hosted Apps"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Hosted Apps meet my needs",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Hosted Apps"
+              }
+            }
+          },
+          "label": "Fulfillment Type - Hosted Apps",
+          "description": null,
+          "required": false,
+          "template": "object:647",
+          "processInputId": 536870952,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Hosted Apps",
+              "displayValue": "Hosted Apps",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": "Hosted Apps",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "2fac6103-1a51-a006-b84c-e10a8068a412",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "5edf9544-9d57-2952-167b-5ae1cab7878a",
+            "leadingQuestionExpectedAnswers": [
+              "Override"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Recommendation override:",
+                "valueReference": "5edf9544-9d57-2952-167b-5ae1cab7878a",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Override"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Override (consult required)",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Override"
+              }
+            }
+          },
+          "label": "Fulfillment Type - Override",
+          "description": null,
+          "required": false,
+          "template": "object:647",
+          "processInputId": 536870952,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Standard VDI Override",
+              "displayValue": "Standard VDI Override",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": "Standard VDI Override",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DescriptionWidget",
+          "id": "d798150e-6930-fc7c-0837-068ab8fb3a7a",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "5edf9544-9d57-2952-167b-5ae1cab7878a",
+            "leadingQuestionExpectedAnswers": [
+              "Override"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Recommendation override:",
+                "valueReference": "5edf9544-9d57-2952-167b-5ae1cab7878a",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Override"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Override (consult required)",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Override"
+              }
+            }
+          },
+          "description": "<p>&nbsp;</p>\n<p><strong>Your hosted apps request has been overridden, a consult will be required.</strong></p>\n<p>&nbsp;</p>",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "7f1cad3e-c6ea-53d9-3bc6-52975f4352c6",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "5edf9544-9d57-2952-167b-5ae1cab7878a",
+            "leadingQuestionExpectedAnswers": [
+              "Override"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Recommendation override:",
+                "valueReference": "5edf9544-9d57-2952-167b-5ae1cab7878a",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Override"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Override (consult required)",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Override"
+              }
+            }
+          },
+          "label": "Please provide justification for your override:",
+          "description": null,
+          "required": true,
+          "template": "object:657",
+          "processInputId": 536870960,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "ff6a1bfc-1e4e-6474-cfc6-4864e023d8cb",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "fce4bd56-d97c-4d61-a50f-083a7e05d295",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Supervisor Name:",
+          "description": "<p>Please specify the approving supervisor</p>",
+          "required": true,
+          "template": "object:660",
+          "processInputId": 536870950,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "CTM:People",
+          "datasetName": "CTM:People",
+          "datasetIdFieldId": "260000006",
+          "datasetIdFieldName": "ManagersName",
+          "datasetNameFieldId": "260000006",
+          "datasetNameFieldName": "ManagersName",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "AND",
+            "withParentheses": false,
+            "left": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Profile Status",
+                "valueReference": "7",
+                "fieldType": "SELECTION",
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Enabled"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Enabled"
+              }
+            },
+            "right": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Full Name",
+                  "valueReference": "1000000017",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "*Manager Not Found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "*Manager Not Found"
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Full Name",
+                  "valueReference": "1000000017",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "*Name Not Found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "*Name Not Found"
+                }
+              }
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "d900936b-4211-f006-b86e-77978a85dc63",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "fce4bd56-d97c-4d61-a50f-083a7e05d295",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Supervisor ID",
+          "description": null,
+          "required": false,
+          "template": "object:661",
+          "processInputId": 536870912,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "e9ce5711-6ac6-a405-5393-746b8795f4f8",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "fce4bd56-d97c-4d61-a50f-083a7e05d295",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              }
+            }
+          },
+          "label": "Comments:",
+          "description": "<p><strong>If ‘Name Not Found’ is selected, indicate the following information, if known: &nbsp;recipient’s name, corporate ID, company, department, and phone number.&nbsp; If this is for a remote contractor, please also include an external email address that can be used to reach them.&nbsp;Additionally, if you would like the VDI hosted at a specific location please note it below. (ex. Green Bay data center, Pewaukee data center).</strong></p>",
+          "required": true,
+          "template": "object:662",
+          "processInputId": 536870937,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "5884123e-7bb9-9944-73e0-06c069d2914c",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "fce4bd56-d97c-4d61-a50f-083a7e05d295",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Retire VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want to retire a VDI",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Retire VDI"
+                }
+              }
+            }
+          },
+          "label": "Comments:",
+          "description": "<p><strong>If ‘Name Not Found’ is selected, indicate the following information, if known: &nbsp;recipient’s name, corporate ID, company, department, and phone number.&nbsp; If this is for a remote contractor, please also include an external email address that can be used to reach them.</strong></p>",
+          "required": true,
+          "template": "object:662",
+          "processInputId": 536870937,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "b3503c9d-102b-be60-da93-49faae244385",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "fce4bd56-d97c-4d61-a50f-083a7e05d295",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              }
+            }
+          },
+          "label": "Supervisor Name Lookup",
+          "description": null,
+          "required": false,
+          "template": "object:663",
+          "processInputId": 536870950,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "471c00cf-4dfc-b518-79b3-6ddec481ad3d",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "fce4bd56-d97c-4d61-a50f-083a7e05d295",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              }
+            }
+          },
+          "label": "Supervisor ID Lookup",
+          "description": null,
+          "required": false,
+          "template": "object:664",
+          "processInputId": 536870912,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "37b55de6-cef5-4787-a74e-7c0725deeff8",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Retire VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want to retire a VDI",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Retire VDI"
+                }
+              },
+              "right": {
+                "operator": "NOT_CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "fce4bd56-d97c-4d61-a50f-083a7e05d295",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              }
+            }
+          },
+          "label": "Comments:",
+          "description": null,
+          "required": false,
+          "template": "object:665",
+          "processInputId": 536870937,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "58f4a2ab-90a6-b749-fe71-669bdf79a01a",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "What are you looking to do?",
+                  "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New VDI"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I want a new VDI and/or access to hosted apps",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New VDI"
+                }
+              },
+              "right": {
+                "operator": "NOT_CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "fce4bd56-d97c-4d61-a50f-083a7e05d295",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              }
+            }
+          },
+          "label": "Comments:",
+          "description": "<p>If you would like the VDI hosted at a specific location please note it below. (ex. Green Bay data center, Pewaukee data center)</p>",
+          "required": false,
+          "template": "object:665",
+          "processInputId": 536870937,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "name": "Retrieve Supervisor Name and ID",
+      "type": "OPEN_QUESTIONNAIRE",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "CTM:People",
+        "tableName": "CTM:People",
+        "mappings": [
+          {
+            "fieldName": "ManagerLoginID",
+            "fieldId": "301336500",
+            "questionLabel": "Supervisor ID Lookup",
+            "questionId": "471c00cf-4dfc-b518-79b3-6ddec481ad3d"
+          },
+          {
+            "fieldName": "ManagersName",
+            "fieldId": "260000006",
+            "questionLabel": "Supervisor Name Lookup",
+            "questionId": "b3503c9d-102b-be60-da93-49faae244385"
+          }
+        ],
+        "qualification": {
+          "operator": "AND",
+          "withParentheses": false,
+          "left": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Remedy Login ID",
+              "valueReference": "4",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "CONTEXT",
+              "label": null,
+              "valueReference": "${requestedFor.loginName}",
+              "fieldType": null,
+              "value": null
+            }
+          },
+          "right": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Profile Status",
+              "valueReference": "7",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Enabled"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Enabled"
+            }
+          }
+        }
+      },
+      "qualification": null
+    },
+    {
+      "name": "Retrieve supervisor when requested for Not Found",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "CTM:People",
+        "tableName": "CTM:People",
+        "mappings": [
+          {
+            "fieldName": "Remedy Login ID",
+            "fieldId": "4",
+            "questionLabel": "Supervisor ID",
+            "questionId": "d900936b-4211-f006-b86e-77978a85dc63"
+          }
+        ],
+        "qualification": {
+          "operator": "EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "FIELD",
+            "label": "Full Name",
+            "valueReference": "1000000017",
+            "fieldType": "TEXT",
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Supervisor Name:",
+            "valueReference": "ff6a1bfc-1e4e-6474-cfc6-4864e023d8cb",
+            "fieldType": null,
+            "value": null
+          }
+        }
+      },
+      "qualification": {
+        "operator": "NOT_EQUALS",
+        "withParentheses": false,
+        "left": {
+          "values": [],
+          "type": "QUESTION_ANSWER",
+          "label": "Supervisor Name:",
+          "valueReference": "ff6a1bfc-1e4e-6474-cfc6-4864e023d8cb",
+          "fieldType": null,
+          "value": null
+        },
+        "right": {
+          "values": [],
+          "type": "STRING",
+          "label": null,
+          "valueReference": null,
+          "fieldType": null,
+          "value": null
+        }
+      }
+    },
+    {
+      "name": "Retrieve DWP-SRM-SLA Data",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "weDWP:DWP-SRM-SLA-DefinitionMeasurement",
+        "tableName": "weDWP:DWP-SRM-SLA-DefinitionMeasurement",
+        "mappings": [
+          {
+            "fieldName": "Disclaimer__c",
+            "fieldId": "536870920",
+            "questionLabel": "Disclaimer:",
+            "questionId": "778b39a9-baa4-2b4f-cc81-d7603ade67d0"
+          },
+          {
+            "fieldName": "WO Template Name",
+            "fieldId": "536870925",
+            "questionLabel": "DWP-SRM-SLA-template-name",
+            "questionId": "acdb500f-3139-6fab-c60e-242845c8c6b2"
+          },
+          {
+            "fieldName": "Has a Disclaimer",
+            "fieldId": "536870937",
+            "questionLabel": "DWP-SRM-SLA-has-a-disclaimer",
+            "questionId": "cd755772-d2b2-cbce-cc1d-04ae025300fe"
+          },
+          {
+            "fieldName": "Requested Item__c",
+            "fieldId": "536870940",
+            "questionLabel": "DWP-SRM-SLA-requested-item",
+            "questionId": "8411ba9a-d6c7-59c7-6e9b-4c4ef8503db5"
+          },
+          {
+            "fieldName": "Sub Process__c",
+            "fieldId": "536870941",
+            "questionLabel": "DWP-SRM-SLA-sub process",
+            "questionId": "894a149f-32c1-7068-9f74-aa3e53aeff45"
+          }
+        ],
+        "qualification": {
+          "operator": "AND",
+          "withParentheses": false,
+          "left": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Form Tier 1",
+              "valueReference": "536870913",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "QUESTION_ANSWER",
+              "label": "DWP-SRM-SLA-service-name",
+              "valueReference": "ab6a0aa9-2cc4-8717-4c42-0ad541b63803",
+              "fieldType": null,
+              "value": null
+            }
+          },
+          "right": {
+            "operator": "AND",
+            "withParentheses": false,
+            "left": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Form Tier 2",
+                "valueReference": "536870914",
+                "fieldType": "TEXT",
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "What are you looking to do?",
+                "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+                "fieldType": null,
+                "value": null
+              }
+            },
+            "right": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "OR",
+                "withParentheses": true,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "FIELD",
+                    "label": "Form Tier 3",
+                    "valueReference": "536870921",
+                    "fieldType": "TEXT",
+                    "value": null
+                  },
+                  "right": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Fulfillment Type - Standard VDI",
+                    "valueReference": "c383c7e7-23f7-da1e-7040-c75cabd201b3",
+                    "fieldType": null,
+                    "value": null
+                  }
+                },
+                "right": {
+                  "operator": "OR",
+                  "withParentheses": false,
+                  "left": {
+                    "operator": "EQUALS",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "FIELD",
+                      "label": "Form Tier 3",
+                      "valueReference": "536870921",
+                      "fieldType": "TEXT",
+                      "value": null
+                    },
+                    "right": {
+                      "values": [],
+                      "type": "QUESTION_ANSWER",
+                      "label": "Fulfillment Type - GPU VDI",
+                      "valueReference": "e290cc5e-f079-4992-19f0-ee7c5d076a44",
+                      "fieldType": null,
+                      "value": null
+                    }
+                  },
+                  "right": {
+                    "operator": "OR",
+                    "withParentheses": false,
+                    "left": {
+                      "operator": "EQUALS",
+                      "withParentheses": false,
+                      "left": {
+                        "values": [],
+                        "type": "FIELD",
+                        "label": "Form Tier 3",
+                        "valueReference": "536870921",
+                        "fieldType": "TEXT",
+                        "value": null
+                      },
+                      "right": {
+                        "values": [],
+                        "type": "QUESTION_ANSWER",
+                        "label": "Fulfillment Type - OpenCIS VDI",
+                        "valueReference": "9eaaefdb-a30f-9aa2-e133-40aa58cb0bee",
+                        "fieldType": null,
+                        "value": null
+                      }
+                    },
+                    "right": {
+                      "operator": "OR",
+                      "withParentheses": false,
+                      "left": {
+                        "operator": "EQUALS",
+                        "withParentheses": false,
+                        "left": {
+                          "values": [],
+                          "type": "FIELD",
+                          "label": "Form Tier 3",
+                          "valueReference": "536870921",
+                          "fieldType": "TEXT",
+                          "value": null
+                        },
+                        "right": {
+                          "values": [],
+                          "type": "QUESTION_ANSWER",
+                          "label": "Fulfillment Type - Hosted Apps",
+                          "valueReference": "d93051b7-a30a-9c5b-52a1-e7a656d912cd",
+                          "fieldType": null,
+                          "value": null
+                        }
+                      },
+                      "right": {
+                        "operator": "OR",
+                        "withParentheses": false,
+                        "left": {
+                          "operator": "EQUALS",
+                          "withParentheses": false,
+                          "left": {
+                            "values": [],
+                            "type": "FIELD",
+                            "label": "Form Tier 3",
+                            "valueReference": "536870921",
+                            "fieldType": "TEXT",
+                            "value": null
+                          },
+                          "right": {
+                            "values": [],
+                            "type": "QUESTION_ANSWER",
+                            "label": "Fulfillment Type - Override",
+                            "valueReference": "514ec288-0163-63e6-c2f5-a9146e34f629",
+                            "fieldType": null,
+                            "value": null
+                          }
+                        },
+                        "right": {
+                          "operator": "OR",
+                          "withParentheses": false,
+                          "left": {
+                            "operator": "EQUALS",
+                            "withParentheses": false,
+                            "left": {
+                              "values": [],
+                              "type": "FIELD",
+                              "label": "Form Tier 3",
+                              "valueReference": "536870921",
+                              "fieldType": "TEXT",
+                              "value": null
+                            },
+                            "right": {
+                              "values": [],
+                              "type": "QUESTION_ANSWER",
+                              "label": "Fulfillment Type - Retire VDI",
+                              "valueReference": "a1c60dac-6091-e5c6-80b1-02c221144f9a",
+                              "fieldType": null,
+                              "value": null
+                            }
+                          },
+                          "right": {
+                            "operator": "OR",
+                            "withParentheses": false,
+                            "left": {
+                              "operator": "EQUALS",
+                              "withParentheses": false,
+                              "left": {
+                                "values": [],
+                                "type": "FIELD",
+                                "label": "Form Tier 3",
+                                "valueReference": "536870921",
+                                "fieldType": "TEXT",
+                                "value": null
+                              },
+                              "right": {
+                                "values": [],
+                                "type": "QUESTION_ANSWER",
+                                "label": "Fulfillment Type - OpenCIS VDI",
+                                "valueReference": "99be42ce-c9fc-bdc4-2184-382b8237779e",
+                                "fieldType": null,
+                                "value": null
+                              }
+                            },
+                            "right": {
+                              "operator": "OR",
+                              "withParentheses": false,
+                              "left": {
+                                "operator": "EQUALS",
+                                "withParentheses": false,
+                                "left": {
+                                  "values": [],
+                                  "type": "FIELD",
+                                  "label": "Form Tier 3",
+                                  "valueReference": "536870921",
+                                  "fieldType": "TEXT",
+                                  "value": null
+                                },
+                                "right": {
+                                  "values": [],
+                                  "type": "QUESTION_ANSWER",
+                                  "label": "Fulfillment Type - Hosted Apps",
+                                  "valueReference": "3284283e-8c71-3aee-a400-9732036c7952",
+                                  "fieldType": null,
+                                  "value": null
+                                }
+                              },
+                              "right": {
+                                "operator": "EQUALS",
+                                "withParentheses": false,
+                                "left": {
+                                  "values": [],
+                                  "type": "FIELD",
+                                  "label": "Form Tier 3",
+                                  "valueReference": "536870921",
+                                  "fieldType": "TEXT",
+                                  "value": null
+                                },
+                                "right": {
+                                  "values": [],
+                                  "type": "QUESTION_ANSWER",
+                                  "label": "Fulfillment Type - Override",
+                                  "valueReference": "2fac6103-1a51-a006-b84c-e10a8068a412",
+                                  "fieldType": null,
+                                  "value": null
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Status",
+                  "valueReference": "7",
+                  "fieldType": "SELECTION",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Active"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Active"
+                }
+              }
+            }
+          }
+        }
+      },
+      "qualification": {
+        "operator": "AND",
+        "withParentheses": false,
+        "left": {
+          "operator": "NOT_EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "What are you looking to do?",
+            "valueReference": "10e33246-6e8a-d42c-7034-2479291f2568",
+            "fieldType": null,
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "STRING",
+            "label": null,
+            "valueReference": null,
+            "fieldType": null,
+            "value": null
+          }
+        },
+        "right": {
+          "operator": "OR",
+          "withParentheses": true,
+          "left": {
+            "operator": "NOT_EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "QUESTION_ANSWER",
+              "label": "Fulfillment Type - Retire VDI",
+              "valueReference": "a1c60dac-6091-e5c6-80b1-02c221144f9a",
+              "fieldType": null,
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": null
+            }
+          },
+          "right": {
+            "operator": "OR",
+            "withParentheses": false,
+            "left": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Fulfillment Type - Standard VDI",
+                "valueReference": "c383c7e7-23f7-da1e-7040-c75cabd201b3",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            },
+            "right": {
+              "operator": "OR",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Fulfillment Type - GPU VDI",
+                  "valueReference": "e290cc5e-f079-4992-19f0-ee7c5d076a44",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              },
+              "right": {
+                "operator": "OR",
+                "withParentheses": false,
+                "left": {
+                  "operator": "NOT_EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Fulfillment Type - OpenCIS VDI",
+                    "valueReference": "9eaaefdb-a30f-9aa2-e133-40aa58cb0bee",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [],
+                    "type": "STRING",
+                    "label": null,
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": null
+                  }
+                },
+                "right": {
+                  "operator": "OR",
+                  "withParentheses": false,
+                  "left": {
+                    "operator": "NOT_EQUALS",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "QUESTION_ANSWER",
+                      "label": "Fulfillment Type - OpenCIS VDI",
+                      "valueReference": "99be42ce-c9fc-bdc4-2184-382b8237779e",
+                      "fieldType": null,
+                      "value": null
+                    },
+                    "right": {
+                      "values": [],
+                      "type": "STRING",
+                      "label": null,
+                      "valueReference": null,
+                      "fieldType": null,
+                      "value": null
+                    }
+                  },
+                  "right": {
+                    "operator": "OR",
+                    "withParentheses": false,
+                    "left": {
+                      "operator": "NOT_EQUALS",
+                      "withParentheses": false,
+                      "left": {
+                        "values": [],
+                        "type": "QUESTION_ANSWER",
+                        "label": "Fulfillment Type - Hosted Apps",
+                        "valueReference": "d93051b7-a30a-9c5b-52a1-e7a656d912cd",
+                        "fieldType": null,
+                        "value": null
+                      },
+                      "right": {
+                        "values": [],
+                        "type": "STRING",
+                        "label": null,
+                        "valueReference": null,
+                        "fieldType": null,
+                        "value": null
+                      }
+                    },
+                    "right": {
+                      "operator": "OR",
+                      "withParentheses": false,
+                      "left": {
+                        "operator": "NOT_EQUALS",
+                        "withParentheses": false,
+                        "left": {
+                          "values": [],
+                          "type": "QUESTION_ANSWER",
+                          "label": "Fulfillment Type - Hosted Apps",
+                          "valueReference": "3284283e-8c71-3aee-a400-9732036c7952",
+                          "fieldType": null,
+                          "value": null
+                        },
+                        "right": {
+                          "values": [],
+                          "type": "STRING",
+                          "label": null,
+                          "valueReference": null,
+                          "fieldType": null,
+                          "value": null
+                        }
+                      },
+                      "right": {
+                        "operator": "OR",
+                        "withParentheses": false,
+                        "left": {
+                          "operator": "NOT_EQUALS",
+                          "withParentheses": false,
+                          "left": {
+                            "values": [],
+                            "type": "QUESTION_ANSWER",
+                            "label": "Fulfillment Type - Override",
+                            "valueReference": "514ec288-0163-63e6-c2f5-a9146e34f629",
+                            "fieldType": null,
+                            "value": null
+                          },
+                          "right": {
+                            "values": [],
+                            "type": "STRING",
+                            "label": null,
+                            "valueReference": null,
+                            "fieldType": null,
+                            "value": null
+                          }
+                        },
+                        "right": {
+                          "operator": "NOT_EQUALS",
+                          "withParentheses": false,
+                          "left": {
+                            "values": [],
+                            "type": "QUESTION_ANSWER",
+                            "label": "Fulfillment Type - Override",
+                            "valueReference": "2fac6103-1a51-a006-b84c-e10a8068a412",
+                            "fieldType": null,
+                            "value": null
+                          },
+                          "right": {
+                            "values": [],
+                            "type": "STRING",
+                            "label": null,
+                            "valueReference": null,
+                            "fieldType": null,
+                            "value": null
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Retrieve Initial Device type",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "1",
+        "tableId": "weAST:AST-PersonalVDIPeopleJoin",
+        "tableName": "weAST:AST-PersonalVDIPeopleJoin",
+        "mappings": [
+          {
+            "fieldName": "Configuration Type__c",
+            "fieldId": "536870913",
+            "questionLabel": "Initial Device Type",
+            "questionId": "667e287c-4ffe-75dd-9485-2360943935e5"
+          }
+        ],
+        "qualification": {
+          "operator": "EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "FIELD",
+            "label": "Name__c",
+            "valueReference": "200000020",
+            "fieldType": "TEXT",
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Name of VDI to retire:",
+            "valueReference": "9b1311a9-1701-f802-a504-a3b358b26cfe",
+            "fieldType": null,
+            "value": null
+          }
+        }
+      },
+      "qualification": {
+        "operator": "NOT_EQUALS",
+        "withParentheses": false,
+        "left": {
+          "values": [],
+          "type": "QUESTION_ANSWER",
+          "label": "Name of VDI to retire:",
+          "valueReference": "9b1311a9-1701-f802-a504-a3b358b26cfe",
+          "fieldType": null,
+          "value": null
+        },
+        "right": {
+          "values": [],
+          "type": "STRING",
+          "label": null,
+          "valueReference": null,
+          "fieldType": null,
+          "value": null
+        }
+      }
+    },
+    {
+      "name": "Retreive Secondary Device Type",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "1",
+        "tableId": "weAST:AST-PersonalVDI",
+        "tableName": "weAST:AST-PersonalVDI",
+        "mappings": [
+          {
+            "fieldName": "Configuration Type",
+            "fieldId": "536870913",
+            "questionLabel": "Secondary Device Type",
+            "questionId": "c7f9a5a0-6c19-e73e-766c-aba49dae2c93"
+          }
+        ],
+        "qualification": {
+          "operator": "EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "FIELD",
+            "label": "Name__c",
+            "valueReference": "200000020",
+            "fieldType": "TEXT",
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Secondary Device Lookup",
+            "valueReference": "a5008824-efa9-d6f2-b09c-e3097965272d",
+            "fieldType": null,
+            "value": null
+          }
+        }
+      },
+      "qualification": {
+        "operator": "NOT_EQUALS",
+        "withParentheses": false,
+        "left": {
+          "values": [],
+          "type": "QUESTION_ANSWER",
+          "label": "Secondary Device Lookup",
+          "valueReference": "a5008824-efa9-d6f2-b09c-e3097965272d",
+          "fieldType": null,
+          "value": null
+        },
+        "right": {
+          "values": [],
+          "type": "STRING",
+          "label": null,
+          "valueReference": null,
+          "fieldType": null,
+          "value": null
+        }
+      }
+    }
+  ],
+  "showActions": false,
+  "useDefaultLanguage": false
+}

@@ -1,0 +1,89 @@
+====================================================================================================
+TEST PLAN (V4) - Headset and Other Phone Accessories_20250407133638569
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 3
+Total test cases: 2
+Reachable questions: 18
+Min questions per case: 9
+Max questions per case: 17
+Avg questions per case: 13.0
+Coverage: 18/18 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q2: Requesting:
+  Options: Add, Problem
+Q3: Is this WBS, I/O or PM order going to be split?
+  Options: Yes, No
+Q14: Product Needed:
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (Requesting:): Add
+  Q3 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q14 (Product Needed:): [Not assigned]
+
+Visible questions (17):
+  DATA COLLECTION (enter any valid value): Q4, Q8, Q9, Q10, Q11, Q12, Q13, Q19, Q26, Q28, Q29, Q32, Q34, Q37
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (Requesting:): Problem
+
+Visible questions (9):
+  DATA COLLECTION (enter any valid value): Q19, Q26, Q28, Q29, Q30, Q32, Q34, Q37
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q2: Requesting: (TEST VAR)
+Q3: Is this WBS, I/O or PM order going to be split? (TEST VAR)
+Q4: WBS, I/O, PM Order (DATA COL)
+Q8: Percent Split: Element One (DATA COL)
+Q9: Second: WBS, I/O or PM Order (DATA COL)
+Q10: Percent Split: Element Two (DATA COL)
+Q11: Site/Location (DATA COL)
+Q12: Acknowledgement: (DATA COL)
+Q13: Mail Drop/Delivery instructions: (DATA COL)
+Q14: Product Needed: (TEST VAR)
+Q19: Disclaimer: (DATA COL)
+Q26: Provide Headset information when not listed in the table above: (Manufacturer, Model, Description) (DATA COL)
+Q28: Requested delivery date: (DATA COL)
+Q29: Business justification: (DATA COL)
+Q30: Description of the problem: (DATA COL)
+Q32: Supervisor Name (DATA COL)
+Q34: Comments: (DATA COL)
+Q37: Comments: (DATA COL)
+

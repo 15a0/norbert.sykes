@@ -1,0 +1,133 @@
+====================================================================================================
+TEST PLAN (V4) - Active Directory Secure Group
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 3
+Total test cases: 5
+Reachable questions: 36
+Min questions per case: 13
+Max questions per case: 18
+Avg questions per case: 14.8
+Coverage: 36/36 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q3: I need to:
+  Options: Add an account or device to existing AD group, Remove an account or device from existing AD group, Create a new AD group, Update AD group owner, description, approver, remarks or notes, Move/Copy secure AD group from one PC to another PC, Remove secure AD group from computer
+Q10: Domain:
+  Options: Corp, Stg-Corp, Dev-Corp, Other
+Q29: Are you going to want an approver for future additions to this group?
+  Options: Yes, No
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I need to:): Create a new AD group
+  Q10 (Domain:): Corp
+  Q29 (Are you going to want an approver for future additions to this group?): Yes
+
+Visible questions (18):
+  DATA COLLECTION (enter any valid value): Q2, Q9, Q12, Q15, Q16, Q17, Q25, Q26, Q27, Q28, Q30, Q33, Q42, Q44, Q45
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I need to:): Update AD group owner, description, approver, remarks or notes
+
+Visible questions (16):
+  DATA COLLECTION (enter any valid value): Q2, Q9, Q15, Q16, Q17, Q18, Q19, Q20, Q21, Q22, Q23, Q24, Q42, Q44, Q45
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I need to:): Move/Copy secure AD group from one PC to another PC
+
+Visible questions (14):
+  DATA COLLECTION (enter any valid value): Q2, Q9, Q15, Q16, Q17, Q34, Q35, Q36, Q37, Q41, Q42, Q44, Q45
+
+Test Case 4
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I need to:): Remove secure AD group from computer
+
+Visible questions (13):
+  DATA COLLECTION (enter any valid value): Q2, Q9, Q15, Q16, Q17, Q38, Q39, Q40, Q41, Q42, Q44, Q45
+
+Test Case 5
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I need to:): Add an account or device to existing AD group
+  Q10 (Domain:): Other
+
+Visible questions (13):
+  DATA COLLECTION (enter any valid value): Q2, Q9, Q11, Q13, Q14, Q15, Q16, Q17, Q42, Q44, Q45
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q2: Unknown (DATA COL)
+Q3: I need to: (TEST VAR)
+Q9: DWP-SRM-SLA-disclaimer (DATA COL)
+Q10: Domain: (TEST VAR)
+Q11: Other: (DATA COL)
+Q12: AD group(s) name(s): (DATA COL)
+Q13: AD group(s) name(s): (DATA COL)
+Q14: Account(s) or device(s): (DATA COL)
+Q15: Unknown (DATA COL)
+Q16: AD group(s) name(s): (DATA COL)
+Q17: Owner(s): (DATA COL)
+Q18: AD group(s) name(s): (DATA COL)
+Q19: Current Approver(s) to be removed: (DATA COL)
+Q20: New Approver(s): (DATA COL)
+Q21: Description: (DATA COL)
+Q22: Remarks: (DATA COL)
+Q23: Owner(s): (DATA COL)
+Q24: Notes: (DATA COL)
+Q25: Security or distribution (mail) group? (DATA COL)
+Q26: Description/purpose: (DATA COL)
+Q27: Owner(s): (DATA COL)
+Q28: Member(s): (DATA COL)
+Q29: Are you going to want an approver for future additions to this group? (TEST VAR)
+Q30: Approver(s): (DATA COL)
+Q33: Special handling requirements: (DATA COL)
+Q34: Secure group name(s) to copy: (DATA COL)
+Q35: Current PC name: (DATA COL)
+Q36: New PC name: (DATA COL)
+Q37: Swap Date Time: (DATA COL)
+Q38: PC name(s) to remove groups from: (DATA COL)
+Q39: Secure group name(s) to remove: (DATA COL)
+Q40: Additional information: (DATA COL)
+Q41: Attach screenshot: (DATA COL)
+Q42: Business justification/reason for request: (DATA COL)
+Q44: Comments: (DATA COL)
+Q45: Comments: (DATA COL)
+

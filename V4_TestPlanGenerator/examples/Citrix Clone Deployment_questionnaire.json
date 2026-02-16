@@ -1,0 +1,1578 @@
+{
+  "id": null,
+  "guid": null,
+  "createDate": null,
+  "modifiedDate": null,
+  "rxId": null,
+  "summary": null,
+  "serviceRevisionId": null,
+  "workflowId": "rx-7556c683-5937-4615-9294-0bff7c3b233b",
+  "questionnaireGroupId": "9fe5b004-80e9-4cfb-9450-30f1e3cd235a",
+  "name": "Citrix Clone Deployment",
+  "bulkRequestedForUserLimit": 1,
+  "pages": [
+    {
+      "id": "d57d4f75-6dae-cd16-a01b-f3a860d75e13",
+      "externalId": null,
+      "perUser": false,
+      "title": "",
+      "pageItems": [
+        {
+          "type": "TextField",
+          "id": "db2cec3a-c805-c636-6f4c-cfbf50315734",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-service-name",
+          "description": null,
+          "required": false,
+          "template": "object:695",
+          "processInputId": 536870931,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "${service.name}",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "b28ffc6c-cb32-8719-27c4-967869b69f61",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-template-name",
+          "description": null,
+          "required": false,
+          "template": "object:698",
+          "processInputId": 536870932,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "DWP Citrix Clone Deployment",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "d203a418-bf08-9e13-b196-f515395d1378",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-requested-item",
+          "description": null,
+          "required": false,
+          "template": "object:700",
+          "processInputId": 536870933,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "6072de2e-e7db-2c44-008f-caff4ff10590",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-has-a-disclaimer",
+          "description": null,
+          "required": false,
+          "template": "object:699",
+          "processInputId": 536870937,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "61245cac-6257-638c-348f-f5aeb318096e",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-sub-process",
+          "description": null,
+          "required": false,
+          "template": "object:701",
+          "processInputId": 536870929,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "08078b49-bc0c-dc98-8272-f31725573cae",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "DWP-SRM-SLA-has-a-disclaimer",
+                "valueReference": "6072de2e-e7db-2c44-008f-caff4ff10590",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "0"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "0"
+              }
+            }
+          },
+          "label": "Disclaimer:",
+          "description": null,
+          "required": false,
+          "template": "object:702",
+          "processInputId": 536870935,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "5bd61aa5-7062-eba6-f0ae-e3fc3967b3c2",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "WBS, I/O, PM Order:",
+          "description": null,
+          "required": true,
+          "template": "object:696",
+          "processInputId": 536870918,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Is this WBS, I/O or PM Order going to be split?",
+          "description": null,
+          "required": true,
+          "template": "object:697",
+          "processInputId": 536870922,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "ca861cd6-4e41-1a3c-28c0-64a358b8fd85",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM Order going to be split?",
+                "valueReference": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Percent Split 1:",
+          "description": null,
+          "required": true,
+          "template": "object:703",
+          "processInputId": 536870914,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "bbb41fd4-2c24-48a8-34ad-e2f715335cb8",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM Order going to be split?",
+                "valueReference": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "WBS IO PM 2:",
+          "description": null,
+          "required": true,
+          "template": "object:704",
+          "processInputId": 536870917,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "0f6e98c6-fee8-940b-9991-53094cbb15d9",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM Order going to be split?",
+                "valueReference": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Percent Split 2:",
+          "description": null,
+          "required": true,
+          "template": "object:705",
+          "processInputId": 536870913,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "afcc61f3-c260-b569-5a06-8e4770fed3c9",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM Order going to be split?",
+                "valueReference": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "Percent Split 1:",
+          "description": null,
+          "required": false,
+          "template": "object:703",
+          "processInputId": 536870914,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "100",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "a1f1b613-8e00-b806-67e0-27a0141df8ef",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM Order going to be split?",
+                "valueReference": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "WBS IO PM 2:",
+          "description": null,
+          "required": false,
+          "template": "object:704",
+          "processInputId": 536870917,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "40d8189b-5fc3-15dc-57a6-2f112207a10a",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this WBS, I/O or PM Order going to be split?",
+                "valueReference": "24e77926-600e-bc16-2b6b-5fb9610aaf31",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "Percent Split 2:",
+          "description": null,
+          "required": false,
+          "template": "object:705",
+          "processInputId": 536870913,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "0",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "af2f0cc9-a0dc-e940-9e75-a9238b23e804",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Organization of Server Owner?",
+          "description": "<p>Select the organization of the Server&nbsp;owner.</p>",
+          "required": true,
+          "template": "object:706",
+          "processInputId": 536870923,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "CTM:People Organization",
+          "datasetName": "CTM:People Organization",
+          "datasetIdFieldId": "1000000010",
+          "datasetIdFieldName": "Organization",
+          "datasetNameFieldId": "1000000010",
+          "datasetNameFieldName": "Organization",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Status",
+              "valueReference": "7",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Enabled"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Enabled"
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Lookup",
+          "id": "1ca55955-a933-79b9-a3d5-811c89a03a8d",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Organization of Server Owner?",
+                "valueReference": "af2f0cc9-a0dc-e940-9e75-a9238b23e804",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "Server Owner:",
+          "description": "<p>Please specify the Server&nbsp;owner, If Server&nbsp;owner is not found, please select \"*Name Not Found\"</p>",
+          "required": true,
+          "template": "object:707",
+          "processInputId": 536870919,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "CTM:People",
+          "datasetName": "CTM:People",
+          "datasetIdFieldId": "1000000017",
+          "datasetIdFieldName": "Full Name",
+          "datasetNameFieldId": "1000000017",
+          "datasetNameFieldName": "Full Name",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "AND",
+            "withParentheses": false,
+            "left": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Profile Status",
+                "valueReference": "7",
+                "fieldType": "SELECTION",
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Enabled"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Enabled"
+              }
+            },
+            "right": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "OR",
+                "withParentheses": true,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "FIELD",
+                    "label": "Organization",
+                    "valueReference": "1000000010",
+                    "fieldType": "TEXT",
+                    "value": null
+                  },
+                  "right": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Organization of Server Owner?",
+                    "valueReference": "af2f0cc9-a0dc-e940-9e75-a9238b23e804",
+                    "fieldType": null,
+                    "value": null
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "FIELD",
+                    "label": "Full Name",
+                    "valueReference": "1000000017",
+                    "fieldType": "TEXT",
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "*Name Not Found"
+                    ],
+                    "type": "STRING",
+                    "label": null,
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "*Name Not Found"
+                  }
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Full Name",
+                  "valueReference": "1000000017",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "*Manager Not Found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "*Manager Not Found"
+                }
+              }
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "lookupThreshold": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "ed139e73-ffea-bc6b-53e5-a1c4bdafbbeb",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Project name:",
+          "description": "<p>If no specific project, enter N/A.</p>",
+          "required": true,
+          "template": "object:708",
+          "processInputId": 536870920,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "01eccd81-01ec-29e7-6cc8-4257b4db585d",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Citrix Golden Image Name",
+          "description": "<p>Specify the name of the Citrix golden image to be deployed.</p>",
+          "required": true,
+          "template": "object:709",
+          "processInputId": 536870924,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "weDWP:DWP-SRM-CitrixGoldenImageNames",
+          "datasetName": "weDWP:DWP-SRM-CitrixGoldenImageNames",
+          "datasetIdFieldId": "8",
+          "datasetIdFieldName": "Golden_Image_Name",
+          "datasetNameFieldId": "8",
+          "datasetNameFieldName": "Golden_Image_Name",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Status",
+              "valueReference": "7",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Active"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Active"
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "b8796039-5ffb-8284-5774-56c0deabfc38",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Citrix Golden Image Name",
+                "valueReference": "01eccd81-01ec-29e7-6cc8-4257b4db585d",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "Prod Image Deployment",
+          "description": null,
+          "required": false,
+          "template": "object:710",
+          "processInputId": 536870927,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Lookup",
+          "id": "de55638e-6d00-b46b-bb7a-ad03b6417a62",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Prod Image Deployment",
+                "valueReference": "b8796039-5ffb-8284-5774-56c0deabfc38",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Approved CRQ Number",
+          "description": "<p>Must be one of the following status values; \u201cScheduled\u201d, \u201cImplementation In Progress\u201d or \u201cRequest For Authorization\u201d.</p>",
+          "required": true,
+          "template": "object:711",
+          "processInputId": 536870925,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "CHG:ChangeInterface",
+          "datasetName": "CHG:ChangeInterface",
+          "datasetIdFieldId": "1000000182",
+          "datasetIdFieldName": "Infrastructure Change ID",
+          "datasetNameFieldId": "1000000182",
+          "datasetNameFieldName": "Infrastructure Change ID",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "OR",
+            "withParentheses": false,
+            "left": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Change Request Status",
+                "valueReference": "7",
+                "fieldType": "SELECTION",
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Scheduled"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Scheduled"
+              }
+            },
+            "right": {
+              "operator": "OR",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Change Request Status",
+                  "valueReference": "7",
+                  "fieldType": "SELECTION",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Implementation In Progress"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Implementation In Progress"
+                }
+              },
+              "right": {
+                "operator": "OR",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "FIELD",
+                    "label": "Change Request Status",
+                    "valueReference": "7",
+                    "fieldType": "SELECTION",
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Request For Authorization"
+                    ],
+                    "type": "STRING",
+                    "label": null,
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Request For Authorization"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "FIELD",
+                    "label": "Change Request Status",
+                    "valueReference": "7",
+                    "fieldType": "SELECTION",
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Scheduled For Approval"
+                    ],
+                    "type": "STRING",
+                    "label": null,
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Scheduled For Approval"
+                  }
+                }
+              }
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "lookupThreshold": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "29997662-8aaa-730a-5e0b-d23b60ad6845",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Prod Image Deployment",
+                "valueReference": "b8796039-5ffb-8284-5774-56c0deabfc38",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Approved CRQ Number",
+          "description": null,
+          "required": false,
+          "template": "object:712",
+          "processInputId": 536870925,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "97b753a2-2cb3-f9ee-75e6-bada5947c8d8",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Reason for Deployment:",
+          "description": null,
+          "required": true,
+          "template": "object:713",
+          "processInputId": 536870916,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "5978b4ec-63e7-c218-1697-4deda7be03f7",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Who will reboot the clones?",
+          "description": null,
+          "required": true,
+          "template": "object:714",
+          "processInputId": 536870928,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "My team will reboot them",
+              "displayValue": "My team will reboot them",
+              "disabled": false
+            },
+            {
+              "dataValue": "Clones will reboot on existing automated reboot schedule",
+              "displayValue": "Clones will reboot on existing automated reboot schedule",
+              "disabled": false
+            },
+            {
+              "dataValue": "Need reboot scheduled separate from weekly automated reboot schedule",
+              "displayValue": "Need reboot scheduled separate from weekly automated reboot schedule",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DateTimeField",
+          "id": "96b8ad9a-e4a7-7336-49bc-b815e3153c7a",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "OR",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Who will reboot the clones?",
+                  "valueReference": "5978b4ec-63e7-c218-1697-4deda7be03f7",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "My team will reboot them"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "My team will reboot them",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "My team will reboot them"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Who will reboot the clones?",
+                  "valueReference": "5978b4ec-63e7-c218-1697-4deda7be03f7",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Clones will reboot on existing automated reboot schedule"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Clones will reboot on existing automated reboot schedule",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Clones will reboot on existing automated reboot schedule"
+                }
+              }
+            }
+          },
+          "label": "Deadline for clones to be prepped for reboot:",
+          "description": "<p><strong>Notice: At least 24-hour advance notice, more if possible, must be provided for Citrix clone deployments.</strong></p>",
+          "required": true,
+          "template": "object:715",
+          "processInputId": 536870921,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "zonedDefaultAnswer": null,
+          "timezoneId": null,
+          "min": {
+            "limitType": "NO_LIMIT"
+          },
+          "max": {
+            "limitType": "NO_LIMIT"
+          },
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DateTimeField",
+          "id": "6f0858d0-679d-e11f-9109-d3b6676f0595",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "5978b4ec-63e7-c218-1697-4deda7be03f7",
+            "leadingQuestionExpectedAnswers": [
+              "Need reboot scheduled separate from weekly automated reboot schedule"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Who will reboot the clones?",
+                "valueReference": "5978b4ec-63e7-c218-1697-4deda7be03f7",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Need reboot scheduled separate from weekly automated reboot schedule"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Need reboot scheduled separate from weekly automated reboot schedule",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Need reboot scheduled separate from weekly automated reboot schedule"
+              }
+            }
+          },
+          "label": "Date and time clones should be rebooted:",
+          "description": "<p><strong>Notice: At least 24-hour advance notice, more if possible, must be provided for Citrix clone deployments.</strong></p>",
+          "required": true,
+          "template": "object:715",
+          "processInputId": 536870921,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "zonedDefaultAnswer": null,
+          "timezoneId": null,
+          "min": {
+            "limitType": "NO_LIMIT"
+          },
+          "max": {
+            "limitType": "NO_LIMIT"
+          },
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "a0a724d5-49a5-7065-2684-55c045c4ee17",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Customer",
+          "description": null,
+          "required": false,
+          "template": "object:716",
+          "processInputId": 536870926,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "${requestedFor.fullName}",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "be07fb0c-6fcf-16ac-0c78-1313857fd64b",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "a0a724d5-49a5-7065-2684-55c045c4ee17",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Not Found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Not Found"
+              }
+            }
+          },
+          "label": "Comments:",
+          "description": null,
+          "required": false,
+          "template": "object:717",
+          "processInputId": 536870915,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "269c5c0d-3f0e-a88c-db09-2321686e241b",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "a0a724d5-49a5-7065-2684-55c045c4ee17",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Not Found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Not Found"
+              }
+            }
+          },
+          "label": "Comments:",
+          "description": "<p><strong>If \u2018Name Not Found\u2019 is selected, indicate the following information, if known: &nbsp;recipient\u2019s name, corporate ID, company, department, and phone number</strong></p>",
+          "required": true,
+          "template": "object:717",
+          "processInputId": 536870915,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "name": "Retrieve deployment type",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "weDWP:DWP-SRM-CitrixGoldenImageNames",
+        "tableName": "weDWP:DWP-SRM-CitrixGoldenImageNames",
+        "mappings": [
+          {
+            "fieldName": "Prod__c",
+            "fieldId": "536870913",
+            "questionLabel": "Prod Image Deployment",
+            "questionId": "b8796039-5ffb-8284-5774-56c0deabfc38"
+          }
+        ],
+        "qualification": {
+          "operator": "EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "FIELD",
+            "label": "Golden_Image_Name",
+            "valueReference": "8",
+            "fieldType": "TEXT",
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Citrix Golden Image Name",
+            "valueReference": "01eccd81-01ec-29e7-6cc8-4257b4db585d",
+            "fieldType": null,
+            "value": null
+          }
+        }
+      },
+      "qualification": {
+        "operator": "NOT_EQUALS",
+        "withParentheses": false,
+        "left": {
+          "values": [],
+          "type": "QUESTION_ANSWER",
+          "label": "Citrix Golden Image Name",
+          "valueReference": "01eccd81-01ec-29e7-6cc8-4257b4db585d",
+          "fieldType": null,
+          "value": null
+        },
+        "right": {
+          "values": [],
+          "type": "STRING",
+          "label": null,
+          "valueReference": null,
+          "fieldType": null,
+          "value": null
+        }
+      }
+    },
+    {
+      "name": "Retrieve DWP-SRM-SLA Data",
+      "type": "OPEN_QUESTIONNAIRE",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "weDWP:DWP-SRM-SLA-DefinitionMeasurement",
+        "tableName": "weDWP:DWP-SRM-SLA-DefinitionMeasurement",
+        "mappings": [
+          {
+            "fieldName": "WO Template Name",
+            "fieldId": "536870925",
+            "questionLabel": "DWP-SRM-SLA-template-name",
+            "questionId": "b28ffc6c-cb32-8719-27c4-967869b69f61"
+          },
+          {
+            "fieldName": "Has a Disclaimer",
+            "fieldId": "536870937",
+            "questionLabel": "DWP-SRM-SLA-has-a-disclaimer",
+            "questionId": "6072de2e-e7db-2c44-008f-caff4ff10590"
+          },
+          {
+            "fieldName": "Disclaimer__c",
+            "fieldId": "536870920",
+            "questionLabel": "Disclaimer:",
+            "questionId": "08078b49-bc0c-dc98-8272-f31725573cae"
+          },
+          {
+            "fieldName": "Requested Item__c",
+            "fieldId": "536870940",
+            "questionLabel": "DWP-SRM-SLA-requested-item",
+            "questionId": "d203a418-bf08-9e13-b196-f515395d1378"
+          },
+          {
+            "fieldName": "Sub Process__c",
+            "fieldId": "536870941",
+            "questionLabel": "DWP-SRM-SLA-sub-process",
+            "questionId": "61245cac-6257-638c-348f-f5aeb318096e"
+          }
+        ],
+        "qualification": {
+          "operator": "AND",
+          "withParentheses": false,
+          "left": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Form Tier 1",
+              "valueReference": "536870913",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "QUESTION_ANSWER",
+              "label": "DWP-SRM-SLA-service-name",
+              "valueReference": "db2cec3a-c805-c636-6f4c-cfbf50315734",
+              "fieldType": null,
+              "value": null
+            }
+          },
+          "right": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Status",
+              "valueReference": "7",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Active"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Active"
+            }
+          }
+        }
+      },
+      "qualification": null
+    }
+  ],
+  "showActions": false,
+  "useDefaultLanguage": false
+}

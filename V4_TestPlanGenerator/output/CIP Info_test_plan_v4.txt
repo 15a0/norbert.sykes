@@ -1,0 +1,89 @@
+====================================================================================================
+TEST PLAN (V4) - CIP Info
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 3
+Total test cases: 2
+Reachable questions: 15
+Min questions per case: 12
+Max questions per case: 12
+Avg questions per case: 12.0
+Coverage: 15/15 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q9: Employee type:
+  Options: Employee, Contractor
+Q10: CIP information type:
+  Options: Archer GRC, Corporate file share/SharePoint, DEMAXX file share, Patching SME, Remedy CMDB, SevOne, Other
+Q13: Request type:
+  Options: Add, Remove
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q9 (Employee type:): Employee
+  Q10 (CIP information type:): Other
+  Q13 (Request type:): Add
+
+Visible questions (12):
+  DATA COLLECTION (enter any valid value): Q3, Q4, Q6, Q11, Q18, Q19, Q22, Q25, Q26
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q9 (Employee type:): Employee
+  Q10 (CIP information type:): Remedy CMDB
+  Q13 (Request type:): Remove
+
+Visible questions (12):
+  DATA COLLECTION (enter any valid value): Q3, Q4, Q6, Q18, Q20, Q21, Q23, Q25, Q26
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q3: Approving Supervisor: (DATA COL)
+Q4: Supervisor Override: (DATA COL)
+Q6: Supervisor: (DATA COL)
+Q9: Employee type: (TEST VAR)
+Q10: CIP information type: (TEST VAR)
+Q11: Other: (DATA COL)
+Q13: Request type: (TEST VAR)
+Q18: Disclaimer: (DATA COL)
+Q19: Requested start date: (DATA COL)
+Q20: Unknown (DATA COL)
+Q21: Request removal date and time: (DATA COL)
+Q22: Reason for request: (DATA COL)
+Q23: Reason for removal: (DATA COL)
+Q25: Comments: (DATA COL)
+Q26: Comments: (DATA COL)
+

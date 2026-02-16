@@ -1,0 +1,172 @@
+====================================================================================================
+TEST PLAN (V4) - Corporate workstation and accessories
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 11
+Total test cases: 6
+Reachable questions: 35
+Min questions per case: 8
+Max questions per case: 25
+Avg questions per case: 15.7
+Coverage: 35/35 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q2: Request type:
+  Options: New, Collect, I have a problem
+Q8: Hardware type
+  Options: Bundle, Other, Both
+Q10: Which one of these packages do you need?
+  Options: Desktop bundle (includes desktop, 2 monitors, keyboard, external camera and mouse), PC only, Laptop bundle, two monitors (includes laptop, docking station, 2 monitors, keyboard, mouse, wired headset and external camera), Laptop bundle, one monitor (includes laptop, docking station, 1 monitor, keyboard, mouse and wired headset ), Laptop bundle, no monitor (includes laptop and wired headset ), Laptop only
+Q12: Is this device for a CAD Designer, IT App Developer, or Engineer that requires specialized software?
+  Options: Yes, No
+Q16: Additional IT hardware:
+  Options: Laptop hotel bundle, Web camera, Wireless keyboard/mouse, Monitor, Docking Station, USBC to Ethernet adapter, HP power adapter, iPad wall power adapter, Replacement battery, Panasonic wall power adapter, Panasonic car power adapter, Vehicle mount, Other
+Q20: Request pertains to:
+  Options: Desktop, Laptop, Ruggedized device, Web camera, Wireless keyboard/mouse, Monitor, Docking station, USB to Ethernet adapter, HP power adaptor, iPad wall power adaptor, Replacement battery, Panasonic wall power adaptor, Panasonic car power adaptor, Vehicle mount, Other
+Q22: Device name:
+Q32: Is this WBS, I/O or PM order going to be split?
+  Options: Yes, No
+Q55: Recipient's primary site:
+Q56: Is the Recipient's primary site above correct?
+  Options: Yes, No
+Q57: Recipient's primary site:
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (Request type:): New
+  Q8 (Hardware type): Both
+  Q10 (Which one of these packages do you need?): Desktop bundle (includes desktop, 2 monitors, keyboard, external camera and mouse)
+  Q12 (Is this device for a CAD Designer, IT App Developer, or Engineer that requires specialized software?): Yes
+  Q16 (Additional IT hardware:): Laptop hotel bundle
+  Q32 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q55 (Recipient's primary site:): [Not assigned]
+  Q56 (Is the Recipient's primary site above correct?): Yes
+
+Visible questions (25):
+  DATA COLLECTION (enter any valid value): Q7, Q9, Q13, Q15, Q24, Q33, Q37, Q38, Q39, Q40, Q41, Q44, Q48, Q49, Q51, Q52, Q58
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (Request type:): Collect
+
+Visible questions (10):
+  DATA COLLECTION (enter any valid value): Q7, Q24, Q40, Q42, Q43, Q45, Q46, Q48, Q52
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (Request type:): I have a problem
+  Q20 (Request pertains to:): Other
+
+Visible questions (9):
+  DATA COLLECTION (enter any valid value): Q7, Q21, Q23, Q24, Q40, Q48, Q52
+
+Test Case 4
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (Request type:): New
+  Q8 (Hardware type): Other
+  Q16 (Additional IT hardware:): Other
+  Q32 (Is this WBS, I/O or PM order going to be split?): Yes
+  Q55 (Recipient's primary site:): [Not assigned]
+  Q56 (Is the Recipient's primary site above correct?): Yes
+
+Visible questions (22):
+  DATA COLLECTION (enter any valid value): Q7, Q9, Q18, Q24, Q33, Q37, Q38, Q39, Q40, Q41, Q44, Q48, Q49, Q51, Q52, Q58
+
+Test Case 5
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (Request type:): I have a problem
+  Q20 (Request pertains to:): Desktop
+  Q22 (Device name:): [Not assigned]
+
+Visible questions (8):
+  DATA COLLECTION (enter any valid value): Q7, Q24, Q40, Q48, Q52
+
+Test Case 6
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (Request type:): New
+  Q8 (Hardware type): Bundle
+  Q10 (Which one of these packages do you need?): Desktop bundle (includes desktop, 2 monitors, keyboard, external camera and mouse)
+  Q12 (Is this device for a CAD Designer, IT App Developer, or Engineer that requires specialized software?): Yes
+  Q55 (Recipient's primary site:): [Not assigned]
+  Q56 (Is the Recipient's primary site above correct?): No
+  Q57 (Recipient's primary site:): [Not assigned]
+
+Visible questions (20):
+  DATA COLLECTION (enter any valid value): Q7, Q9, Q13, Q15, Q24, Q40, Q41, Q44, Q48, Q49, Q51, Q52, Q58
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q2: Request type: (TEST VAR)
+Q7: Disclaimer: (DATA COL)
+Q8: Hardware type (TEST VAR)
+Q9: I have read and understood the guidelines: (DATA COL)
+Q10: Which one of these packages do you need? (TEST VAR)
+Q12: Is this device for a CAD Designer, IT App Developer, or Engineer that requires specialized software? (TEST VAR)
+Q13: List the software that will be used: (DATA COL)
+Q15: Is this for a new hire? (DATA COL)
+Q16: Additional IT hardware: (TEST VAR)
+Q18: Other: (DATA COL)
+Q20: Request pertains to: (TEST VAR)
+Q21: Other device type: (DATA COL)
+Q22: Device name: (TEST VAR)
+Q23: What is the device ID number? (DATA COL)
+Q24: Device lookup: (DATA COL)
+Q27: What is the device ID number? (DATA COL)
+Q32: Is this WBS, I/O or PM order going to be split? (TEST VAR)
+Q33: WBS, I/O, PM Order (DATA COL)
+Q37: Percent Split: Element One (DATA COL)
+Q38: Second: WBS, I/O or PM Order (DATA COL)
+Q39: Percent Split: Element Two (DATA COL)
+Q40: Reason for request: (DATA COL)
+Q41: Number of devices needed: (DATA COL)
+Q42: What is the device ID number(s)? (DATA COL)
+Q43: Where is the device(s) located? (DATA COL)
+Q44: Requested delivery date: (DATA COL)
+Q45: Requested retirement date: (DATA COL)
+Q46: Pickup instructions: (DATA COL)
+Q48: Comments: (DATA COL)
+Q49: Supervisor Name (DATA COL)
+Q51: Customer Site (DATA COL)
+Q52: Comments: (DATA COL)
+Q55: Recipient's primary site: (TEST VAR)
+Q56: Is the Recipient's primary site above correct? (TEST VAR)
+Q57: Recipient's primary site: (TEST VAR)
+Q58: Delivery instructions: (DATA COL)
+

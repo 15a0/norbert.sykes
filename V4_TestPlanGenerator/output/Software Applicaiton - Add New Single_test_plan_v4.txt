@@ -1,0 +1,241 @@
+====================================================================================================
+TEST PLAN (V4) - Software Applicaiton - Add New Single
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 16
+Total test cases: 6
+Reachable questions: 58
+Unreachable questions (excluded from coverage): 1
+Min questions per case: 41
+Max questions per case: 48
+Avg questions per case: 45.0
+Coverage: 58/58 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q8: Is this WBS, I/O, PM order going to be split?
+  Options: Yes, No
+Q16: Device name:
+Q22: Select 1st software title
+Q39: Is the software that you are requesting an upgraded version or title new to the organization?
+  Options: Yes - Existing software title, new version, Yes - New software title, No
+Q41: Is the software that you are requesting an upgraded version or title new to the organization?
+  Options: Yes - Existing software title, new version, Yes - New software title, No
+Q42: Is the software that you are requesting an upgraded version new to the organization?
+  Options: Yes - Existing software title, new version, No
+Q52: Is there a 2nd Software?
+  Options: No, Yes
+Q53: Select the 2nd Title:
+Q77: Is there a 3rd title?
+  Options: No, Yes
+Q78: Select the 3rd title:
+Q102: Is there a 4th title?
+  Options: No, Yes
+Q103: Select the 4th title:
+Q127: Is there a 5th title?
+  Options: No, Yes
+Q128: Select the 5th title:
+Q152: Customer:
+Q160: Supervisor Name  - Y
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q8 (Is this WBS, I/O, PM order going to be split?): Yes
+  Q39 (Is the software that you are requesting an upgraded version or title new to the organization?): Yes - Existing software title, new version
+  Q41 (Is the software that you are requesting an upgraded version or title new to the organization?): Yes - Existing software title, new version
+  Q52 (Is there a 2nd Software?): No
+  Q77 (Is there a 3rd title?): Yes
+  Q102 (Is there a 4th title?): No
+  Q152 (Customer:): [Not assigned]
+  Q160 (Supervisor Name  - Y): [Not assigned]
+
+Visible questions (48):
+  DATA COLLECTION (enter any valid value): Q6, Q9, Q13, Q14, Q15, Q18, Q20, Q21, Q38, Q40, Q43, Q49, Q51, Q54, Q70, Q71, Q74, Q76, Q79, Q94, Q95, Q96, Q99, Q101, Q120, Q121, Q124, Q129, Q145, Q146, Q149, Q151, Q159, Q162, Q163, Q164, Q165, Q166, Q167, Q179
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q8 (Is this WBS, I/O, PM order going to be split?): Yes
+  Q39 (Is the software that you are requesting an upgraded version or title new to the organization?): No
+  Q41 (Is the software that you are requesting an upgraded version or title new to the organization?): No
+  Q52 (Is there a 2nd Software?): No
+  Q102 (Is there a 4th title?): Yes
+  Q127 (Is there a 5th title?): No
+  Q152 (Customer:): [Not assigned]
+  Q160 (Supervisor Name  - Y): [Not assigned]
+
+Visible questions (48):
+  DATA COLLECTION (enter any valid value): Q6, Q9, Q13, Q14, Q15, Q18, Q20, Q21, Q38, Q40, Q46, Q49, Q51, Q70, Q71, Q74, Q79, Q95, Q96, Q99, Q101, Q104, Q119, Q120, Q121, Q124, Q126, Q129, Q145, Q146, Q149, Q151, Q159, Q162, Q163, Q164, Q165, Q166, Q167, Q179
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q8 (Is this WBS, I/O, PM order going to be split?): Yes
+  Q39 (Is the software that you are requesting an upgraded version or title new to the organization?): Yes - Existing software title, new version
+  Q41 (Is the software that you are requesting an upgraded version or title new to the organization?): Yes - Existing software title, new version
+  Q42 (Is the software that you are requesting an upgraded version new to the organization?): Yes - Existing software title, new version
+  Q52 (Is there a 2nd Software?): No
+  Q152 (Customer:): [Not assigned]
+  Q160 (Supervisor Name  - Y): [Not assigned]
+
+Visible questions (43):
+  DATA COLLECTION (enter any valid value): Q6, Q9, Q13, Q14, Q15, Q18, Q20, Q21, Q23, Q38, Q40, Q43, Q49, Q51, Q70, Q71, Q74, Q95, Q96, Q99, Q120, Q121, Q124, Q129, Q145, Q146, Q149, Q151, Q159, Q162, Q163, Q164, Q165, Q166, Q167, Q179
+
+Test Case 4
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q8 (Is this WBS, I/O, PM order going to be split?): Yes
+  Q39 (Is the software that you are requesting an upgraded version or title new to the organization?): Yes - New software title
+  Q41 (Is the software that you are requesting an upgraded version or title new to the organization?): Yes - Existing software title, new version
+  Q52 (Is there a 2nd Software?): No
+  Q152 (Customer:): [Not assigned]
+  Q160 (Supervisor Name  - Y): [Not assigned]
+
+Visible questions (41):
+  DATA COLLECTION (enter any valid value): Q6, Q9, Q13, Q14, Q15, Q18, Q20, Q21, Q38, Q40, Q45, Q49, Q51, Q70, Q71, Q74, Q95, Q96, Q99, Q120, Q121, Q124, Q129, Q145, Q146, Q149, Q151, Q159, Q162, Q163, Q164, Q165, Q166, Q167, Q179
+
+Test Case 5
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q8 (Is this WBS, I/O, PM order going to be split?): Yes
+  Q39 (Is the software that you are requesting an upgraded version or title new to the organization?): Yes - Existing software title, new version
+  Q41 (Is the software that you are requesting an upgraded version or title new to the organization?): Yes - Existing software title, new version
+  Q52 (Is there a 2nd Software?): Yes
+  Q77 (Is there a 3rd title?): No
+  Q152 (Customer:): [Not assigned]
+  Q160 (Supervisor Name  - Y): [Not assigned]
+
+Visible questions (45):
+  DATA COLLECTION (enter any valid value): Q6, Q9, Q13, Q14, Q15, Q18, Q20, Q21, Q38, Q40, Q43, Q49, Q51, Q54, Q69, Q70, Q71, Q74, Q76, Q95, Q96, Q99, Q120, Q121, Q124, Q129, Q145, Q146, Q149, Q151, Q159, Q162, Q163, Q164, Q165, Q166, Q167, Q179
+
+Test Case 6
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q8 (Is this WBS, I/O, PM order going to be split?): Yes
+  Q39 (Is the software that you are requesting an upgraded version or title new to the organization?): No
+  Q41 (Is the software that you are requesting an upgraded version or title new to the organization?): No
+  Q52 (Is there a 2nd Software?): No
+  Q127 (Is there a 5th title?): Yes
+  Q152 (Customer:): [Not assigned]
+  Q160 (Supervisor Name  - Y): [Not assigned]
+
+Visible questions (45):
+  DATA COLLECTION (enter any valid value): Q6, Q9, Q13, Q14, Q15, Q18, Q20, Q21, Q38, Q40, Q46, Q49, Q51, Q70, Q71, Q74, Q95, Q96, Q99, Q104, Q120, Q121, Q124, Q126, Q129, Q144, Q145, Q146, Q149, Q151, Q159, Q162, Q163, Q164, Q165, Q166, Q167, Q179
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q6: Disclaimer: (DATA COL)
+Q8: Is this WBS, I/O, PM order going to be split? (TEST VAR)
+Q9: WBS, I/O, PM Order (DATA COL)
+Q13: WBS Percent Split Element One (DATA COL)
+Q14: Second WBS, I/O, PM Order (DATA COL)
+Q15: WBS Percent Split Element Two (DATA COL)
+Q16: Device name: (TEST VAR)
+Q18: Device lookup: (DATA COL)
+Q20: Reason for request: (DATA COL)
+Q21: Requested completion date: (DATA COL)
+Q22: Select 1st software title (TEST VAR) (UNREACHABLE)
+Q23: Software Description (DATA COL)
+Q38: Enter software title: (DATA COL)
+Q39: Is the software that you are requesting an upgraded version or title new to the organization? (TEST VAR)
+Q40: Enter software title if not listed: (DATA COL)
+Q41: Is the software that you are requesting an upgraded version or title new to the organization? (TEST VAR)
+Q42: Is the software that you are requesting an upgraded version new to the organization? (TEST VAR)
+Q43: What is the new version number? (DATA COL)
+Q45: Software is an investment. (DATA COL)
+Q46: Enter the AD group info if known: (DATA COL)
+Q49: In app setup questions and answers. (DATA COL)
+Q51: Enter additional details, including desired access, if applicable: (DATA COL)
+Q52: Is there a 2nd Software? (TEST VAR)
+Q53: Select the 2nd Title: (TEST VAR)
+Q54: Software Description (DATA COL)
+Q69: Enter software title: (DATA COL)
+Q70: Enter software title if not listed: (DATA COL)
+Q71: Enter the AD Group info if Known: (DATA COL)
+Q74: In app setup questions and answers. (DATA COL)
+Q76: Enter additional details, including desired access, if applicable: (DATA COL)
+Q77: Is there a 3rd title? (TEST VAR)
+Q78: Select the 3rd title: (TEST VAR)
+Q79: Software Description (DATA COL)
+Q94: Enter software title: (DATA COL)
+Q95: Enter software title if not listed: (DATA COL)
+Q96: Enter the AD Group info if Known: (DATA COL)
+Q99: In app setup questions and answers. (DATA COL)
+Q101: Enter additional details, including desired access, if applicable: (DATA COL)
+Q102: Is there a 4th title? (TEST VAR)
+Q103: Select the 4th title: (TEST VAR)
+Q104: Software Description (DATA COL)
+Q119: Enter software title: (DATA COL)
+Q120: Enter software title if not listed: (DATA COL)
+Q121: Enter the AD Group info if Known: (DATA COL)
+Q124: In app setup questions and answers: (DATA COL)
+Q126: Enter additional details, including desired access, if applicable: (DATA COL)
+Q127: Is there a 5th title? (TEST VAR)
+Q128: Select the 5th title: (TEST VAR)
+Q129: Software Description (DATA COL)
+Q144: Enter software title: (DATA COL)
+Q145: Enter software title if not listed: (DATA COL)
+Q146: Enter the AD Group info if Known: (DATA COL)
+Q149: In app setup questions and answers. (DATA COL)
+Q151: Enter additional details, including desired access, if applicable: (DATA COL)
+Q152: Customer: (TEST VAR)
+Q159: Recipient's Device: (DATA COL)
+Q160: Supervisor Name  - Y (TEST VAR)
+Q162: Unknown (DATA COL)
+Q163: Recipient's name: (DATA COL)
+Q164: Recipient's ID: (DATA COL)
+Q165: Recipient's phone (DATA COL)
+Q166: Recipient's job title (DATA COL)
+Q167: Recipient's Device: (DATA COL)
+Q168: Supervisor Name (DATA COL)
+Q170: Unknown (DATA COL)
+Q171: Recipient's name: (DATA COL)
+Q172: Recipient's ID: (DATA COL)
+Q173: Recipient's phone: (DATA COL)
+Q174: Recipient's site: (DATA COL)
+Q175: Recipient's job title: (DATA COL)
+Q176: Recipient's department: (DATA COL)
+Q177: Recipient's Device: (DATA COL)
+Q179: Comments: (DATA COL)
+
+====================================================================================================
+UNREACHABLE QUESTIONS (Cannot be tested)
+====================================================================================================
+
+These questions have visibility conditions that are always False.
+They cannot be displayed to users and are excluded from test coverage.
+
+Q22: Select 1st software title
+  Visibility condition: DWP-SRM-SLA-service-name != Software application - Add - Enhanced Approvals
+

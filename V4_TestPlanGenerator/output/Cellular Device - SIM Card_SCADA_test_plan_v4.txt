@@ -1,0 +1,87 @@
+====================================================================================================
+TEST PLAN (V4) - Cellular Device - SIM Card/SCADA
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 5
+Total test cases: 1
+Reachable questions: 19
+Min questions per case: 19
+Max questions per case: 19
+Avg questions per case: 19.0
+Coverage: 19/19 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q5: Do you want to Activate or Deactivate SIM Card?
+  Options: Activate SIM Card on SCADA Device, Deactivate SIM Card on SCADA Device
+Q11: Is this WBS, I/O, PM Order going to be split?
+  Options: Yes, No
+Q12: Select the utility|operating company where monthly recurring charges should be applied:
+Q23: Select the additional utility|operating company.
+Q34: Carrier:
+  Options: AT&T, Verizon
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q5 (Do you want to Activate or Deactivate SIM Card?): Activate SIM Card on SCADA Device
+  Q11 (Is this WBS, I/O, PM Order going to be split?): Yes
+  Q12 (Select the utility|operating company where monthly recurring charges should be applied:): [Not assigned]
+  Q23 (Select the additional utility|operating company.): [Not assigned]
+  Q34 (Carrier:): Verizon
+
+Visible questions (19):
+  DATA COLLECTION (enter any valid value): Q10, Q14, Q15, Q22, Q25, Q26, Q29, Q30, Q31, Q32, Q33, Q36, Q37, Q38
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q5: Do you want to Activate or Deactivate SIM Card? (TEST VAR)
+Q10: Disclaimer: (DATA COL)
+Q11: Is this WBS, I/O, PM Order going to be split? (TEST VAR)
+Q12: Select the utility|operating company where monthly recurring charges should be applied: (TEST VAR)
+Q14: Other Operating Company: (DATA COL)
+Q15: Other WBS IO PM: (DATA COL)
+Q22: Percent Split: Element One (DATA COL)
+Q23: Select the additional utility|operating company. (TEST VAR)
+Q25: Other Operating Company: (DATA COL)
+Q26: Other WBS: (DATA COL)
+Q29: Percent Split: Element Two (DATA COL)
+Q30: SIM ID: (DATA COL)
+Q31: Device Owner: (DATA COL)
+Q32: Device Model: (DATA COL)
+Q33: ICCID: (DATA COL)
+Q34: Carrier: (TEST VAR)
+Q36: IMEI: (DATA COL)
+Q37: Comments: (DATA COL)
+Q38: Comments: (DATA COL)
+

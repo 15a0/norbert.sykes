@@ -1,0 +1,75 @@
+====================================================================================================
+TEST PLAN (V4) - ATC Substation requests
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 4
+Total test cases: 1
+Reachable questions: 10
+Min questions per case: 10
+Max questions per case: 10
+Avg questions per case: 10.0
+Coverage: 10/10 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q2: Contact person for this request:
+Q5: Company affiliation:
+  Options: WE, WPS
+Q6: Key Type
+  Options: WE, WPS, Both
+Q9: Supervisor name:
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q2 (Contact person for this request:): [Not assigned]
+  Q5 (Company affiliation:): WE
+  Q6 (Key Type): WE
+  Q9 (Supervisor name:): [Not assigned]
+
+Visible questions (10):
+  DATA COLLECTION (enter any valid value): Q3, Q4, Q7, Q8, Q14, Q16
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q2: Contact person for this request: (TEST VAR)
+Q3: Recipient name: (DATA COL)
+Q4: Vendor: (DATA COL)
+Q5: Company affiliation: (TEST VAR)
+Q6: Key Type (TEST VAR)
+Q7: Clearance code: (DATA COL)
+Q8: Attached photo: (DATA COL)
+Q9: Supervisor name: (TEST VAR)
+Q14: Disclaimer: (DATA COL)
+Q16: Comments: (DATA COL)
+

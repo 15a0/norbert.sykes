@@ -1,0 +1,92 @@
+====================================================================================================
+TEST PLAN (V4) - Citrix Clone Deployment
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 4
+Total test cases: 2
+Reachable questions: 16
+Min questions per case: 15
+Max questions per case: 15
+Avg questions per case: 15.0
+Coverage: 16/16 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q8: Is this WBS, I/O or PM Order going to be split?
+  Options: Yes, No
+Q15: Organization of Server Owner?
+Q18: Citrix Golden Image Name
+Q23: Who will reboot the clones?
+  Options: My team will reboot them, Clones will reboot on existing automated reboot schedule, Need reboot scheduled separate from weekly automated reboot schedule
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q8 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q15 (Organization of Server Owner?): [Not assigned]
+  Q18 (Citrix Golden Image Name): [Not assigned]
+  Q23 (Who will reboot the clones?): My team will reboot them
+
+Visible questions (15):
+  DATA COLLECTION (enter any valid value): Q7, Q9, Q10, Q11, Q16, Q17, Q20, Q22, Q24, Q27, Q28
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q8 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q15 (Organization of Server Owner?): [Not assigned]
+  Q18 (Citrix Golden Image Name): [Not assigned]
+  Q23 (Who will reboot the clones?): Need reboot scheduled separate from weekly automated reboot schedule
+
+Visible questions (15):
+  DATA COLLECTION (enter any valid value): Q7, Q9, Q10, Q11, Q16, Q17, Q20, Q22, Q25, Q27, Q28
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q7: WBS, I/O, PM Order: (DATA COL)
+Q8: Is this WBS, I/O or PM Order going to be split? (TEST VAR)
+Q9: Percent Split 1: (DATA COL)
+Q10: WBS IO PM 2: (DATA COL)
+Q11: Percent Split 2: (DATA COL)
+Q15: Organization of Server Owner? (TEST VAR)
+Q16: Server Owner: (DATA COL)
+Q17: Project name: (DATA COL)
+Q18: Citrix Golden Image Name (TEST VAR)
+Q20: Approved CRQ Number (DATA COL)
+Q22: Reason for Deployment: (DATA COL)
+Q23: Who will reboot the clones? (TEST VAR)
+Q24: Deadline for clones to be prepped for reboot: (DATA COL)
+Q25: Date and time clones should be rebooted: (DATA COL)
+Q27: Comments: (DATA COL)
+Q28: Comments: (DATA COL)
+

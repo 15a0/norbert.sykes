@@ -1,0 +1,106 @@
+====================================================================================================
+TEST PLAN (V4) - Outlook distribution group questionnaire
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 2
+Total test cases: 4
+Reachable questions: 19
+Min questions per case: 9
+Max questions per case: 11
+Avg questions per case: 10.0
+Coverage: 19/19 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q3: What do you need?
+  Options: New List, Update a List
+Q10: I am looking to update or change:
+  Options: Group Name, Membership, Ownership
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (What do you need?): New List
+
+Visible questions (11):
+  DATA COLLECTION (enter any valid value): Q2, Q5, Q6, Q7, Q8, Q9, Q15, Q23, Q25, Q26
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (What do you need?): Update a List
+  Q10 (I am looking to update or change:): Membership
+
+Visible questions (10):
+  DATA COLLECTION (enter any valid value): Q2, Q15, Q16, Q17, Q20, Q23, Q25, Q26
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (What do you need?): Update a List
+  Q10 (I am looking to update or change:): Group Name
+
+Visible questions (9):
+  DATA COLLECTION (enter any valid value): Q2, Q15, Q18, Q19, Q23, Q25, Q26
+
+Test Case 4
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (What do you need?): Update a List
+  Q10 (I am looking to update or change:): Ownership
+
+Visible questions (10):
+  DATA COLLECTION (enter any valid value): Q2, Q15, Q16, Q21, Q22, Q23, Q25, Q26
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q2: Unknown (DATA COL)
+Q3: What do you need? (TEST VAR)
+Q5: Desired name: (DATA COL)
+Q6: Owner/administrator of distribution group: (DATA COL)
+Q7: The owner can add members or fill out the spreadsheet (optional, link below). (DATA COL)
+Q8: Shared Access Attachment (DATA COL)
+Q9: Level of security needed: (DATA COL)
+Q10: I am looking to update or change: (TEST VAR)
+Q15: DWP-SRM-SLA-disclaimer (DATA COL)
+Q16: Outlook group name: (DATA COL)
+Q17: The owner can add members or fill out the spreadsheet (optional, link below). (DATA COL)
+Q18: Current group name: (DATA COL)
+Q19: New group name: (DATA COL)
+Q20: Shared access attachment (DATA COL)
+Q21: Current owner name: (DATA COL)
+Q22: New owner name: (DATA COL)
+Q23: Enter the distribution list to be deleted: (DATA COL)
+Q25: Comments: (DATA COL)
+Q26: Comments: (DATA COL)
+

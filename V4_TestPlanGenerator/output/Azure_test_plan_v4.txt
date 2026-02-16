@@ -1,0 +1,113 @@
+====================================================================================================
+TEST PLAN (V4) - Azure
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 2
+Total test cases: 5
+Reachable questions: 18
+Min questions per case: 4
+Max questions per case: 12
+Avg questions per case: 9.6
+Coverage: 18/18 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q3: I need to:
+  Options: New project creation, Request user access, Retire project
+Q11: Project Type:
+  Options: Application based, Team support based, Project based
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I need to:): New project creation
+  Q11 (Project Type:): Application based
+
+Visible questions (12):
+  DATA COLLECTION (enter any valid value): Q2, Q8, Q9, Q10, Q12, Q15, Q17, Q18, Q26, Q27
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I need to:): Retire project
+
+Visible questions (8):
+  DATA COLLECTION (enter any valid value): Q2, Q8, Q21, Q22, Q23, Q26, Q27
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I need to:): Request user access
+
+Visible questions (4):
+  DATA COLLECTION (enter any valid value): Q2, Q8, Q20
+
+Test Case 4
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I need to:): New project creation
+  Q11 (Project Type:): Team support based
+
+Visible questions (12):
+  DATA COLLECTION (enter any valid value): Q2, Q8, Q9, Q10, Q13, Q15, Q17, Q18, Q26, Q27
+
+Test Case 5
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (I need to:): New project creation
+  Q11 (Project Type:): Project based
+
+Visible questions (12):
+  DATA COLLECTION (enter any valid value): Q2, Q8, Q9, Q10, Q14, Q15, Q17, Q18, Q26, Q27
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q2: Unknown (DATA COL)
+Q3: I need to: (TEST VAR)
+Q8: Disclaimer: (DATA COL)
+Q9: What is the Name of your project/application? (DATA COL)
+Q10: Provide a detailed justification for this request: (DATA COL)
+Q11: Project Type: (TEST VAR)
+Q12: Unknown (DATA COL)
+Q13: Unknown (DATA COL)
+Q14: Unknown (DATA COL)
+Q15: Team Project Owner Name: (DATA COL)
+Q17: List the project admins for the requested project(s): (DATA COL)
+Q18: What department/domain/organization/collection will this project fall under? (DATA COL)
+Q20: Unknown (DATA COL)
+Q21: Collection name: (DATA COL)
+Q22: What is the team project name? (DATA COL)
+Q23: Team Project Owner Name: (DATA COL)
+Q26: Comments: (DATA COL)
+Q27: Comments: (DATA COL)
+

@@ -1,0 +1,375 @@
+====================================================================================================
+TEST PLAN (V4) - Server Request
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Test variables: 18
+Total test cases: 10
+Reachable questions: 61
+Min questions per case: 47
+Max questions per case: 51
+Avg questions per case: 48.0
+Coverage: 61/61 (100%)
+
+====================================================================================================
+INSTRUCTIONS FOR TESTERS
+====================================================================================================
+
+TEST VARIABLES (vary these to cover all paths):
+  These questions control form flow. Their answers determine which other questions appear.
+  Follow the assignments in each test case exactly.
+
+DATA COLLECTION QUESTIONS (enter any valid value):
+  These questions do NOT affect form flow. Their specific values don't matter for testing.
+  You can enter:
+    - Text fields: any text (e.g., 'TEST CASE' or placeholder text)
+    - Dropdowns/Select: any available option
+    - Checkboxes: any state (checked/unchecked)
+    - Date fields: any valid date
+    - Required fields: must enter something, but any valid value works
+    - Optional fields: can skip if not required
+
+====================================================================================================
+TEST VARIABLES
+====================================================================================================
+
+Q3: Is this WBS, I/O or PM Order going to be split?
+  Options: Yes, No
+Q10: What type of server?
+  Options: Virtual, Physical
+Q12: Function of server?
+  Options: Application, Database, Citrix session host, File Server, Web Server, DR, Other
+Q19: Will this server be part of a Windows Failover Cluster?
+  Options: Yes, No
+Q22: Specify location:
+  Options: PEDC, PEDC-DMZ, SCA, SCA-DMZ, Externally Hosted
+Q23: Specify location:
+  Options: PEDC, PEDC-DMZ, SCA, SCA-DMZ, Other
+Q32: Server Usage (Pick One):
+  Options: Production, Testing, Development, Staging, Other
+Q34: Is SAN Storage required?
+  Options: Yes, No
+Q36: Operating System
+  Options: Windows Server 2025, Windows Server 2022, Windows Server 2019, Solaris, Red Hat, No operating system or OS not listed
+Q39: Will this server contain a database?
+  Options: Yes, No
+Q40: What type of database?
+  Options: MS SQL, Oracle, Other
+Q42: Domain:
+  Options: corp.dirsrv.com, Other
+Q44: Number of Processor Cores required
+  Options: 4, 6, 8, Other, Licensing Restrictions
+Q46: Amount of RAM required (in gigabytes):
+  Options: 4GB, 8GB, 16GB, 32GB, Other
+Q49: Select Backup Retention:
+  Options: Schedule 1, Schedule 2, Schedule 3, Schedule 4
+Q53: Select Patch Week:
+  Options: Week 1, Week 2, Week 3, Week 4, Week 5
+Q57: Monitoring Type:
+  Options: No Monitoring, Base Monitoring, Base Monitoring plus additional monitoring
+Q60: Organization
+
+====================================================================================================
+TEST CASES
+====================================================================================================
+
+Test Case 1
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q10 (What type of server?): Physical
+  Q12 (Function of server?): Other
+  Q19 (Will this server be part of a Windows Failover Cluster?): Yes
+  Q23 (Specify location:): PEDC
+  Q32 (Server Usage (Pick One):): Production
+  Q34 (Is SAN Storage required?): Yes
+  Q36 (Operating System): Windows Server 2025
+  Q39 (Will this server contain a database?): Yes
+  Q40 (What type of database?): MS SQL
+  Q42 (Domain:): corp.dirsrv.com
+  Q44 (Number of Processor Cores required): 4
+  Q46 (Amount of RAM required (in gigabytes):): 4GB
+  Q49 (Select Backup Retention:): Schedule 1
+  Q53 (Select Patch Week:): Week 1
+  Q57 (Monitoring Type:): No Monitoring
+  Q60 (Organization): [Not assigned]
+
+Visible questions (51):
+  DATA COLLECTION (enter any valid value): Q2, Q4, Q5, Q6, Q11, Q17, Q18, Q20, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q35, Q37, Q48, Q50, Q52, Q55, Q56, Q59, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q70, Q72, Q75
+
+Test Case 2
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q10 (What type of server?): Virtual
+  Q12 (Function of server?): Application
+  Q19 (Will this server be part of a Windows Failover Cluster?): Yes
+  Q22 (Specify location:): PEDC
+  Q32 (Server Usage (Pick One):): Other
+  Q36 (Operating System): Windows Server 2025
+  Q39 (Will this server contain a database?): Yes
+  Q40 (What type of database?): MS SQL
+  Q42 (Domain:): corp.dirsrv.com
+  Q44 (Number of Processor Cores required): 4
+  Q46 (Amount of RAM required (in gigabytes):): 4GB
+  Q49 (Select Backup Retention:): Schedule 1
+  Q53 (Select Patch Week:): Week 1
+  Q57 (Monitoring Type:): No Monitoring
+  Q60 (Organization): [Not assigned]
+
+Visible questions (48):
+  DATA COLLECTION (enter any valid value): Q2, Q4, Q5, Q6, Q17, Q20, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q33, Q37, Q48, Q50, Q52, Q55, Q56, Q59, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q70, Q72, Q75
+
+Test Case 3
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q10 (What type of server?): Virtual
+  Q12 (Function of server?): Application
+  Q19 (Will this server be part of a Windows Failover Cluster?): Yes
+  Q22 (Specify location:): PEDC
+  Q32 (Server Usage (Pick One):): Production
+  Q36 (Operating System): No operating system or OS not listed
+  Q39 (Will this server contain a database?): Yes
+  Q40 (What type of database?): MS SQL
+  Q42 (Domain:): corp.dirsrv.com
+  Q44 (Number of Processor Cores required): 4
+  Q46 (Amount of RAM required (in gigabytes):): 4GB
+  Q49 (Select Backup Retention:): Schedule 1
+  Q53 (Select Patch Week:): Week 1
+  Q57 (Monitoring Type:): No Monitoring
+  Q60 (Organization): [Not assigned]
+
+Visible questions (48):
+  DATA COLLECTION (enter any valid value): Q2, Q4, Q5, Q6, Q17, Q20, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q37, Q38, Q48, Q50, Q52, Q55, Q56, Q59, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q70, Q72, Q75
+
+Test Case 4
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q10 (What type of server?): Virtual
+  Q12 (Function of server?): Application
+  Q19 (Will this server be part of a Windows Failover Cluster?): Yes
+  Q22 (Specify location:): PEDC
+  Q32 (Server Usage (Pick One):): Production
+  Q36 (Operating System): Windows Server 2025
+  Q39 (Will this server contain a database?): Yes
+  Q40 (What type of database?): Other
+  Q42 (Domain:): corp.dirsrv.com
+  Q44 (Number of Processor Cores required): 4
+  Q46 (Amount of RAM required (in gigabytes):): 4GB
+  Q49 (Select Backup Retention:): Schedule 1
+  Q53 (Select Patch Week:): Week 1
+  Q57 (Monitoring Type:): No Monitoring
+  Q60 (Organization): [Not assigned]
+
+Visible questions (48):
+  DATA COLLECTION (enter any valid value): Q2, Q4, Q5, Q6, Q17, Q20, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q37, Q41, Q48, Q50, Q52, Q55, Q56, Q59, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q70, Q72, Q75
+
+Test Case 5
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q10 (What type of server?): Virtual
+  Q12 (Function of server?): Application
+  Q19 (Will this server be part of a Windows Failover Cluster?): Yes
+  Q22 (Specify location:): PEDC
+  Q32 (Server Usage (Pick One):): Production
+  Q36 (Operating System): Windows Server 2025
+  Q39 (Will this server contain a database?): Yes
+  Q40 (What type of database?): MS SQL
+  Q42 (Domain:): Other
+  Q44 (Number of Processor Cores required): 4
+  Q46 (Amount of RAM required (in gigabytes):): 4GB
+  Q49 (Select Backup Retention:): Schedule 1
+  Q53 (Select Patch Week:): Week 1
+  Q57 (Monitoring Type:): No Monitoring
+  Q60 (Organization): [Not assigned]
+
+Visible questions (48):
+  DATA COLLECTION (enter any valid value): Q2, Q4, Q5, Q6, Q17, Q20, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q37, Q43, Q48, Q50, Q52, Q55, Q56, Q59, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q70, Q72, Q75
+
+Test Case 6
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q10 (What type of server?): Virtual
+  Q12 (Function of server?): Application
+  Q19 (Will this server be part of a Windows Failover Cluster?): Yes
+  Q22 (Specify location:): PEDC
+  Q32 (Server Usage (Pick One):): Production
+  Q36 (Operating System): Windows Server 2025
+  Q39 (Will this server contain a database?): Yes
+  Q40 (What type of database?): MS SQL
+  Q42 (Domain:): corp.dirsrv.com
+  Q44 (Number of Processor Cores required): Other
+  Q46 (Amount of RAM required (in gigabytes):): 4GB
+  Q49 (Select Backup Retention:): Schedule 1
+  Q53 (Select Patch Week:): Week 1
+  Q57 (Monitoring Type:): No Monitoring
+  Q60 (Organization): [Not assigned]
+
+Visible questions (48):
+  DATA COLLECTION (enter any valid value): Q2, Q4, Q5, Q6, Q17, Q20, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q37, Q45, Q48, Q50, Q52, Q55, Q56, Q59, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q70, Q72, Q75
+
+Test Case 7
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q10 (What type of server?): Virtual
+  Q12 (Function of server?): Application
+  Q19 (Will this server be part of a Windows Failover Cluster?): Yes
+  Q22 (Specify location:): PEDC
+  Q32 (Server Usage (Pick One):): Production
+  Q36 (Operating System): Windows Server 2025
+  Q39 (Will this server contain a database?): Yes
+  Q40 (What type of database?): MS SQL
+  Q42 (Domain:): corp.dirsrv.com
+  Q44 (Number of Processor Cores required): 4
+  Q46 (Amount of RAM required (in gigabytes):): Other
+  Q49 (Select Backup Retention:): Schedule 1
+  Q53 (Select Patch Week:): Week 1
+  Q57 (Monitoring Type:): No Monitoring
+  Q60 (Organization): [Not assigned]
+
+Visible questions (48):
+  DATA COLLECTION (enter any valid value): Q2, Q4, Q5, Q6, Q17, Q20, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q37, Q47, Q48, Q50, Q52, Q55, Q56, Q59, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q70, Q72, Q75
+
+Test Case 8
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q10 (What type of server?): Virtual
+  Q12 (Function of server?): Application
+  Q19 (Will this server be part of a Windows Failover Cluster?): Yes
+  Q22 (Specify location:): PEDC
+  Q32 (Server Usage (Pick One):): Production
+  Q36 (Operating System): Windows Server 2025
+  Q39 (Will this server contain a database?): Yes
+  Q40 (What type of database?): MS SQL
+  Q42 (Domain:): corp.dirsrv.com
+  Q44 (Number of Processor Cores required): 4
+  Q46 (Amount of RAM required (in gigabytes):): 4GB
+  Q49 (Select Backup Retention:): Schedule 2
+  Q53 (Select Patch Week:): Week 1
+  Q57 (Monitoring Type:): No Monitoring
+  Q60 (Organization): [Not assigned]
+
+Visible questions (47):
+  DATA COLLECTION (enter any valid value): Q2, Q4, Q5, Q6, Q17, Q20, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q37, Q48, Q51, Q52, Q55, Q56, Q59, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q70, Q72, Q75
+
+Test Case 9
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q10 (What type of server?): Virtual
+  Q12 (Function of server?): Application
+  Q19 (Will this server be part of a Windows Failover Cluster?): Yes
+  Q22 (Specify location:): PEDC
+  Q32 (Server Usage (Pick One):): Production
+  Q36 (Operating System): Windows Server 2025
+  Q39 (Will this server contain a database?): Yes
+  Q40 (What type of database?): MS SQL
+  Q42 (Domain:): corp.dirsrv.com
+  Q44 (Number of Processor Cores required): 4
+  Q46 (Amount of RAM required (in gigabytes):): 4GB
+  Q49 (Select Backup Retention:): Schedule 1
+  Q53 (Select Patch Week:): Week 5
+  Q57 (Monitoring Type:): No Monitoring
+  Q60 (Organization): [Not assigned]
+
+Visible questions (47):
+  DATA COLLECTION (enter any valid value): Q2, Q4, Q5, Q6, Q17, Q20, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q37, Q48, Q50, Q52, Q54, Q56, Q59, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q70, Q72, Q75
+
+Test Case 10
+----------------------------------------------------------------------------------------------------
+TEST VARIABLE ASSIGNMENTS (required - follow exactly):
+  Q3 (Is this WBS, I/O or PM Order going to be split?): Yes
+  Q10 (What type of server?): Virtual
+  Q12 (Function of server?): Application
+  Q19 (Will this server be part of a Windows Failover Cluster?): Yes
+  Q22 (Specify location:): PEDC
+  Q32 (Server Usage (Pick One):): Production
+  Q36 (Operating System): Windows Server 2025
+  Q39 (Will this server contain a database?): Yes
+  Q40 (What type of database?): MS SQL
+  Q42 (Domain:): corp.dirsrv.com
+  Q44 (Number of Processor Cores required): 4
+  Q46 (Amount of RAM required (in gigabytes):): 4GB
+  Q49 (Select Backup Retention:): Schedule 1
+  Q53 (Select Patch Week:): Week 1
+  Q57 (Monitoring Type:): Base Monitoring plus additional monitoring
+  Q60 (Organization): [Not assigned]
+
+Visible questions (47):
+  DATA COLLECTION (enter any valid value): Q2, Q4, Q5, Q6, Q17, Q20, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q37, Q48, Q50, Q52, Q55, Q56, Q58, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q70, Q72, Q75
+
+====================================================================================================
+COMPLETE QUESTION REFERENCE
+====================================================================================================
+
+All questions in this questionnaire (for tester reference):
+
+Q2: WBS, I/O, PM Order (DATA COL)
+Q3: Is this WBS, I/O or PM Order going to be split? (TEST VAR)
+Q4: Percent Split 1 (DATA COL)
+Q5: WBS IO PM 2 (DATA COL)
+Q6: Percent Split 2 (DATA COL)
+Q10: What type of server? (TEST VAR)
+Q11: Physical justification: (DATA COL)
+Q12: Function of server? (TEST VAR)
+Q17: Disclaimer: (DATA COL)
+Q18: Other: (DATA COL)
+Q19: Will this server be part of a Windows Failover Cluster? (TEST VAR)
+Q20: What is the name of the cluster? (DATA COL)
+Q22: Specify location: (TEST VAR)
+Q23: Specify location: (TEST VAR)
+Q25: Other Location (DATA COL)
+Q26: Reason for location: (DATA COL)
+Q27: Requested delivery date: (DATA COL)
+Q28: Reason for request: (DATA COL)
+Q29: Server Name (DATA COL)
+Q30: Application Name (DATA COL)
+Q31: App Disk Capacity (in GB) (DATA COL)
+Q32: Server Usage (Pick One): (TEST VAR)
+Q33: Other: (DATA COL)
+Q34: Is SAN Storage required? (TEST VAR)
+Q35: How much storage is needed? (DATA COL)
+Q36: Operating System (TEST VAR)
+Q37: Does it need IIS? (DATA COL)
+Q38: Enter Details (DATA COL)
+Q39: Will this server contain a database? (TEST VAR)
+Q40: What type of database? (TEST VAR)
+Q41: Which database? (DATA COL)
+Q42: Domain: (TEST VAR)
+Q43: Which Domain? (DATA COL)
+Q44: Number of Processor Cores required (TEST VAR)
+Q45: Other or Licensing Restrictions (DATA COL)
+Q46: Amount of RAM required (in gigabytes): (TEST VAR)
+Q47: Amount of RAM required (in gigabytes) (DATA COL)
+Q48: Unknown (DATA COL)
+Q49: Select Backup Retention: (TEST VAR)
+Q50: Acknowledgement: (DATA COL)
+Q51: Select Daily Backup Time: (DATA COL)
+Q52: Unknown (DATA COL)
+Q53: Select Patch Week: (TEST VAR)
+Q54: Select Patch Day: (DATA COL)
+Q55: Select Patch Day: (DATA COL)
+Q56: Select Start Patch Time: (DATA COL)
+Q57: Monitoring Type: (TEST VAR)
+Q58: Additional Monitoring Type: (DATA COL)
+Q59: Acknowledgement: (DATA COL)
+Q60: Organization (TEST VAR)
+Q61: Application Contact (DATA COL)
+Q62: Support Team: (DATA COL)
+Q63: Lync Response Group On Call Phone Number: (DATA COL)
+Q64: Local Server Admin Group: (DATA COL)
+Q65: CyberArk group(s) for application support team: (DATA COL)
+Q66: EULA Compliance Certification (DATA COL)
+Q67: Server Policy Agreement (DATA COL)
+Q68: Unknown (DATA COL)
+Q70: Supervisor Name (DATA COL)
+Q72: Comments (DATA COL)
+Q75: Comments (DATA COL)
+

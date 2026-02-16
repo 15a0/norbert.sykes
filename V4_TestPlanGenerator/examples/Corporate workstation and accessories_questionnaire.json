@@ -1,0 +1,4951 @@
+{
+  "id": "17450",
+  "guid": null,
+  "createDate": null,
+  "modifiedDate": null,
+  "rxId": null,
+  "summary": null,
+  "serviceRevisionId": null,
+  "workflowId": "rx-bbffd5e5-5c96-44fd-8e7f-5f83496350d0",
+  "questionnaireGroupId": "c41752c9-27a5-4d37-a6e5-325aee011538",
+  "name": "Corporate workstation and accessories",
+  "bulkRequestedForUserLimit": 1,
+  "pages": [
+    {
+      "id": "cc524d10-43ff-773d-60f8-7ec9736d1a50",
+      "externalId": null,
+      "perUser": false,
+      "title": "",
+      "pageItems": [
+        {
+          "type": "TextField",
+          "id": "a24bd44f-452d-4eb0-0f06-529d0b26159a",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "DWP-SRM-SLA-service-name",
+          "description": null,
+          "required": false,
+          "template": "object:1438",
+          "processInputId": 536870958,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "${service.name}",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Request type:",
+          "description": "<p>Requests for multiple users should be done on separate request forms. One person per request form.</p>",
+          "required": true,
+          "template": "object:1439",
+          "processInputId": 536870923,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "New",
+              "displayValue": "New",
+              "disabled": false
+            },
+            {
+              "dataValue": "Collect",
+              "displayValue": "Collect",
+              "disabled": false
+            },
+            {
+              "dataValue": "I have a problem",
+              "displayValue": "I have a problem",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "649b5550-e5f0-fe3b-9ca3-2f68436e1701",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "I have a problem"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I have a problem",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "I have a problem"
+                }
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-template-name",
+          "description": null,
+          "required": false,
+          "template": "object:1440",
+          "processInputId": 536870953,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "404d027c-ef57-d189-a541-0041f6374908",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "I have a problem"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I have a problem",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "I have a problem"
+                }
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-has-a-disclaimer",
+          "description": null,
+          "required": false,
+          "template": "object:1441",
+          "processInputId": 536870946,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "498333ec-17e6-f8ed-6e02-56115377ccdd",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "I have a problem"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I have a problem",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "I have a problem"
+                }
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-requested-item",
+          "description": null,
+          "required": false,
+          "template": "object:1442",
+          "processInputId": 536870959,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "3c76a84a-9f3a-b0e8-4ca1-52389ea7c5f1",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "I have a problem"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I have a problem",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "I have a problem"
+                }
+              }
+            }
+          },
+          "label": "DWP-SRM-SLA-sub-process",
+          "description": null,
+          "required": false,
+          "template": "object:1443",
+          "processInputId": 536870937,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "97141d78-1d85-6816-28d0-1ce792045131",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "DWP-SRM-SLA-has-a-disclaimer",
+                  "valueReference": "404d027c-ef57-d189-a541-0041f6374908",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "0"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "0"
+                }
+              }
+            }
+          },
+          "label": "Disclaimer:",
+          "description": null,
+          "required": false,
+          "template": "object:1444",
+          "processInputId": 536870957,
+          "hidden": false,
+          "readOnly": true,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "e25891b9-b339-72e3-293f-d90aca496571",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Hardware type",
+          "description": null,
+          "required": true,
+          "template": "object:1445",
+          "processInputId": 536870948,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Bundle",
+              "displayValue": "Request a laptop or desktop bundle.  - (No Accounting Required.)",
+              "disabled": false
+            },
+            {
+              "dataValue": "Other",
+              "displayValue": "Request additional IT hardware.  - (Accounting Required.)",
+              "disabled": false
+            },
+            {
+              "dataValue": "Both",
+              "displayValue": "Request both a bundle and additional IT hardware.  - (Accounting Required.)",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "9bff87d1-b672-a317-797b-9fc623c038fa",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+            "leadingQuestionExpectedAnswers": [
+              "New"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "New"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "New",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "New"
+              }
+            }
+          },
+          "label": "I have read and understood the guidelines:",
+          "description": "<p>Make sure that requests are compliant with current guidelines located here:&nbsp;<a target=\"_blank\" href=\"https://teams.wecenergygroup.com/Depts/HR/Policies/Policies/Remote_Work_Arrangements_Guidelines.docx\">https://teams.wecenergygroup.com/Depts/HR/Policies/Policies/Remote_Work_Arrangements_Guidelines.docx</a></p>",
+          "required": true,
+          "template": "object:1446",
+          "processInputId": 536870951,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "6db6ec11-0c2c-5695-2455-05111844080f",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "OR",
+                "withParentheses": true,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Hardware type",
+                    "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Bundle"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Request a laptop or desktop bundle.  - (No Accounting Required.)",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Bundle"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Hardware type",
+                    "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Both"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Request both a bundle and additional IT hardware.  - (Accounting Required.)",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Both"
+                  }
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Which one of these packages do you need?",
+          "description": "<p>If any of the individual items included in a bundle are not needed, please note that in the comments.</p>",
+          "required": true,
+          "template": "object:1447",
+          "processInputId": 536870942,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Desktop bundle (includes desktop, 2 monitors, keyboard, external camera and mouse)",
+              "displayValue": "Desktop bundle (includes desktop, 2 monitors, keyboard, external camera and mouse)",
+              "disabled": false
+            },
+            {
+              "dataValue": "PC only",
+              "displayValue": "Desktop only",
+              "disabled": false
+            },
+            {
+              "dataValue": "Laptop bundle, two monitors (includes laptop, docking station, 2 monitors, keyboard, mouse, wired headset and external camera)",
+              "displayValue": "Laptop bundle, two monitors (includes laptop, docking station, 2 monitors, keyboard, mouse, wired headset and external camera)",
+              "disabled": false
+            },
+            {
+              "dataValue": "Laptop bundle, one monitor (includes laptop, docking station, 1 monitor, keyboard, mouse and wired headset )",
+              "displayValue": "Laptop bundle, one monitor (includes laptop, docking station, 1 monitor, keyboard, mouse and wired headset )",
+              "disabled": false
+            },
+            {
+              "dataValue": "Laptop bundle, no monitor (includes laptop and wired headset )",
+              "displayValue": "Laptop bundle, no monitor (includes laptop and wired headset )",
+              "disabled": false
+            },
+            {
+              "dataValue": "Laptop only",
+              "displayValue": "Laptop only",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "5fa4fa8b-6c66-3fc7-1928-530e932ff659",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "OR",
+                "withParentheses": true,
+                "left": {
+                  "operator": "NOT_EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Hardware type",
+                    "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Bundle"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Request a laptop or desktop bundle.  - (No Accounting Required.)",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Bundle"
+                  }
+                },
+                "right": {
+                  "operator": "NOT_EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Hardware type",
+                    "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Both"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Request both a bundle and additional IT hardware.  - (Accounting Required.)",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Both"
+                  }
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Complete package",
+          "description": null,
+          "required": false,
+          "template": "object:1447",
+          "processInputId": 536870942,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "N/A",
+              "displayValue": "N/A",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": "N/A",
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "ad096208-f295-196d-6143-34110feaf218",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "OR",
+                "withParentheses": true,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Hardware type",
+                    "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Bundle"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Request a laptop or desktop bundle.  - (No Accounting Required.)",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Bundle"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Hardware type",
+                    "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Both"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Request both a bundle and additional IT hardware.  - (Accounting Required.)",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Both"
+                  }
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Is this device for a CAD Designer, IT App Developer, or Engineer that requires specialized software?",
+          "description": "<p>ArcGIS, Microstation, Synergee, Autocad, Smallworld, FME, DDS, UI Planner Launcher</p>",
+          "required": true,
+          "template": "object:1448",
+          "processInputId": 536870949,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "37c61a4a-9f29-6cd4-eede-8779a20e2254",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "ad096208-f295-196d-6143-34110feaf218",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this device for a CAD Designer, IT App Developer, or Engineer that requires specialized software?",
+                "valueReference": "ad096208-f295-196d-6143-34110feaf218",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "List the software that will be used:",
+          "description": "<p>In addition to listing the software below, request it by submitting the <a target=\"_blank\" href=\"https://remedydwp.comp.dirsrv.com/dwp/app/#/itemprofile/407\"><strong>Software Application</strong></a> form.</p>",
+          "required": true,
+          "template": "object:1449",
+          "processInputId": 536870950,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "cd97cb2e-f028-05ae-5b71-9ae9212fc5eb",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "ad096208-f295-196d-6143-34110feaf218",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is this device for a CAD Designer, IT App Developer, or Engineer that requires specialized software?",
+                "valueReference": "ad096208-f295-196d-6143-34110feaf218",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "List the software that will be used:",
+          "description": "<p>In addition to listing the software below, request it by submitting the <a target=\"_blank\" href=\"https://remedydwp.comp.dirsrv.com/dwp/app/#/itemprofile/407\"><strong>Software Application</strong></a> form.</p>",
+          "required": false,
+          "template": "object:1449",
+          "processInputId": 536870950,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "64d8543f-67c5-67d6-4297-e9d6246c717b",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Which one of these packages do you need?",
+                "valueReference": "6db6ec11-0c2c-5695-2455-05111844080f",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "Is this for a new hire?",
+          "description": null,
+          "required": false,
+          "template": "object:1450",
+          "processInputId": 536870941,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "MultiSelectDropdown",
+          "id": "ae8d8b85-dc8f-d78f-f20e-391a176f6a3c",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "OR",
+                "withParentheses": true,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Hardware type",
+                    "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Other"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Request additional IT hardware.  - (Accounting Required.)",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Other"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Hardware type",
+                    "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Both"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Request both a bundle and additional IT hardware.  - (Accounting Required.)",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Both"
+                  }
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Additional IT hardware:",
+          "description": "<p>Select all that apply.</p>\n<p><strong>This form should not be used to order headsets, If a new headset is needed a seperate <a target=\"_blank\" href=\"https://remedydwp.comp.dirsrv.com/dwp/rest/share/OJSXG33VOJRWKVDZOBST2U2CL5IFET2GJFGEKJTUMVXGC3TUJFSD2MBQGAYDAMBQGAYDAMBQGAYDCJTSMVZW65LSMNSUSZB5GEZDSMBREZRW63TUMV4HIVDZOBST2Q2BKRAUYT2HL5EE6TKF\">headset</a> form will need to be submitted.</strong></p>",
+          "required": true,
+          "template": "object:1451",
+          "processInputId": 536870919,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Laptop hotel bundle",
+              "displayValue": "Laptop hotel bundle,  (includes docking station, 2 monitors, mouse and keyboard (peripherals only, no laptop))",
+              "disabled": false
+            },
+            {
+              "dataValue": "Web camera",
+              "displayValue": "Web camera",
+              "disabled": false
+            },
+            {
+              "dataValue": "Wireless keyboard/mouse",
+              "displayValue": "Wireless keyboard/mouse",
+              "disabled": false
+            },
+            {
+              "dataValue": "Monitor",
+              "displayValue": "Monitor",
+              "disabled": false
+            },
+            {
+              "dataValue": "Docking Station",
+              "displayValue": "Docking station",
+              "disabled": false
+            },
+            {
+              "dataValue": "USBC to Ethernet adapter",
+              "displayValue": "USBC to Ethernet adapter",
+              "disabled": false
+            },
+            {
+              "dataValue": "HP power adapter",
+              "displayValue": "HP power adapter",
+              "disabled": false
+            },
+            {
+              "dataValue": "iPad wall power adapter",
+              "displayValue": "iPad wall power adapter",
+              "disabled": false
+            },
+            {
+              "dataValue": "Replacement battery",
+              "displayValue": "Replacement battery",
+              "disabled": false
+            },
+            {
+              "dataValue": "Panasonic wall power adapter",
+              "displayValue": "Panasonic wall power adapter",
+              "disabled": false
+            },
+            {
+              "dataValue": "Panasonic car power adapter",
+              "displayValue": "Panasonic car power adapter",
+              "disabled": false
+            },
+            {
+              "dataValue": "Vehicle mount",
+              "displayValue": "Vehicle mount",
+              "disabled": false
+            },
+            {
+              "dataValue": "Other",
+              "displayValue": "Other",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswers": [],
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "MultiSelectDropdown",
+          "id": "27855af9-9134-ed77-cea3-e307c7d5b8b1",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "OR",
+                "withParentheses": true,
+                "left": {
+                  "operator": "NOT_EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Hardware type",
+                    "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Other"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Request additional IT hardware.  - (Accounting Required.)",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Other"
+                  }
+                },
+                "right": {
+                  "operator": "NOT_EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Hardware type",
+                    "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Both"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Request both a bundle and additional IT hardware.  - (Accounting Required.)",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Both"
+                  }
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Type",
+          "description": "<p>Select all that apply.</p>",
+          "required": false,
+          "template": "object:1451",
+          "processInputId": 536870919,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "N/A",
+              "displayValue": "N/A",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswers": [
+            "N/A"
+          ],
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "e8533a5d-2d12-c745-158a-97b9b708eb0e",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              },
+              "right": {
+                "operator": "INCLUDES",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Additional IT hardware:",
+                  "valueReference": "ae8d8b85-dc8f-d78f-f20e-391a176f6a3c",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Other"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Other",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Other"
+                }
+              }
+            }
+          },
+          "label": "Other:",
+          "description": null,
+          "required": true,
+          "template": "object:1452",
+          "processInputId": 536870928,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "eba68ae1-d3b3-e730-d814-9a6770fe0777",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              },
+              "right": {
+                "operator": "DOES_NOT_INCLUDE",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Additional IT hardware:",
+                  "valueReference": "ae8d8b85-dc8f-d78f-f20e-391a176f6a3c",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Other"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Other",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Other"
+                }
+              }
+            }
+          },
+          "label": "Other:",
+          "description": null,
+          "required": false,
+          "template": "object:1452",
+          "processInputId": 536870928,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "8b6e9402-c12c-1527-ecdc-215a40abe10d",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+            "leadingQuestionExpectedAnswers": [
+              "I have a problem"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "I have a problem"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "I have a problem",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "I have a problem"
+              }
+            }
+          },
+          "label": "Request pertains to:",
+          "description": null,
+          "required": true,
+          "template": "object:1453",
+          "processInputId": 536870944,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Desktop",
+              "displayValue": "Desktop",
+              "disabled": false
+            },
+            {
+              "dataValue": "Laptop",
+              "displayValue": "Laptop",
+              "disabled": false
+            },
+            {
+              "dataValue": "Ruggedized device",
+              "displayValue": "Ruggedized device",
+              "disabled": false
+            },
+            {
+              "dataValue": "Web camera",
+              "displayValue": "Web camera",
+              "disabled": false
+            },
+            {
+              "dataValue": "Wireless keyboard/mouse",
+              "displayValue": "Wireless keyboard/mouse",
+              "disabled": false
+            },
+            {
+              "dataValue": "Monitor",
+              "displayValue": "Monitor",
+              "disabled": false
+            },
+            {
+              "dataValue": "Docking station",
+              "displayValue": "Docking station",
+              "disabled": false
+            },
+            {
+              "dataValue": "USB to Ethernet adapter",
+              "displayValue": "USB to Ethernet adapter",
+              "disabled": false
+            },
+            {
+              "dataValue": "HP power adaptor",
+              "displayValue": "HP power adaptor",
+              "disabled": false
+            },
+            {
+              "dataValue": "iPad wall power adaptor",
+              "displayValue": "iPad wall power adaptor",
+              "disabled": false
+            },
+            {
+              "dataValue": "Replacement battery",
+              "displayValue": "Replacement battery",
+              "disabled": false
+            },
+            {
+              "dataValue": "Panasonic wall power adaptor",
+              "displayValue": "Panasonic wall power adaptor",
+              "disabled": false
+            },
+            {
+              "dataValue": "Panasonic car power adaptor",
+              "displayValue": "Panasonic car power adaptor",
+              "disabled": false
+            },
+            {
+              "dataValue": "Vehicle mount",
+              "displayValue": "Vehicle mount",
+              "disabled": false
+            },
+            {
+              "dataValue": "Other",
+              "displayValue": "Other",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "89946c18-5c30-5baa-9671-0c2b7abb8e02",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "I have a problem"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I have a problem",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "I have a problem"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request pertains to:",
+                  "valueReference": "8b6e9402-c12c-1527-ecdc-215a40abe10d",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Other"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Other",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Other"
+                }
+              }
+            }
+          },
+          "label": "Other device type:",
+          "description": null,
+          "required": true,
+          "template": "object:1454",
+          "processInputId": 536870945,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "bc66d198-957e-c8bb-fb0d-b5677663de02",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "OR",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request pertains to:",
+                  "valueReference": "8b6e9402-c12c-1527-ecdc-215a40abe10d",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Desktop"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Desktop",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Desktop"
+                }
+              },
+              "right": {
+                "operator": "OR",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Request pertains to:",
+                    "valueReference": "8b6e9402-c12c-1527-ecdc-215a40abe10d",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Laptop"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Laptop",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Laptop"
+                  }
+                },
+                "right": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Request pertains to:",
+                    "valueReference": "8b6e9402-c12c-1527-ecdc-215a40abe10d",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Ruggedized device"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Ruggedized device",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Ruggedized device"
+                  }
+                }
+              }
+            }
+          },
+          "label": "Device name:",
+          "description": "<p>To find device name click \"AboutMyPC\" from Start menu. If device name is not available in the dropdown, select \"Search for a different workstation\" and use the device lookup to select the device.</p>",
+          "required": true,
+          "template": "object:1455",
+          "processInputId": 536870934,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "AST:AssetJoinASTPeople",
+          "datasetName": "AST:AssetJoinASTPeople",
+          "datasetIdFieldId": "200000020",
+          "datasetIdFieldName": "Name",
+          "datasetNameFieldId": "200000020",
+          "datasetNameFieldName": "Name",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "OR",
+            "withParentheses": false,
+            "left": {
+              "operator": "AND",
+              "withParentheses": true,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Class Id",
+                  "valueReference": "400079600",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "BMC_COMPUTERSYSTEM"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "BMC_COMPUTERSYSTEM"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "FIELD",
+                    "label": "AssetLifecycleStatus",
+                    "valueReference": "7",
+                    "fieldType": "SELECTION",
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Deployed"
+                    ],
+                    "type": "STRING",
+                    "label": null,
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Deployed"
+                  }
+                },
+                "right": {
+                  "operator": "AND",
+                  "withParentheses": false,
+                  "left": {
+                    "operator": "EQUALS",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "FIELD",
+                      "label": "DatasetId",
+                      "valueReference": "400127400",
+                      "fieldType": "TEXT",
+                      "value": null
+                    },
+                    "right": {
+                      "values": [
+                        "BMC.ASSET"
+                      ],
+                      "type": "STRING",
+                      "label": null,
+                      "valueReference": null,
+                      "fieldType": null,
+                      "value": "BMC.ASSET"
+                    }
+                  },
+                  "right": {
+                    "operator": "AND",
+                    "withParentheses": false,
+                    "left": {
+                      "operator": "EQUALS",
+                      "withParentheses": false,
+                      "left": {
+                        "values": [],
+                        "type": "FIELD",
+                        "label": "Login Name",
+                        "valueReference": "260100002",
+                        "fieldType": "TEXT",
+                        "value": null
+                      },
+                      "right": {
+                        "values": [],
+                        "type": "CONTEXT",
+                        "label": null,
+                        "valueReference": "${requestedFor.loginName}",
+                        "fieldType": null,
+                        "value": null
+                      }
+                    },
+                    "right": {
+                      "operator": "AND",
+                      "withParentheses": false,
+                      "left": {
+                        "operator": "NOT_EQUALS",
+                        "withParentheses": false,
+                        "left": {
+                          "values": [],
+                          "type": "FIELD",
+                          "label": "Item",
+                          "valueReference": "200000005",
+                          "fieldType": "TEXT",
+                          "value": null
+                        },
+                        "right": {
+                          "values": [
+                            "Server"
+                          ],
+                          "type": "STRING",
+                          "label": null,
+                          "valueReference": null,
+                          "fieldType": null,
+                          "value": "Server"
+                        }
+                      },
+                      "right": {
+                        "operator": "NOT_EQUALS",
+                        "withParentheses": false,
+                        "left": {
+                          "values": [],
+                          "type": "FIELD",
+                          "label": "Item",
+                          "valueReference": "200000005",
+                          "fieldType": "TEXT",
+                          "value": null
+                        },
+                        "right": {
+                          "values": [
+                            "VDI"
+                          ],
+                          "type": "STRING",
+                          "label": null,
+                          "valueReference": null,
+                          "fieldType": null,
+                          "value": "VDI"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "right": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Name",
+                "valueReference": "200000020",
+                "fieldType": "TEXT",
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Search for a different device"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Search for a different device"
+              }
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "7a4c826d-0420-5782-d400-74a81530afd1",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "I have a problem"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I have a problem",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "I have a problem"
+                }
+              },
+              "right": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "AND",
+                  "withParentheses": true,
+                  "left": {
+                    "operator": "NOT_EQUALS",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "QUESTION_ANSWER",
+                      "label": "Request pertains to:",
+                      "valueReference": "8b6e9402-c12c-1527-ecdc-215a40abe10d",
+                      "fieldType": null,
+                      "value": null
+                    },
+                    "right": {
+                      "values": [
+                        "Desktop"
+                      ],
+                      "type": "QUESTION_OPTION",
+                      "label": "Desktop",
+                      "valueReference": null,
+                      "fieldType": null,
+                      "value": "Desktop"
+                    }
+                  },
+                  "right": {
+                    "operator": "AND",
+                    "withParentheses": false,
+                    "left": {
+                      "operator": "NOT_EQUALS",
+                      "withParentheses": false,
+                      "left": {
+                        "values": [],
+                        "type": "QUESTION_ANSWER",
+                        "label": "Request pertains to:",
+                        "valueReference": "8b6e9402-c12c-1527-ecdc-215a40abe10d",
+                        "fieldType": null,
+                        "value": null
+                      },
+                      "right": {
+                        "values": [
+                          "Laptop"
+                        ],
+                        "type": "QUESTION_OPTION",
+                        "label": "Laptop",
+                        "valueReference": null,
+                        "fieldType": null,
+                        "value": "Laptop"
+                      }
+                    },
+                    "right": {
+                      "operator": "NOT_EQUALS",
+                      "withParentheses": false,
+                      "left": {
+                        "values": [],
+                        "type": "QUESTION_ANSWER",
+                        "label": "Request pertains to:",
+                        "valueReference": "8b6e9402-c12c-1527-ecdc-215a40abe10d",
+                        "fieldType": null,
+                        "value": null
+                      },
+                      "right": {
+                        "values": [
+                          "Ruggedized device"
+                        ],
+                        "type": "QUESTION_OPTION",
+                        "label": "Ruggedized device",
+                        "valueReference": null,
+                        "fieldType": null,
+                        "value": "Ruggedized device"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "operator": "NOT_EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Request pertains to:",
+                    "valueReference": "8b6e9402-c12c-1527-ecdc-215a40abe10d",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [],
+                    "type": "STRING",
+                    "label": null,
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": null
+                  }
+                }
+              }
+            }
+          },
+          "label": "What is the device ID number?",
+          "description": "<p>Please enter N/A if the device does not have an ID Number.</p>",
+          "required": true,
+          "template": "object:1456",
+          "processInputId": 536870934,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Lookup",
+          "id": "13c53e1f-d54c-332c-971b-2eae51c95af1",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Device name:",
+                "valueReference": "bc66d198-957e-c8bb-fb0d-b5677663de02",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Search for a different device"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Search for a different device"
+              }
+            }
+          },
+          "label": "Device lookup:",
+          "description": null,
+          "required": true,
+          "template": "object:1457",
+          "processInputId": 536870916,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "weAST:AST-PersonalComputerSystemPeopleJoin",
+          "datasetName": "weAST:AST-PersonalComputerSystemPeopleJoin",
+          "datasetIdFieldId": "200000020",
+          "datasetIdFieldName": "Name__c",
+          "datasetNameFieldId": "200000020",
+          "datasetNameFieldName": "Name__c",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "NOT_CONTAINS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Name__c",
+              "valueReference": "200000020",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "VM"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "VM"
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "lookupThreshold": 4,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "ee53a75c-04c0-fff6-2885-097e845cc4d7",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "OR",
+              "withParentheses": false,
+              "left": {
+                "operator": "AND",
+                "withParentheses": false,
+                "left": {
+                  "operator": "NOT_EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Device name:",
+                    "valueReference": "bc66d198-957e-c8bb-fb0d-b5677663de02",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Search for a different device"
+                    ],
+                    "type": "STRING",
+                    "label": null,
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Search for a different device"
+                  }
+                },
+                "right": {
+                  "operator": "NOT_EQUALS",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Device name:",
+                    "valueReference": "bc66d198-957e-c8bb-fb0d-b5677663de02",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [],
+                    "type": "STRING",
+                    "label": null,
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": null
+                  }
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request pertains to:",
+                  "valueReference": "8b6e9402-c12c-1527-ecdc-215a40abe10d",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Other"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Other",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Other"
+                }
+              }
+            }
+          },
+          "label": "Secondary Device Lookup",
+          "description": null,
+          "required": false,
+          "template": "object:1458",
+          "processInputId": 536870916,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "f10e5fad-6591-c796-e9c9-08e124c2ae9e",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "I have a problem"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "I have a problem",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "I have a problem"
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request pertains to:",
+                  "valueReference": "8b6e9402-c12c-1527-ecdc-215a40abe10d",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Other"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Other",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Other"
+                }
+              }
+            }
+          },
+          "label": "Other:",
+          "description": null,
+          "required": false,
+          "template": "object:1454",
+          "processInputId": 536870945,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "ae58e50e-f605-e2f5-2e46-b98de164cdc7",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "OR",
+                "withParentheses": true,
+                "left": {
+                  "operator": "INCLUDES",
+                  "withParentheses": false,
+                  "left": {
+                    "values": [],
+                    "type": "QUESTION_ANSWER",
+                    "label": "Additional IT hardware:",
+                    "valueReference": "ae8d8b85-dc8f-d78f-f20e-391a176f6a3c",
+                    "fieldType": null,
+                    "value": null
+                  },
+                  "right": {
+                    "values": [
+                      "Replacement battery"
+                    ],
+                    "type": "QUESTION_OPTION",
+                    "label": "Replacement battery",
+                    "valueReference": null,
+                    "fieldType": null,
+                    "value": "Replacement battery"
+                  }
+                },
+                "right": {
+                  "operator": "OR",
+                  "withParentheses": false,
+                  "left": {
+                    "operator": "INCLUDES",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "QUESTION_ANSWER",
+                      "label": "Additional IT hardware:",
+                      "valueReference": "ae8d8b85-dc8f-d78f-f20e-391a176f6a3c",
+                      "fieldType": null,
+                      "value": null
+                    },
+                    "right": {
+                      "values": [
+                        "Docking Station"
+                      ],
+                      "type": "QUESTION_OPTION",
+                      "label": "Docking station",
+                      "valueReference": null,
+                      "fieldType": null,
+                      "value": "Docking Station"
+                    }
+                  },
+                  "right": {
+                    "operator": "INCLUDES",
+                    "withParentheses": false,
+                    "left": {
+                      "values": [],
+                      "type": "QUESTION_ANSWER",
+                      "label": "Additional IT hardware:",
+                      "valueReference": "ae8d8b85-dc8f-d78f-f20e-391a176f6a3c",
+                      "fieldType": null,
+                      "value": null
+                    },
+                    "right": {
+                      "values": [
+                        "Laptop hotel bundle"
+                      ],
+                      "type": "QUESTION_OPTION",
+                      "label": "Laptop hotel bundle,  (includes docking station, 2 monitors, mouse and keyboard (peripherals only, no laptop))",
+                      "valueReference": null,
+                      "fieldType": null,
+                      "value": "Laptop hotel bundle"
+                    }
+                  }
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "What is the device ID number?",
+          "description": null,
+          "required": true,
+          "template": "object:1459",
+          "processInputId": 536870943,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "376ddf2d-8c46-db90-9556-6f6b91ca6885",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Hardware type",
+                  "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Bundle"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Request a laptop or desktop bundle.  - (No Accounting Required.)",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Bundle"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "WBS, I/O, PM Order",
+          "description": null,
+          "required": false,
+          "template": "object:1460",
+          "processInputId": 536870925,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "bb0def7d-b5f6-157d-e18d-9c875a16e481",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Hardware type",
+                  "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Bundle"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Request a laptop or desktop bundle.  - (No Accounting Required.)",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Bundle"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Percent Split 1",
+          "description": null,
+          "required": false,
+          "template": "object:1461",
+          "processInputId": 536870930,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "6546fe16-dad1-9aa8-59fd-7b36d35b20e7",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Hardware type",
+                  "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Bundle"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Request a laptop or desktop bundle.  - (No Accounting Required.)",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Bundle"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "WBS IO PM 2",
+          "description": null,
+          "required": false,
+          "template": "object:1462",
+          "processInputId": 536870931,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "757927b9-38fe-7ae5-af97-3b2baee7c569",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Hardware type",
+                  "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Bundle"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Request a laptop or desktop bundle.  - (No Accounting Required.)",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Bundle"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Percent Split 2",
+          "description": null,
+          "required": false,
+          "template": "object:1463",
+          "processInputId": 536870929,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Hardware type",
+                  "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Bundle"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Request a laptop or desktop bundle.  - (No Accounting Required.)",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Bundle"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Is\u00a0this\u00a0WBS,\u00a0I/O\u00a0or\u00a0PM\u00a0order\u00a0going\u00a0to\u00a0be\u00a0split?",
+          "description": null,
+          "required": true,
+          "template": "object:1464",
+          "processInputId": 536870932,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "4fb04c4d-72d2-3bde-3e59-077413634679",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Hardware type",
+                  "valueReference": "e25891b9-b339-72e3-293f-d90aca496571",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "Bundle"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "Request a laptop or desktop bundle.  - (No Accounting Required.)",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "Bundle"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "WBS, I/O, PM Order",
+          "description": null,
+          "required": true,
+          "template": "object:1460",
+          "processInputId": 536870925,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "529221ec-8fb1-728a-5e42-73c5b0eeb17a",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is\u00a0this\u00a0WBS,\u00a0I/O\u00a0or\u00a0PM\u00a0order\u00a0going\u00a0to\u00a0be\u00a0split?",
+                "valueReference": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "Percent Split 1",
+          "description": null,
+          "required": false,
+          "template": "object:1461",
+          "processInputId": 536870930,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "100",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "d1a57cd3-46b7-c08d-7700-9e01ded89bd2",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is\u00a0this\u00a0WBS,\u00a0I/O\u00a0or\u00a0PM\u00a0order\u00a0going\u00a0to\u00a0be\u00a0split?",
+                "valueReference": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "WBS IO PM 2",
+          "description": null,
+          "required": false,
+          "template": "object:1462",
+          "processInputId": 536870931,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "N/A",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "13c028d7-c43b-7c28-a60f-42015b594d1f",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+            "leadingQuestionExpectedAnswers": [
+              "No"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is\u00a0this\u00a0WBS,\u00a0I/O\u00a0or\u00a0PM\u00a0order\u00a0going\u00a0to\u00a0be\u00a0split?",
+                "valueReference": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "No"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "No",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "No"
+              }
+            }
+          },
+          "label": "Percent Split 2",
+          "description": null,
+          "required": false,
+          "template": "object:1463",
+          "processInputId": 536870929,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "0",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "38244e34-ce07-33b3-e899-44fe136f3a8f",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is\u00a0this\u00a0WBS,\u00a0I/O\u00a0or\u00a0PM\u00a0order\u00a0going\u00a0to\u00a0be\u00a0split?",
+                "valueReference": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Percent Split: Element One",
+          "description": null,
+          "required": true,
+          "template": "object:1465",
+          "processInputId": 536870930,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "d3afc811-1f11-cd43-8060-4cdd069eb88a",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is\u00a0this\u00a0WBS,\u00a0I/O\u00a0or\u00a0PM\u00a0order\u00a0going\u00a0to\u00a0be\u00a0split?",
+                "valueReference": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Second: WBS, I/O or PM Order",
+          "description": null,
+          "required": true,
+          "template": "object:1466",
+          "processInputId": 536870931,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "61928889-e277-b52d-c9b1-9310a371cf14",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+            "leadingQuestionExpectedAnswers": [
+              "Yes"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is\u00a0this\u00a0WBS,\u00a0I/O\u00a0or\u00a0PM\u00a0order\u00a0going\u00a0to\u00a0be\u00a0split?",
+                "valueReference": "efa3c68d-0bd4-a581-7407-db66db4c597d",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Yes"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Yes",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Yes"
+              }
+            }
+          },
+          "label": "Percent Split: Element Two",
+          "description": null,
+          "required": true,
+          "template": "object:1467",
+          "processInputId": 536870929,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "4f87f63c-7319-ff8d-be64-1ca9d4423ad0",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Reason for request:",
+          "description": null,
+          "required": true,
+          "template": "object:1468",
+          "processInputId": 536870914,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "77776958-9777-a6c6-f60b-73f371ae5199",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+            "leadingQuestionExpectedAnswers": [
+              "New"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "New"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "New",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "New"
+              }
+            }
+          },
+          "label": "Number of devices needed:",
+          "description": null,
+          "required": true,
+          "template": "object:1469",
+          "processInputId": 536870926,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "6e1b432d-27c8-d437-4a10-5b2b46359635",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+            "leadingQuestionExpectedAnswers": [
+              "Collect"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Collect"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Collect",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Collect"
+              }
+            }
+          },
+          "label": "What is the device ID number(s)?",
+          "description": "<p>Please N/A if the device does not have an ID Number.</p>",
+          "required": true,
+          "template": "object:1470",
+          "processInputId": 536870921,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "893f8f4d-89a1-6b94-d2e4-6cbc9e4645ba",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+            "leadingQuestionExpectedAnswers": [
+              "Collect"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Collect"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Collect",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Collect"
+              }
+            }
+          },
+          "label": "Where is the device(s) located?",
+          "description": "<p>(Location, building, floor, cube number)</p>",
+          "required": true,
+          "template": "object:1471",
+          "processInputId": 536870922,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DateField",
+          "id": "8663fefe-b054-42ef-37ad-0de8041873be",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+            "leadingQuestionExpectedAnswers": [
+              "New"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "New"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "New",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "New"
+              }
+            }
+          },
+          "label": "Requested delivery date:",
+          "description": null,
+          "required": true,
+          "template": "object:1472",
+          "processInputId": 536870964,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "timezoneId": null,
+          "min": {
+            "limitType": "NO_LIMIT"
+          },
+          "max": {
+            "limitType": "NO_LIMIT"
+          },
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "DateTimeField",
+          "id": "59f99e03-c8ad-2eb5-ba9b-c3751e729401",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+            "leadingQuestionExpectedAnswers": [
+              "Collect"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Collect"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Collect",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Collect"
+              }
+            }
+          },
+          "label": "Requested retirement date:",
+          "description": null,
+          "required": true,
+          "template": "object:1473",
+          "processInputId": 536870962,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "zonedDefaultAnswer": null,
+          "timezoneId": null,
+          "min": {
+            "limitType": "NO_LIMIT"
+          },
+          "max": {
+            "limitType": "NO_LIMIT"
+          },
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "eff1877d-254a-83f9-e70d-2dda0533262e",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionId": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+            "leadingQuestionExpectedAnswers": [
+              "Collect"
+            ],
+            "expression": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Collect"
+                ],
+                "type": "QUESTION_OPTION",
+                "label": "Collect",
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Collect"
+              }
+            }
+          },
+          "label": "Pickup instructions:",
+          "description": null,
+          "required": true,
+          "template": "object:1474",
+          "processInputId": 536870920,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "f3b2d411-a964-4ff5-6d06-6271eb0c9f37",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": null,
+          "label": "Customer",
+          "description": null,
+          "required": false,
+          "template": "object:1475",
+          "processInputId": 536870938,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": "${requestedFor.fullName}",
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "966a0cf4-5dbb-3e3c-ddcc-fa98b4c458e0",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "f3b2d411-a964-4ff5-6d06-6271eb0c9f37",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Comments:",
+          "description": "<p><strong>If \u2018Name Not Found\u2019 is selected, indicate the following information, if known: &nbsp;recipient\u2019s name, corporate ID, company, department, and phone number</strong></p>",
+          "required": true,
+          "template": "object:1476",
+          "processInputId": 536870917,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "9a791775-732b-c4b5-5077-37fbda38c041",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "f3b2d411-a964-4ff5-6d06-6271eb0c9f37",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Supervisor Name",
+          "description": "<p>Please specify the approving supervisor</p>",
+          "required": true,
+          "template": "object:1477",
+          "processInputId": 536870940,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "CTM:People",
+          "datasetName": "CTM:People",
+          "datasetIdFieldId": "260000006",
+          "datasetIdFieldName": "ManagersName",
+          "datasetNameFieldId": "260000006",
+          "datasetNameFieldName": "ManagersName",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "AND",
+            "withParentheses": false,
+            "left": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Profile Status",
+                "valueReference": "7",
+                "fieldType": "SELECTION",
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Enabled"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Enabled"
+              }
+            },
+            "right": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Full Name",
+                  "valueReference": "1000000017",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "*Manager Not Found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "*Manager Not Found"
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "FIELD",
+                  "label": "Full Name",
+                  "valueReference": "1000000017",
+                  "fieldType": "TEXT",
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "*Name Not Found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "*Name Not Found"
+                }
+              }
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "936e9a05-da07-327f-e296-a39d5b48de88",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "f3b2d411-a964-4ff5-6d06-6271eb0c9f37",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Supervisor ID",
+          "description": null,
+          "required": false,
+          "template": "object:1478",
+          "processInputId": 536870939,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "202b0520-b45b-f222-ea0c-b24035a75c3f",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "f3b2d411-a964-4ff5-6d06-6271eb0c9f37",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Customer Site",
+          "description": "<p>Select the Primary site where the employee will be reporting out of:</p>",
+          "required": false,
+          "template": "object:1479",
+          "processInputId": 536870952,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "CTM:People",
+          "datasetName": "CTM:People",
+          "datasetIdFieldId": "260000001",
+          "datasetIdFieldName": "Site",
+          "datasetNameFieldId": "260000001",
+          "datasetNameFieldName": "Site",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Profile Status",
+              "valueReference": "7",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Enabled"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Enabled"
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": true,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "395d9d06-5a49-479b-75df-88a9264f630b",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_CONTAINS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Customer",
+                "valueReference": "f3b2d411-a964-4ff5-6d06-6271eb0c9f37",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "found"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "found"
+              }
+            }
+          },
+          "label": "Comments:",
+          "description": null,
+          "required": false,
+          "template": "object:1476",
+          "processInputId": 536870917,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "aca1ddc5-9110-25ee-7393-6f16d7f16d71",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "f3b2d411-a964-4ff5-6d06-6271eb0c9f37",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Supervisor Name Lookup",
+          "description": null,
+          "required": false,
+          "template": "object:1480",
+          "processInputId": 536870940,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "52167714-74d8-d733-3323-82f67bd12df1",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "f3b2d411-a964-4ff5-6d06-6271eb0c9f37",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Supervisor ID Lookup",
+          "description": null,
+          "required": false,
+          "template": "object:1481",
+          "processInputId": 536870939,
+          "hidden": true,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextField",
+          "id": "06fce784-38c0-6236-289e-19d1ee3e7905",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "f3b2d411-a964-4ff5-6d06-6271eb0c9f37",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Recipient's primary site:",
+          "description": null,
+          "required": false,
+          "template": "object:1482",
+          "processInputId": 536870952,
+          "hidden": false,
+          "readOnly": true,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "maxLength": null,
+          "regex": null,
+          "formattingHint": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "RadioButtons",
+          "id": "4073547d-1b78-0601-5078-e0f5728b7d24",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "NOT_CONTAINS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Customer",
+                  "valueReference": "f3b2d411-a964-4ff5-6d06-6271eb0c9f37",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "found"
+                  ],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "found"
+                }
+              },
+              "right": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Request type:",
+                  "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "New"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "New",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "New"
+                }
+              }
+            }
+          },
+          "label": "Is the Recipient's primary site above correct?",
+          "description": null,
+          "required": true,
+          "template": "object:1483",
+          "processInputId": 536870967,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "options": [
+            {
+              "dataValue": "Yes",
+              "displayValue": "Yes",
+              "disabled": false
+            },
+            {
+              "dataValue": "No",
+              "displayValue": "No",
+              "disabled": false
+            }
+          ],
+          "connectorId": null,
+          "datasetId": null,
+          "datasetName": null,
+          "datasetIdFieldId": null,
+          "datasetIdFieldName": null,
+          "datasetNameFieldId": null,
+          "datasetNameFieldName": null,
+          "qualification": null,
+          "qualificationExpression": null,
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "Dropdown",
+          "id": "099b1c2c-ba87-b437-3737-6dd702ed6b98",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "AND",
+              "withParentheses": false,
+              "left": {
+                "operator": "EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Is the Recipient's primary site above correct?",
+                  "valueReference": "4073547d-1b78-0601-5078-e0f5728b7d24",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [
+                    "No"
+                  ],
+                  "type": "QUESTION_OPTION",
+                  "label": "No",
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": "No"
+                }
+              },
+              "right": {
+                "operator": "NOT_EQUALS",
+                "withParentheses": false,
+                "left": {
+                  "values": [],
+                  "type": "QUESTION_ANSWER",
+                  "label": "Recipient's primary site:",
+                  "valueReference": "06fce784-38c0-6236-289e-19d1ee3e7905",
+                  "fieldType": null,
+                  "value": null
+                },
+                "right": {
+                  "values": [],
+                  "type": "STRING",
+                  "label": null,
+                  "valueReference": null,
+                  "fieldType": null,
+                  "value": null
+                }
+              }
+            }
+          },
+          "label": "Recipient's primary site:",
+          "description": "<p>Select the primary site where the recipient will be reporting out of:</p>",
+          "required": true,
+          "template": "object:1484",
+          "processInputId": 536870965,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "connectorId": "201",
+          "datasetId": "CTM:People",
+          "datasetName": "CTM:People",
+          "datasetIdFieldId": "260000001",
+          "datasetIdFieldName": "Site",
+          "datasetNameFieldId": "260000001",
+          "datasetNameFieldName": "Site",
+          "qualification": null,
+          "qualificationExpression": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Profile Status",
+              "valueReference": "7",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Enabled"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Enabled"
+            }
+          },
+          "useCustomQualification": false,
+          "runAsAdministrator": false,
+          "defaultAnswer": null,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        },
+        {
+          "type": "TextArea",
+          "id": "b05ce317-36b0-b1e5-641c-3db478ecf9f2",
+          "externalId": null,
+          "perUser": false,
+          "visible": null,
+          "useDefaultLocale": false,
+          "visibilityCondition": {
+            "leadingQuestionExpectedAnswers": [],
+            "expression": {
+              "operator": "NOT_EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Is the Recipient's primary site above correct?",
+                "valueReference": "4073547d-1b78-0601-5078-e0f5728b7d24",
+                "fieldType": null,
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": null
+              }
+            }
+          },
+          "label": "Delivery instructions:",
+          "description": "<p>(Location, building, floor, cube number) for the recipient's site provided above.</p>",
+          "required": true,
+          "template": "object:1485",
+          "processInputId": 536870913,
+          "hidden": false,
+          "readOnly": false,
+          "answerSource": "DEFAULT",
+          "tags": [],
+          "defaultAnswer": null,
+          "formattingHint": null,
+          "maxLength": null,
+          "regex": null,
+          "numberOfRows": 254,
+          "enabledPasswordEncryption": false,
+          "confidential": false
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "name": "Retrieve Supervisor Name and ID",
+      "type": "OPEN_QUESTIONNAIRE",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "CTM:People",
+        "tableName": "CTM:People",
+        "mappings": [
+          {
+            "fieldName": "ManagerLoginID",
+            "fieldId": "301336500",
+            "questionLabel": "Supervisor ID Lookup",
+            "questionId": "52167714-74d8-d733-3323-82f67bd12df1"
+          },
+          {
+            "fieldName": "ManagersName",
+            "fieldId": "260000006",
+            "questionLabel": "Supervisor Name Lookup",
+            "questionId": "aca1ddc5-9110-25ee-7393-6f16d7f16d71"
+          },
+          {
+            "fieldName": "Site",
+            "fieldId": "260000001",
+            "questionLabel": "Recipient's primary site:",
+            "questionId": "06fce784-38c0-6236-289e-19d1ee3e7905"
+          }
+        ],
+        "qualification": {
+          "operator": "AND",
+          "withParentheses": false,
+          "left": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Remedy Login ID",
+              "valueReference": "4",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "CONTEXT",
+              "label": null,
+              "valueReference": "${requestedFor.loginName}",
+              "fieldType": null,
+              "value": null
+            }
+          },
+          "right": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Profile Status",
+              "valueReference": "7",
+              "fieldType": "SELECTION",
+              "value": null
+            },
+            "right": {
+              "values": [
+                "Enabled"
+              ],
+              "type": "STRING",
+              "label": null,
+              "valueReference": null,
+              "fieldType": null,
+              "value": "Enabled"
+            }
+          }
+        }
+      },
+      "qualification": null
+    },
+    {
+      "name": "Retrieve supervisor when requested for Not Found",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "CTM:People",
+        "tableName": "CTM:People",
+        "mappings": [
+          {
+            "fieldName": "Remedy Login ID",
+            "fieldId": "4",
+            "questionLabel": "Supervisor ID",
+            "questionId": "936e9a05-da07-327f-e296-a39d5b48de88"
+          }
+        ],
+        "qualification": {
+          "operator": "EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "FIELD",
+            "label": "Full Name",
+            "valueReference": "1000000017",
+            "fieldType": "TEXT",
+            "value": null
+          },
+          "right": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Supervisor Name",
+            "valueReference": "9a791775-732b-c4b5-5077-37fbda38c041",
+            "fieldType": null,
+            "value": null
+          }
+        }
+      },
+      "qualification": {
+        "operator": "NOT_EQUALS",
+        "withParentheses": false,
+        "left": {
+          "values": [],
+          "type": "QUESTION_ANSWER",
+          "label": "Supervisor Name",
+          "valueReference": "9a791775-732b-c4b5-5077-37fbda38c041",
+          "fieldType": null,
+          "value": null
+        },
+        "right": {
+          "values": [],
+          "type": "STRING",
+          "label": null,
+          "valueReference": null,
+          "fieldType": null,
+          "value": null
+        }
+      }
+    },
+    {
+      "name": "Retrieve DWP-SRM-SLA Data",
+      "type": "ANSWER_QUESTION",
+      "mapping": {
+        "connectorId": "201",
+        "tableId": "weDWP:DWP-SRM-SLA-DefinitionMeasurement",
+        "tableName": "weDWP:DWP-SRM-SLA-DefinitionMeasurement",
+        "mappings": [
+          {
+            "fieldName": "WO Template Name",
+            "fieldId": "536870925",
+            "questionLabel": "DWP-SRM-SLA-template-name",
+            "questionId": "649b5550-e5f0-fe3b-9ca3-2f68436e1701"
+          },
+          {
+            "fieldName": "Has a Disclaimer",
+            "fieldId": "536870937",
+            "questionLabel": "DWP-SRM-SLA-has-a-disclaimer",
+            "questionId": "404d027c-ef57-d189-a541-0041f6374908"
+          },
+          {
+            "fieldName": "Disclaimer__c",
+            "fieldId": "536870920",
+            "questionLabel": "Disclaimer:",
+            "questionId": "97141d78-1d85-6816-28d0-1ce792045131"
+          },
+          {
+            "fieldName": "Requested Item__c",
+            "fieldId": "536870940",
+            "questionLabel": "DWP-SRM-SLA-requested-item",
+            "questionId": "498333ec-17e6-f8ed-6e02-56115377ccdd"
+          },
+          {
+            "fieldName": "Sub Process__c",
+            "fieldId": "536870941",
+            "questionLabel": "DWP-SRM-SLA-sub-process",
+            "questionId": "3c76a84a-9f3a-b0e8-4ca1-52389ea7c5f1"
+          }
+        ],
+        "qualification": {
+          "operator": "AND",
+          "withParentheses": false,
+          "left": {
+            "operator": "EQUALS",
+            "withParentheses": false,
+            "left": {
+              "values": [],
+              "type": "FIELD",
+              "label": "Form Tier 1",
+              "valueReference": "536870913",
+              "fieldType": "TEXT",
+              "value": null
+            },
+            "right": {
+              "values": [],
+              "type": "QUESTION_ANSWER",
+              "label": "DWP-SRM-SLA-service-name",
+              "valueReference": "a24bd44f-452d-4eb0-0f06-529d0b26159a",
+              "fieldType": null,
+              "value": null
+            }
+          },
+          "right": {
+            "operator": "AND",
+            "withParentheses": false,
+            "left": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Form Tier 2",
+                "valueReference": "536870914",
+                "fieldType": "TEXT",
+                "value": null
+              },
+              "right": {
+                "values": [],
+                "type": "QUESTION_ANSWER",
+                "label": "Request type:",
+                "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+                "fieldType": null,
+                "value": null
+              }
+            },
+            "right": {
+              "operator": "EQUALS",
+              "withParentheses": false,
+              "left": {
+                "values": [],
+                "type": "FIELD",
+                "label": "Status",
+                "valueReference": "7",
+                "fieldType": "SELECTION",
+                "value": null
+              },
+              "right": {
+                "values": [
+                  "Active"
+                ],
+                "type": "STRING",
+                "label": null,
+                "valueReference": null,
+                "fieldType": null,
+                "value": "Active"
+              }
+            }
+          }
+        }
+      },
+      "qualification": {
+        "operator": "OR",
+        "withParentheses": true,
+        "left": {
+          "operator": "EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Request type:",
+            "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+            "fieldType": null,
+            "value": null
+          },
+          "right": {
+            "values": [
+              "New"
+            ],
+            "type": "QUESTION_OPTION",
+            "label": "New",
+            "valueReference": null,
+            "fieldType": null,
+            "value": "New"
+          }
+        },
+        "right": {
+          "operator": "EQUALS",
+          "withParentheses": false,
+          "left": {
+            "values": [],
+            "type": "QUESTION_ANSWER",
+            "label": "Request type:",
+            "valueReference": "3fbde0ed-bf05-745d-375f-c637d1ef48da",
+            "fieldType": null,
+            "value": null
+          },
+          "right": {
+            "values": [
+              "Collect"
+            ],
+            "type": "QUESTION_OPTION",
+            "label": "Collect",
+            "valueReference": null,
+            "fieldType": null,
+            "value": "Collect"
+          }
+        }
+      }
+    }
+  ],
+  "showActions": false,
+  "useDefaultLanguage": false
+}
